@@ -1,167 +1,196 @@
+// ref: https://www.youtube.com/watch?v=hwfiYvzH9s4
 "use client";
-import Link from "next/link";
-import { useState, useEffect, useLayoutEffect, useSyncExternalStore } from "react";
-import { usePathname } from "next/navigation";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons"
-import useScrollPos from "../utils/useScrollPos";
+import React, { Fragment } from 'react';
+import { Menu, Transition } from '@headlessui/react';
+// import { ChevronDownIcon } from '@heroicons/react/solid';
 
-// useSyncExternalStore to prevent error during hydration
-function useWindowWidth() {
-    const windowWidth = useSyncExternalStore(onResize, getWindowWidthSnapshot, getServerSnapshot);
-    return {
-        width: windowWidth
-    };
-}
-function onResize(onChange) {
-    window.addEventListener("resize", onChange);
-    return () => window.removeEventListener("resize", onChange);
-}
-function getWindowWidthSnapshot() {
-    return window.innerWidth;
-}
-function getServerSnapshot() {
-    return 0;
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ');
 }
 
-function useNavbarEffect() {
-    const breakpoint = 768;
-    const pathname = usePathname();
-    const { width } = useWindowWidth();
-    const [expanded, setExpanded] = useState(width >= breakpoint);
-
-    // Determine screenMd and expanded on resize
-    useEffect(() => {
-        setExpanded(width >= breakpoint);
-    }, [width]);
-
-    // Expand/collapse navbar when screen size LTBP/STBP
-    useLayoutEffect(() => {
-        const isScreenMd = width >= breakpoint;
-        setExpanded(isScreenMd);
-    }, [width]);
-
-    // Collapse navbar on pathname change && screen size smaller than breakpoint
-    useEffect(() => {
-        if (width < breakpoint) {
-            setExpanded(false);
-        }
-    }, [pathname, width]);
-
-    return { expanded, setExpanded, screenMd: width >= breakpoint };
-}
-
-export default function Navbar() {
-    const active = (useScrollPos() >= 100);
-    const {expanded, setExpanded, screenMd} = useNavbarEffect();
-    const links = [
-        ["首頁", "#"],
-        ["關於我們", "#about"],
-        ["歷年作品", "#teams"],
-        ["Q & A", "#qna"],
-    ];
-    const menuItems = [
-        {
-          title: 'Home',
-          url: '#',
-        },
-        {
-          title: 'Services',
-          url: '#services',
-          submenu: [
-            {
-              title: 'web design',
-              url: 'web-design',
-            },
-            {
-              title: 'web development',
-              url: 'web-dev',
-            },
-            {
-              title: 'SEO',
-              url: 'seo',
-            },
-          ],
-        },
-        {
-          title: 'About',
-          url: '#about',
-        },
-      ];
-    
-    function toggleNav() {
-        setExpanded(!expanded);
-    };
-
-    return (
-        <>
-            <div className = "bg-gray-400 h-16 w-full sticky top-0 flex items-center"> 
-                <img className = "object-contain mat ml-6 h-12 " 
-                src='/assets/images/logo.svg'
-                alt='logo'/>
-                <div className = "ml-6 hackathon_title">
-                MeiChu Hackthon
+const Navbar = () => {
+  return (
+    <div className='hidden md:block'>
+    <div className='w-full h-14 flex justify-between items-center px-8 bg-gray-300 '>
+      <div className='text-xl font-bold  flex items-center h-full'>
+        <img className = "object-contain mat h-5/6 " 
+            src='/assets/images/logo.svg'
+            alt='logo'/>
+          <div className = "ml-6 hackathon_title">
+            MeiChu Hackthon
+          </div>
+      </div>
+      
+      <ul className='flex items-center'>
+        <li className='w-16  mx-4'>
+          <a  href='#temp'>活動願景</a>
+        </li>
+        <li className='w-16  mx-4'>
+          <Menu as='div' className='relative inline-block text-left'>
+            <Menu.Button>比賽資訊</Menu.Button>
+            <Transition
+              as={Fragment}
+              enter='transition ease-out duration-100'
+              enterFrom='transform opacity-0 scale-95'
+              enterTo='transform opacity-100 scale-100'
+              leave='transition ease-in duration-100'
+              leaveFrom='transform opacity-100 scale-100'
+              leaveTo='transform opacity-0 scale-95'
+            >
+              <Menu.Items className='origin-top-left absolute left-0 mt-2 w-28 rounded-md shadow-lg bg-white divide-y divide-gray-100 focus:outline-none z-30'>
+                <div className='py-1'>
+                  <Menu.Item>
+                  {({ active }) => (
+                      <a
+                        href='#temp'
+                        className={classNames(
+                          active
+                            ? 'bg-gray-100 text-gray-900'
+                            : 'text-gray-700',
+                          'block px-4 py-2 text-sm' 
+                        )}
+                      >
+                       活動流程
+                      </a>
+                    )}
+                  </Menu.Item>
+                  <Menu.Item>
+                    {({ active }) => (
+                      <a
+                        href='#temp'
+                        className={classNames(
+                          active
+                            ? 'bg-gray-100 text-gray-900'
+                            : 'text-gray-700',
+                          'block px-4 py-2 text-sm'
+                        )}
+                      >
+                        組別介紹
+                      </a>
+                    )}
+                  </Menu.Item>
+                  <Menu.Item>
+                    {({ active }) => (
+                      <a
+                        href='#temp'
+                        className={classNames(
+                          active
+                            ? 'bg-gray-100 text-gray-900'
+                            : 'text-gray-700',
+                          'block px-4 py-2 text-sm'
+                        )}
+                      >
+                        獎項資訊
+                      </a>
+                    )}
+                  </Menu.Item>
                 </div>
-                <nav className = " mr-5 flex">
-                    <ul className="flex">
-                        {menuItems.map((menu, index) => {
-                        return <MenuItems items={menu} key={index} />;;
-                        })}
-                    </ul>    
-                </nav>
-                {/* <nav>
-                    <ul>
-                        <li><a href="#section1">Home</a></li>
-                        <li className="dropdown">
-                        <a href="#">Services</a>
-                        <ul className="dropdown-content">
-                            <li><a href="#">Service 1</a></li>
-                            <li><a href="#">Service 2</a></li>
-                            <li><a href="#">Service 3</a></li>
-                        </ul>
-                        </li>
-                        <li><a href="#section2">About Us</a></li>
-                    </ul>
-                    </nav>     */}
-            </div>
-        </>
-    );
-}
+              </Menu.Items>
+            </Transition>
+          </Menu>
+        </li>
+        <li className='w-16 mx-4'>
+          <Menu as='div' className='relative inline-block text-left'>
+            <Menu.Button>競賽題目</Menu.Button>
+            <Transition
+              as={Fragment}
+              enter='transition ease-out duration-100'
+              enterFrom='transform opacity-0 scale-95'
+              enterTo='transform opacity-100 scale-100'
+              leave='transition ease-in duration-100'
+              leaveFrom='transform opacity-100 scale-100'
+              leaveTo='transform opacity-0 scale-95'
+            >
+              <Menu.Items className='origin-top-left absolute left-0 mt-2 w-28 rounded-md shadow-lg bg-white divide-y divide-gray-100 focus:outline-none z-30'>
+                <div className='py-1'>
+                  <Menu.Item>
+                  {({ active }) => (
+                      <a
+                        href='#temp'
+                        className={classNames(
+                          active
+                            ? 'bg-gray-100 text-gray-900'
+                            : 'text-gray-700',
+                          'block px-4 py-2 text-sm' 
+                        )}
+                      >
+                       題目介紹
+                      </a>
+                    )}
+                  </Menu.Item>
+                  <Menu.Item>
+                    {({ active }) => (
+                      <a
+                        href='#temp'
+                        className={classNames(
+                          active
+                            ? 'bg-gray-100 text-gray-900'
+                            : 'text-gray-700',
+                          'block px-4 py-2 text-sm'
+                        )}
+                      >
+                        賽前工作坊
+                      </a>
+                    )}
+                  </Menu.Item>
+                </div>
+              </Menu.Items>
+            </Transition>
+          </Menu>
+        </li>
+        <li className='w-16 ml-4'>
+          <Menu as='div' className='relative inline-block text-left'>
+            <Menu.Button>活動相關</Menu.Button>
+            <Transition
+              as={Fragment}
+              enter='transition ease-out duration-100'
+              enterFrom='transform opacity-0 scale-95'
+              enterTo='transform opacity-100 scale-100'
+              leave='transition ease-in duration-100'
+              leaveFrom='transform opacity-100 scale-100'
+              leaveTo='transform opacity-0 scale-95'
+            >
+              <Menu.Items className='origin-top-left absolute left-0 mt-2 w-24 rounded-md shadow-lg bg-white divide-y divide-gray-100 focus:outline-none z-30'>
+                <div className='py-1'>
+                  <Menu.Item>
+                  {({ active }) => (
+                      <a
+                        href='#temp'
+                        className={classNames(
+                          active
+                            ? 'bg-gray-100 text-gray-900'
+                            : 'text-gray-700',
+                          'block px-4 py-2 text-sm' 
+                        )}
+                      >
+                       贊助企業
+                      </a>
+                    )}
+                  </Menu.Item>
+                  <Menu.Item>
+                    {({ active }) => (
+                      <a
+                        href='#temp'
+                        className={classNames(
+                          active
+                            ? 'bg-gray-100 text-gray-900'
+                            : 'text-gray-700',
+                          'block px-4 py-2 text-sm'
+                        )}
+                      >
+                        工作人員
+                      </a>
+                    )}
+                  </Menu.Item>
+                </div>
+              </Menu.Items>
+            </Transition>
+          </Menu>
+        </li>
+      </ul>
+    </div>
+    </div>
+  );
+};
 
-
-function MenuItems({items}) {
-    return (
-        
-    <li className="ml-14 bg-yellow">
-      {items.submenu ? (
-        <>
-        <div>
-          <button className = "text-lg" type="button" aria-haspopup="menu">
-            {items.title}{' '}
-          </button>
-          <ul className="dropdown bg-black">
-            {items.submenu.map((submenu, index) => (
-                <li key={index} className="">
-                <a href={submenu.url}>{submenu.title}</a>
-                </li>
-            ))}
-            </ul>
-        </div>
-        </>
-      ) : (
-        <a className = "text-lg" href={items.url}>{items.title}</a>
-      )}
-    </li>
-    );
-}
-function Dropdown({submenus}) {
-    return (
-    <ul className="dropdown bg-black">
-        {submenus.map((items, index) => (
-            <li key={index} className="">
-            {/* <a href={items.submenu.url}>{items.submenu.title}</a> */}
-            </li>
-        ))}
-    </ul>
-    );
-}
+export default Navbar;
