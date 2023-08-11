@@ -10,12 +10,12 @@ export const metadata = {
 const RootLayout = ({ children }) => (
   <html lang='en'>
     <body> 
-        <div className='main'>
+        {/* <div className='main'>
           <div className='gradient' />
-        </div>
+        </div> */}
 
+        <NavBar /> 
         <main className='app'>
-          <NavBar /> 
           {children}
         </main> 
     </body>
