@@ -71,12 +71,17 @@
   }
 }
 
+p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 /* Tailwind Styles */
-.hackathon_title{
-  font-style:italic;
+.hackathon_title {
+  font-style: italic;
 }
 .app {
-  @apply  z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
+  @apply z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
 }
 
 .black_btn {

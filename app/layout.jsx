@@ -1,25 +1,23 @@
-import '@styles/globals.css'
+import "@styles/globals.css";
 
 import NavBar from "@components/NavBar";
-
+import Topic from "@components/Topic";
 
 export const metadata = {
-  title: "2023 meichu hackathon" 
-}
+  title: "2023 meichu hackathon",
+};
 
 const RootLayout = ({ children }) => (
-  <html lang='en'>
-    <body> 
-        {/* <div className='main'>
+  <html lang="en">
+    <body>
+      {/* <div className='main'>
           <div className='gradient' />
         </div> */}
 
-        <NavBar /> 
-        <main className='app'>
-          {children}
-        </main> 
+      <NavBar />
+      <Topic />
+      <main className="app">{children}</main>
     </body>
   </html>
 );
-export default RootLayout; 
-
+export default RootLayout;
