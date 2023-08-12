@@ -4,12 +4,12 @@ const Footer = () => {
   return (
     <>
       <div className="grid grid-cols-1 divide-y divide-divider-gray">
-        <div className="flex justify-items-stretch h-auto">
-          <div className="flex items-center basis-1/2 p-16">
+        <div className="flex flex-col md:flex-row justify-items-stretch h-auto">
+          <div className="flex items-center justify-center md:justify-start basis-1/2 pt-16 md:p-16">
             <img className="w-32" src="/assets/images/logo.svg" alt="logo" />
           </div>
           <div className="basis-1/2">
-            <div className="flex flex-col justify-center px-24 py-16">
+            <div className="flex flex-col justify-center items-center md:items-start px-12 md:px-24 py-16">
               <p className="font-bold">開發部</p>
               <p className="font-normal">
                 邵筱庭 / 王柏涵 / 邱奕庭 / 林柏宇 / 侯博軒 / 王皓平 / 曾家祐 /
@@ -48,7 +48,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex px-20 h-40">
+        <div className="flex px-12 md:px-20 h-40">
           <div className="basis-1/2 flex flex-col justify-center gap-y-2">
             <div className="flex gap-x-7">
               <div>
