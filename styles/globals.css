@@ -65,6 +65,11 @@
   opacity: 0.15;
 }
 
+p {
+  line-height: 1.5rem;
+  font-size: 0.875rem;
+}
+
 @media screen and (max-width: 640px) {
   .main {
     padding: 0;
@@ -72,11 +77,11 @@
 }
 
 /* Tailwind Styles */
-.hackathon_title{
-  font-style:italic;
+.hackathon_title {
+  font-style: italic;
 }
 .app {
-  @apply  z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
+  @apply z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
 }
 
 .black_btn {
