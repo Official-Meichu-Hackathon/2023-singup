@@ -2,6 +2,7 @@
 "use client";
 import React, { Fragment } from 'react';
 import { Menu, Transition } from '@headlessui/react';
+import '@styles/globals.css'
 // import { ChevronDownIcon } from '@heroicons/react/solid';
 
 function classNames(...classes) {
@@ -12,7 +13,7 @@ const Navbar = () => {
   return(
   <>
     
-    <div className='hidden md:block '>
+    <div className='hidden sm:block '>
     <div className='w-full h-14 flex justify-between items-center px-8 bg-gray-300 fixed'>
       <div className='text-xl font-bold  flex items-center h-full'>
         <img className = "object-contain mat h-5/6 " 
