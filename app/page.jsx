@@ -5,7 +5,12 @@ const Home = () =>{
         <>
             <div>page            
             </div>
-            <CountDown/>
+            <div className = "w-full h-[25vw] bg-gray-100 flex">
+                <CountDown/>
+                <CountDown/>
+                <CountDown/>
+                <CountDown/>
+            </div>
         </>
     )
 }
