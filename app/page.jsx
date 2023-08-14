@@ -1,9 +1,12 @@
-
+import Award from "@components/Award"
 
 const Home = () =>{
     return(
-        <div>page            
-        </div>
+        <>
+            <div>page            
+            </div>
+            <Award/>
+        </>
     )
 }
 export default Home
