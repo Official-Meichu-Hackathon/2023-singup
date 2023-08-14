@@ -193,8 +193,9 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
+      <div className ='h-14'> </div>
     </div>
-    <div className ='h-14'> </div>
+    
   </>
   );
 };
