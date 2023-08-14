@@ -74,7 +74,7 @@ const Navbar = () => {
                   <Menu.Item>
                     {({ active }) => (
                       <a
-                        href='#temp'
+                        href='#Award'
                         className={classNames(
                           active
                             ? 'bg-gray-100 text-gray-900'

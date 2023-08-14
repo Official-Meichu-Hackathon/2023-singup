@@ -29,7 +29,7 @@ const Award = () =>{
     ]
     return(
         <>
-        <div className='mx-[5%] text-[#6A747B]'>
+        <div className='mx-[5%] text-[#6A747B]' id='Award'>
             <h1>獎項資訊 </h1>
             {items.map((item,index) =>{
                 return <Award_each key={index} item={item}/>;
