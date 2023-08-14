@@ -7,6 +7,76 @@
 /* 
   Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them! 
 */
+.content{
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0,1,0,1);
+}
+
+.content.show{
+  height: auto;
+  transition: all 0.5s cubic-bezier(1,0,1,0);
+}
+
+
+h1, h2,h3 {
+  max-width: fit-content;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  line-height: 2;
+
+  @media screen and (min-width: 576px) {
+      font-size: 4.5em;
+  }
+}
+h2 {
+  font-size: 3em;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+
+  @media screen and (min-width: 576px) {
+      font-size: 3.5em;
+  }
+}
+
+h3 {
+  font-size: 2.5em;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+h4{
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 1;
+}
+h5{
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1;
+}
+
+p {
+  font-size: 1em;
+  line-height: 2;
+  text-align: justify;
+}
+
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+} 
 
 .main {
   width: 100vw;
