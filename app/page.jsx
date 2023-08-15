@@ -1,4 +1,5 @@
 import Award from "@components/Award"
+import Team_intro from "@components/Team_intro"
 
 const Home = () =>{
     return(
@@ -6,6 +7,10 @@ const Home = () =>{
             <div>page            
             </div>
             <Award/>
+            <Team_intro
+                imageSrc="/assets/images/創客.png"
+                description="Image Description"
+            />
         </>
     )
 }
