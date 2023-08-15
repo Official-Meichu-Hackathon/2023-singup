@@ -71,11 +71,6 @@
   }
 }
 
-p {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 /* Tailwind Styles */
 .hackathon_title {
   font-style: italic;

@@ -51,7 +51,7 @@ const Topic = () => {
   ];
   return (
     <>
-      <div className="grid grid-cols-2  place-items-center p-[5vw] gap-6">
+      <div className="container mx-auto place-items-center flex flex-col md:grid md:grid-cols-2 xl:grid-cols-3 px-[15%] md:px-[10%] lg:px-[15%] xl:px-[10%] gap-6">
         {contents.map((contents, index) => {
           return <SubTopic key={index} contents={contents} />;
         })}
@@ -65,7 +65,7 @@ const SubTopic = ({ contents }) => {
 
   return (
     <div
-      className="flex flex-col w-[80vw] max-w-[21.7rem] lg:w-[60vw] aspect-[5/4] bg-topic-gray pl-8"
+      className="flex flex-col w-[80vw] max-w-full lg:w-[60vw] aspect-[5/4] bg-topic-gray pl-8"
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
     >
@@ -74,12 +74,12 @@ const SubTopic = ({ contents }) => {
           isHover && "hidden"
         }`}
       >
-        <p className="leading-6">{contents.type}</p>
-        <p className="text-xl">{contents.company}</p>
+        <p className="text-[90%] sm:text-sm leading-6">{contents.type}</p>
+        <p className="text-[125%] sm:text-xl">{contents.company}</p>
       </div>
-      <div className={`basis-1/3 ${isHover && "hidden"}`}>
+      <div className={`pt-[2%] xl:pt-[1%] basis-1/3 ${isHover && "hidden"}`}>
         <Image
-          className="w-24"
+          className="w-[35%]"
           src={TSMC}
           alt="tsmc"
           width={100}
@@ -91,10 +91,10 @@ const SubTopic = ({ contents }) => {
       >
         <p className="text-base font-bold">{contents.topic}</p>
       </div>
-      <div className="grid place-content-end basis-1/3 pb-6 pr-8">
-        <div className="flex flex-row gap-x-2.5 justify-center">
+      <div className="grid place-content-end basis-1/3 pb-[8%] pr-[8%]">
+        <div className="flex flex-row gap-x-2 sm:gap-x-2.5 justify-center">
           <Image
-            className="animate-bounce w-6 h-6 place-self-center"
+            className="w-5 sm:w-6 h-auto place-self-center"
             src={
               isHover
                 ? "/assets/icons/topic_download.svg"
@@ -104,7 +104,7 @@ const SubTopic = ({ contents }) => {
             width={21}
             height={21}
           />
-          <p className="text-base opacity-70">
+          <p className="text-sm sm:text-base opacity-70">
             {isHover ? "檔案下載" : "查看更多"}
           </p>
         </div>
