@@ -15,8 +15,9 @@ const RootLayout = ({ children }) => (
         </div> */}
 
       <NavBar />
-      <main className="app">{children}</main>
+
       <Topic />
+      <main className="app">{children}</main>
     </body>
   </html>
 );
