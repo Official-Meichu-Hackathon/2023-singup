@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 
-const TransformComponent = ({ imageSrc, description }) => {
+const Team_intro = ({ imageSrc, description }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleHover = () => {
@@ -10,20 +10,26 @@ const TransformComponent = ({ imageSrc, description }) => {
 
   return (
     <div
-      className="relative overflow-hidden w-64 h-64 border border-gray-300 rounded shadow-md transition-transform duration-300"
+      className="relative overflow-hidden w-64 h-64 border border-gray-300 rounded shadow-md"
       onMouseEnter={handleHover}
       onMouseLeave={handleHover}
     >
-      <img src={imageSrc} alt="Transforming" className="w-full h-full object-cover" />
-      <div
-        className={`${
-          isHovered ? 'transform translate-y-0 opacity-100' : 'transform translate-y-full opacity-0'
-        } transition-transform duration-300 absolute inset-0 flex items-center justify-center bg-black bg-opacity-60 text-white text-center`}
-      >
-        {description}
+    <div>
+      <img
+        src={imageSrc}
+        alt="Transforming"
+        className={`w-auto h-auto object-cover transition-opacity duration-500 ${
+          isHovered ? 'opacity-0' : 'opacity-100'
+        }`}
+      />
       </div>
+      {isHovered && (
+        <div className="absolute inset-0 flex items-center justify-center bg-gray-300 bg-opacity-80 text-white text-center transition-opacity duration-500">
+          {description}
+        </div>
+      )}
     </div>
   );
 };
 
-export default TransformComponent;
+export default Team_intro;

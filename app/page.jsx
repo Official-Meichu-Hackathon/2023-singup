@@ -8,7 +8,7 @@ const Home = () =>{
             </div>
             <Award/>
             <Team_intro
-                imageSrc="/assets/images/創客.png"
+                imageSrc="/assets/images/創客.jpg"
                 description="Image Description"
             />
         </>
