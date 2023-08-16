@@ -1,5 +1,6 @@
 import Award from "@components/Award";
 import Team_intro from "@components/Team_intro";
+import News from "@components/News";
 
 const Home = () => {
   return (
@@ -7,6 +8,7 @@ const Home = () => {
       <div>page</div>
       <Award />
       <Team_intro />
+      <News />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat modi
         corrupti, commodi rerum fugit voluptatum hic. Quidem corrupti explicabo,
