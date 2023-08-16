@@ -15,7 +15,7 @@ const Navbar = () => {
     <div className='hidden md:block '>
       {/* <div className ='h-14 w-full mt-1 bg-black fixed'> </div> */}
       <ScrollProgressIndicator/>
-      <div className='w-full h-14 flex justify-between items-center px-8 bg-gray-300 fixed'>
+      <div className='w-full h-14 flex justify-between items-center px-8 bg-gray-200 fixed'>
         <div className='text-xl font-bold  flex items-center h-full'>
           <img className = "object-contain mat h-5/6 " 
               src='/assets/images/logo.svg'

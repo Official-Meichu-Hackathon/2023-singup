@@ -7,6 +7,12 @@
 /* 
   Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them! 
 */
+
+.bar_gradient{
+  background: linear-gradient(90deg, #A8D5CC 24.55%, #F3CD71 74.27%);
+
+}
+
 .scroll-progress {
   transition: transform 0.2s ease-out;
 }
