@@ -1,12 +1,12 @@
 import Award from "@components/Award";
 import Team_intro from "@components/Team_intro";
+import Sponsor from "@components/Sponsor";
 
 const Home = () => {
   return (
     <>
       <div>page</div>
-      <Award />
-      <Team_intro />
+      <Sponsor />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat modi
         corrupti, commodi rerum fugit voluptatum hic. Quidem corrupti explicabo,

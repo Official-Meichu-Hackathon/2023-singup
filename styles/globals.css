@@ -11,19 +11,20 @@
   transition: transform 0.2s ease-out;
 }
 
-.content{
+.content {
   max-height: 0;
   overflow: hidden;
-  transition: all 0.5s cubic-bezier(0,1,0,1);
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
 }
 
-.content.show{
+.content.show {
   height: auto;
-  transition: all 0.5s cubic-bezier(1,0,1,0);
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }
 
-
-h1, h2,h3 {
+h1,
+h2,
+h3 {
   max-width: fit-content;
   text-wrap: balance;
 }
@@ -35,7 +36,7 @@ h1 {
   line-height: 2;
 
   @media screen and (min-width: 576px) {
-      font-size: 4.5em;
+    font-size: 4.5em;
   }
 }
 h2 {
@@ -45,7 +46,7 @@ h2 {
   line-height: 1.5;
 
   @media screen and (min-width: 576px) {
-      font-size: 3.5em;
+    font-size: 3.5em;
   }
 }
 
@@ -55,12 +56,12 @@ h3 {
   line-height: 1.2;
 }
 
-h4{
+h4 {
   font-size: 2em;
   font-weight: bold;
   line-height: 1;
 }
-h5{
+h5 {
   font-size: 1.5em;
   font-weight: bold;
   line-height: 1;
@@ -72,7 +73,7 @@ p {
   text-align: justify;
 }
 
-hr { 
+hr {
   display: block;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -80,7 +81,7 @@ hr {
   margin-right: auto;
   border-style: inset;
   border-width: 1px;
-} 
+}
 
 .main {
   width: 100vw;
@@ -145,12 +146,22 @@ hr {
   }
 }
 
+.sponsor_title {
+  border-radius: 1.9375rem;
+  background: var(--3, #6a747b);
+  color: var(--6, #fff);
+  text-align: center;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
 /* Tailwind Styles */
-.hackathon_title{
-  font-style:italic;
+.hackathon_title {
+  font-style: italic;
 }
 .app {
-  @apply  z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
+  @apply z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
 }
 
 .black_btn {
