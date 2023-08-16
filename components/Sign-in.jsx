@@ -10,20 +10,20 @@ const Sign_in = () =>{
             <h1>如何報名</h1>
             <div className = 'w-full h-fit bg-gray-100 rounded-[3rem] flex border-2 border-black'>
                 <div className="w-[30%] ">
-                    <div className = 'pl-[8%] pt-[5%] h-[25%]'>
-                        <h5 className = 'py-5'> 9/5（一)~ 10/3（一）08:00</h5>
+                    <div className = 'px-[8%] py-[5%] h-[25%]'>
+                        <h5 className = 'py-5'> 9/5（一）~ 10/3（一）08:00</h5>
                         <h4 className = 'py-5 pb-10'>開始報名</h4>
                     </div>
-                    <div className = 'pl-[8%] pt-[5%] border-y-2 border-black h-[35%]'>
+                    <div className = 'px-[8%] py-[5%] border-y-2 border-black h-[35%]'>
                         <h5 className = 'py-5'> 10/3（一）23:59</h5>
                         <h4 className = 'py-5 pb-10'>正取隊伍與所屬企業公布</h4>
                     </div>
-                    <div className = 'pl-[8%] pt-[5%] h-[40%]'>
+                    <div className = 'px-[8%] py-[5%] h-[40%]'>
                         <h5 className = 'py-5'> 10/7（五）23:59</h5>
                         <h4 className = 'py-5 pb-10'>繳費截止</h4>
                     </div>
                 </div>
-                <div className = 'w-[70%] border-l-2 border-black pl-[3%] pt-[3%]'>
+                <div className = 'w-[70%] border-l-2 border-black px-[3%] pt-[3%]'>
                     <div className = 'mb-5'>
                         <h5>報名費用  </h5>
                         <p>$600 / 人（須另繳保證金 $200）</p>
