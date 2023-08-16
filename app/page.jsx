@@ -1,4 +1,5 @@
 import Award from "@components/Award"
+import Sign_in from "@components/Sign-in"
 
 const Home = () =>{
     return(
@@ -6,6 +7,7 @@ const Home = () =>{
             <div>page            
             </div>
             <Award/>
+            <Sign_in/>
         </>
     )
 }
