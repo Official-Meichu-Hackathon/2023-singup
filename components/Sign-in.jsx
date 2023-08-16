@@ -8,22 +8,22 @@ const Sign_in = () =>{
         <>
         <div className ='mx-[5%]'>
             <h1>如何報名</h1>
-            <div className = 'w-full h-fit bg-gray-200 rounded-[3rem] flex border-2 border-sky-500'>
+            <div className = 'w-full h-fit bg-gray-100 rounded-[3rem] flex border-2 border-black'>
                 <div className="w-[30%] ">
-                    <div className = 'pl-[8%] pt-[5%] '>
+                    <div className = 'pl-[8%] pt-[5%] h-[25%]'>
                         <h5 className = 'py-5'> 9/5（一)~ 10/3（一）08:00</h5>
                         <h4 className = 'py-5 pb-10'>開始報名</h4>
                     </div>
-                    <div className = 'pl-[8%] pt-[5%] border-y-2 border-sky-800 '>
+                    <div className = 'pl-[8%] pt-[5%] border-y-2 border-black h-[35%]'>
                         <h5 className = 'py-5'> 10/3（一）23:59</h5>
                         <h4 className = 'py-5 pb-10'>正取隊伍與所屬企業公布</h4>
                     </div>
-                    <div className = 'pl-[8%] pt-[5%] '>
+                    <div className = 'pl-[8%] pt-[5%] h-[40%]'>
                         <h5 className = 'py-5'> 10/7（五）23:59</h5>
                         <h4 className = 'py-5 pb-10'>繳費截止</h4>
                     </div>
                 </div>
-                <div className = 'w-[70%] border-l-2 border-sky-800 pl-[3%] pt-[3%]'>
+                <div className = 'w-[70%] border-l-2 border-black pl-[3%] pt-[3%]'>
                     <div className = 'mb-5'>
                         <h5>報名費用  </h5>
                         <p>$600 / 人（須另繳保證金 $200）</p>
@@ -44,6 +44,12 @@ const Sign_in = () =>{
                         <p>組別選擇分為：黑客組、交流組、兩組混合報名</p>
                         <p>＊ 若報名含黑客組，則須將所有企業皆列入志願序</p>
                         <p>＊若單一企業超額，將採取亂數分發</p>
+                    </div>
+                    <div className="mb-5">
+                        <h5>其他須知</h5>
+                        <p>企業可與學生洽談合作以將作品運用到公司中</p>
+                        <p>主辦方與企業可活動中拍照與錄影，並作為未來宣傳使用</p>
+                        <p>得獎隊伍需要將作品上傳到梅竹黑客松成果存放平台（附上連結），方可領取獎金</p>
                     </div>
                 </div>
 
