@@ -33,6 +33,12 @@ const Sponsor = () => {
         })}
       </div>
       <Sponsor_title title="特殊贊助" />
+
+      <Sponsor_title title="這是廣告"/>
+      <a href="https://www.nxp.com" target="_blank" className="w-[60%] md:w-[50%] lg:w-[60%] my-[1%] block">
+      <object data="/assets/images/sponsor_nxp.svg" type="image/svg+xml" className="w-full rounded-[1.25rem] pointer-events-none">
+        </object>
+      </a>
     </>
   );
 };
