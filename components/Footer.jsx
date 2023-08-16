@@ -5,10 +5,10 @@ const Footer = () => {
     <>
       <div className="grid grid-cols-1 divide-y divide-divider-gray">
         <div className="flex flex-col md:flex-row justify-items-stretch h-auto">
-          <div className="flex items-center justify-center md:justify-start basis-1/2 pt-16 md:p-16">
+          <div className="flex items-center justify-center md:justify-start basis-1/4 pt-16 md:p-16 lg:basis-1/3">
             <img className="w-32" src="/assets/images/logo.svg" alt="logo" />
           </div>
-          <div className="basis-1/2">
+          <div className="basis-3/4 lg:basis-2/3">
             <div className="flex flex-col justify-center items-center md:items-start px-12 md:px-24 py-16">
               <p className="font-bold">開發部</p>
               <p className="font-normal">
