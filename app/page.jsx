@@ -8,17 +8,12 @@ const Home = () => {
       <div>page</div>
       <Sponsor />
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat modi
-        corrupti, commodi rerum fugit voluptatum hic. Quidem corrupti explicabo,
-        repellendus nemo rerum esse voluptas, magni, vel sunt hic quis dolorum
-        itaque nihil fugit accusantium cupiditate aliquam qui debitis iure
-        laborum aperiam ipsa corporis. Optio tenetur laboriosam omnis ut
-        consectetur possimus laudantium fugiat quaerat, corrupti natus maiores
-        quia nemo soluta quo quidem inventore itaque iste nobis exercitationem
-        dicta nesciunt atque vero. Nihil, incidunt commodi. Odio ab quidem nobis
-        incidunt asperiores. Inventore reprehenderit debitis minima voluptates
-        harum voluptatibus, adipisci velit illo amet exercitationem quaerat quam
-        perferendis quas deleniti animi? Quidem, at fugit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
+        nesciunt. Corrupti consequuntur dolorem hic aliquid cumque expedita
+        minus veritatis. Harum exercitationem facere adipisci nam nulla, ut
+        iusto nesciunt impedit ullam eius nostrum itaque ea praesentium dolor
+        quisquam repudiandae asperiores quos esse dignissimos quae sunt incidunt
+        porro aut? Ex, maiores inventore.
       </p>
     </>
   );
