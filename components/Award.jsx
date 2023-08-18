@@ -41,7 +41,7 @@ const Award = () =>{
                 <div className ="flex-1 border-t-2  border-solid border-[#6A747B]"></div>
                 <div className='rounded-full w-2 h-2 bg-[#6A747B]'></div>
             </div>
-            <div className='flex '>
+            <div className='flex mb-7'>
                 <Award_each item = {items[0]}/>
                 <Award_each item = {items[1]}/>
             </div>
@@ -64,8 +64,8 @@ const Award_each = ({item}) => {
     return(
         <>
             <div className={item.block_css} >
-                    <div className ="flex items-end">
-                        <h3 className ="mr-5 text-black">{item.team}</h3>
+                    <div className ="flex flex-wrap items-end w-[90%]">
+                        <h3 className ="w-fit mr-5 text-black">{item.team}</h3>
                         <p>{item.description}</p>
                     </div>
                 <div className='ml-[1%]'>
