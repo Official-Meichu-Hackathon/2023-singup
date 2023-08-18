@@ -12,19 +12,22 @@ const Award = () =>{
             block_css:'ml-[1%] w-full',
             team:'黑客組',
             description:'每間企業獨立評選',
-            award:['第一名：新台幣壹萬元整、實體獎品、實習或實習面試資格','第二名：新台幣伍仟元整、實體獎品','第三名：新台幣參仟元整、實體獎品']
+            award:['第一名：新台幣壹萬元整、實體獎品、實習或實習面試資格','第二名：新台幣伍仟元整、實體獎品','第三名：新台幣參仟元整、實體獎品'],
+            dec:''
         },
         {
             block_css:'ml-[1%] w-full',
             team:'創客交流組',
             description:'可重複獲獎',
-            award:['第一名：新台幣壹萬元整','第二名：新台幣伍仟元整','第三名：新台幣參仟元整']
+            award:['第一名：新台幣壹萬元整','第二名：新台幣伍仟元整','第三名：新台幣參仟元整'],
+            dec:''
         },
         {
-            block_css:'ml-[1%] w-full',
+            block_css:'ml-[1%] w-[80%]',
             team:'梅竹大獎',
             description:'由各企業第一名共同角逐',
-            award:['第一名：新台幣壹萬元整','第二名：新台幣伍仟元整','第三名：新台幣參仟元整']
+            award:['第一名：新台幣壹萬元整','第二名：新台幣伍仟元整','第三名：新台幣參仟元整'],
+            dec:'w-[20%] '
         }
     ]
     return(
@@ -46,7 +49,9 @@ const Award = () =>{
                 <div className ="flex-1 border-t-2  border-solid border-[#6A747B]"></div>
                 <div className='rounded-full w-2 h-2 bg-[#6A747B]'></div>
             </div>
-            <Award_each item = {items[2]}/>
+            <div className='flex h-auto'>
+                <Award_each item = {items[2]}/>
+            </div>
         </div>
         </>
     );
@@ -63,14 +68,27 @@ const Award_each = ({item}) => {
                         <h3 className ="mr-5 text-black">{item.team}</h3>
                         <p>{item.description}</p>
                     </div>
-                    <div className='ml-[1%]'>
-                <div className="h-auto transition  duration-500 ease-[cubic-bezier(1,0,1,0)]">
-                {/* // "max-h-0 overflow-hidden transition  duration-500 ease-[cubic-bezier(0,1,0,1)]"}> */}
-                {item.award.map((item,index) => {
-                        return <p className='my-2 pr-[10%]'>{item}</p>
-                    })}
+                <div className='ml-[1%]'>
+                    <div className="h-auto transition  duration-500 ease-[cubic-bezier(1,0,1,0)]">
+                    {/* // "max-h-0 overflow-hidden transition  duration-500 ease-[cubic-bezier(0,1,0,1)]"}> */}
+                    {item.award.map((item,index) => {
+                            return <p className='mt-4 pr-[10%]'>{item}</p>
+                        })}
+                    </div>
                 </div>
             </div>
+            <div className={item.dec}>
+                <div className='h-full'>
+                
+                    <div className='w-full h-[18%]'></div>
+                    <div className='w-full h-[6%] item-end bg-[#F3CD71]'></div>
+                    <div className='w-full h-[18%]'></div>
+                    <div className='w-full h-[6%] item-end bg-[#F3CD71]'></div>
+                    <div className='w-full h-[18%]'></div>
+                    <div className='w-full h-[6%] item-end bg-[#F3CD71]'></div>
+                    <div className='w-full h-[18%]'></div>  
+                    <div className='w-full h-[10%] item-end bg-[#A8D5CC]'></div>
+                </div>
             </div>
             
         </>
