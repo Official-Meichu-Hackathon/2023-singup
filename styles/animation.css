@@ -1,0 +1,38 @@
+
+@-webkit-keyframes meta-movement {
+    50% {
+        -webkit-transform-origin: top left;
+        transform-origin: top left;
+        -webkit-transform: rotate(-5deg);
+        transform: rotate(-5deg)
+    }
+}
+
+@keyframes meta-movement {
+    50% {
+        /* -webkit-transform-origin: top left; */
+        transform-origin: top left;
+        /* -webkit-transform: rotate(-5deg); */
+        transform: rotate(-5deg);
+    }
+}
+#meta {
+    width: 37vw;
+    position: absolute;
+    right: 20vw;
+    z-index: 5;
+    margin: 36vw 15vw;
+    -webkit-transition: -webkit-transform 3s ease-in;
+    transition: -webkit-transform 3s ease-in;
+    -o-transition: transform 3s ease-in;
+    transition: transform 3s ease-in;
+    transition: transform 3s ease-in,-webkit-transform 3s ease-in;
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-animation: meta-movement 10s infinite;
+    animation: meta-movement 10s infinite;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+}
+ 
