@@ -1,13 +1,18 @@
-import Award from "@components/Award";
-import Team_intro from "@components/Team_intro";
 import News from "@components/News";
+import Timetable from "@components/Timetable";
 
 const Home = () => {
   return (
     <>
-      <div>page</div>
-      <Award />
-      <Team_intro />
+      <Timetable />
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+        dignissimos. Minus hic natus debitis praesentium quos doloribus
+        voluptate enim deserunt ut maiores esse delectus earum reprehenderit,
+        quidem facere harum vitae facilis. Tempora nulla ipsa placeat deserunt!
+        Voluptas, aliquam possimus unde similique, natus excepturi facilis
+        quibusdam quaerat ab eum nobis repudiandae!
+      </div>
       <News />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat modi
