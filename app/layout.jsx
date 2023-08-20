@@ -1,7 +1,6 @@
 import "@styles/globals.css";
-
 import NavBar from "@components/NavBar";
-import Topic_new from "@components/Topic_new";
+import Topic from "@components/Topic";
 export const metadata = {
   title: "2023 meichu hackathon",
 };
@@ -15,7 +14,7 @@ const RootLayout = ({ children }) => (
 
       <NavBar />
 
-      <Topic_new />
+      <Topic />
       <main className="app">{children}</main>
     </body>
   </html>
