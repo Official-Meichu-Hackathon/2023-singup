@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Link from "next/link";
 
 const Team_intro = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -14,14 +15,14 @@ const Team_intro = () => {
       imageSrc: "/assets/images/黑客.png",
       description:
         "我們致力於搭起學生與企業之間的橋樑，學生運用企業資源並發揮潛力回應企業命題，同時企業方更提供實習或實習面試機會，能讓學生進一步實踐創意發想！而今年我們將由以下六家企業作為引導單位：Google、台積電、恩智浦與文曄科技、LINE、ETtoday、KKCompany。",
-      link: "/team/hacker",
+      link: "hacker",
     },
     {
       team: "創客交流組",
       imageSrc: "/assets/images/創客.png",
       description:
         "由新竹市政府命題，融入新竹居民真實生活情境與議題，鼓勵運用分享、學習與實作，實際的解決問題與提出方案，並促進創作過程人才交流，體現創新創意、數位應用及動手實作、解決問題的黑客精神！",
-      link: "/team/maker",
+      link: "maker",
     },
   ];
   return (
@@ -74,10 +75,11 @@ const Team_each = ({ team, imageSrc, description, link }) => {
       <div className="w-1/2 pl-[5%] py-[2%] text-[#6A747B] mt-[0.75rem] bg-white ">
         <h3 className="text-[1.5rem] xl:text-[2.5rem]">{team}</h3>
       </div>
-      <div
+      <Link
         className={`${
           isHovered ? "text-white" : "text-[#6A747B]"
         } absolute flex bottom-[4%] gap-x-1 sm:gap-x-2 pl-[5%] text-base`}
+        href={`/team/${link}`}
       >
         <img
           src={
@@ -91,7 +93,7 @@ const Team_each = ({ team, imageSrc, description, link }) => {
         <p className="text-[12px] lg:text-[16px] whitespace-nowrap">
           工作坊細節
         </p>
-      </div>
+      </Link>
     </div>
   );
 };
