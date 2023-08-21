@@ -11,18 +11,23 @@ const CountDown = () =>{
     const a = 600;
     const x = 0;
     return(
-        <div className = "w-full h-auto bg-gray-100 flex justify-between">
-            <div className="w-full aspect-[1/1]"> </div>
-            <div className="w-full aspect-[1/1] bg-gray-300"> temp </div>
-            <div className="w-full aspect-[1/1]"> <Circle /> </div>
-            <div className="w-full aspect-[1/1] bg-gray-300"> temp </div>
+        <div className='w-[75%] m-auto'>
+            <div className = "w-full h-auto bg-gray-100 flex justify-between">
+                <div className="w-full aspect-[1/1]"> </div>
+                <div className="w-full aspect-[1/1] bg-gray-300"> temp </div>
+                <div className="w-full aspect-[1/1]"> <Circle /> </div>
+                <div className="w-full aspect-[1/1] bg-gray-300"> temp </div>
+            </div>
         </div>
     );
 };
 
 function Circle (){
     const PI = 3.141592650897935;
+    const len = 100*0.75/4*PI
+    const percentage = 25*0.75/4*PI
     const a = 120
+    
     return (
     <>  
             {/* <p className = "bg-gray-400">Countdown Timer</p> */}
@@ -39,8 +44,8 @@ function Circle (){
                 </svg>
                 <svg className="w-full h-full  top-0 left-0 static ">
                     <circle className=""
-                        stroke-dasharray="628.3185307179587" 
-                        stroke-dashoffset="323"
+                        stroke-dasharray={`${len}`+'vw'} 
+                        stroke-dashoffset={`${percentage}`+'vw'}
                         cx='50%'
                         cy='50%'
                         r="47%" 

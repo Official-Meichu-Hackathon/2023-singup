@@ -5,9 +5,9 @@ const Home = () =>{
         <>
             <div>page            
             </div>
-            <div className='w-[75%] m-auto'>
+            
             <CountDown />
-            </div>
+ 
         </>
     )
 }
