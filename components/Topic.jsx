@@ -25,6 +25,7 @@ export default function Topic() {
         id: 1,
         company: "台灣積體電路有限公司",
         logo: "/assets/images/TSMC.svg",
+        logo2: null,
         link: "https://youtu.be/4Z7y27pHhXw?si=BKz8VksSzwNOS1HW",
         topic: "Safety Helmet Wearing Detection",
         description:
@@ -35,6 +36,7 @@ export default function Topic() {
         id: 2,
         company: "台灣積體電路有限公司",
         logo: "/assets/images/TSMC.svg",
+        logo2: null,
         link: "https://youtu.be/dQw4w9WgXcQ?si=VvSBT3865TfWIFQw",
         topic: "Safety Helmet Wearing Detection",
         description:
@@ -45,6 +47,7 @@ export default function Topic() {
         id: 3,
         company: "台灣積體電路有限公司",
         logo: "/assets/images/TSMC.svg",
+        logo2: null,
         link: "https://youtu.be/GqNB_mZGoxY?si=cACw_TMXyvjAtTXM",
         topic: "Safety Helmet Wearing Detection",
         description:
@@ -55,6 +58,7 @@ export default function Topic() {
         id: 4,
         company: "台灣積體電路有限公司",
         logo: "/assets/images/TSMC.svg",
+        logo2: null,
         link: "www.google.com",
         topic: "Safety Helmet Wearing Detection",
         description:
@@ -63,8 +67,9 @@ export default function Topic() {
       },
       {
         id: 5,
-        company: "台灣積體電路有限公司",
+        company: "NXP",
         logo: "/assets/images/TSMC.svg",
+        logo2: "/assets/images/TSMC.svg",
         link: "www.google.com",
         topic: "Safety Helmet Wearing Detection",
         description:
@@ -75,6 +80,7 @@ export default function Topic() {
         id: 6,
         company: "台灣積體電路有限公司",
         logo: "/assets/images/TSMC.svg",
+        logo2: null,
         link: "www.google.com",
         topic: "Safety Helmet Wearing Detection",
         description:
@@ -103,7 +109,7 @@ export default function Topic() {
   return (
     <div className="w-full py-16 px-12">
       <Tab.Group>
-        <div className="relative">
+        <div className="relative mb-3">
           <Tab.List className="relative flex ">
             {Object.keys(categories).map((category, idx) => (
               <Tab
@@ -120,12 +126,15 @@ export default function Topic() {
             className="absolute z-10 bottom-0 block h-2 bg-[#F3CD71] transition-all duration-300"
             style={{ left: tabUnderlineLeft, width: tabUnderlineWidth }}
           />
-          <span className="absolute w-full mx-3 bottom-[0.2rem] block h-[0.0625rem] bg-black " />
+          <span className="absolute w-full bottom-[0.2rem] block h-[0.0625rem] bg-black" />
         </div>
         <Tab.Panels className="">
           {Object.values(categories).map((posts, idx) => (
-            <Tab.Panel key={idx} className="bg-white p-3 focus:outline-none 2">
-              <ul className="divide-y divide-[#6A747B] ">
+            <Tab.Panel
+              key={idx}
+              className="bg-[#F5F5F6] py-3 px-0 md:px-3 focus:outline-none"
+            >
+              <ul className="divide-y hidden md:block">
                 {posts.map((post) => (
                   <li key={post.id} className="relative px-1">
                     <ul className="pt-6 pb-2 flex items-end gap-x-2">
@@ -139,8 +148,14 @@ export default function Topic() {
                         <p className="text-end">下載PDF</p>
                       </a>
                     </ul>
-                    <ul>
+                    <ul className="flex flex-row gap-x-4">
                       <img src={post.logo} className="w-auto aspect-square" />
+                      {post.logo2 && (
+                        <img
+                          src={post.logo2}
+                          className="w-auto aspect-square"
+                        />
+                      )}
                     </ul>
                     <ul className="py-2">
                       <p>主題：{post.topic}</p>
@@ -151,6 +166,35 @@ export default function Topic() {
                   </li>
                 ))}
               </ul>
+              <div className="block md:hidden flex flex-col gap-y-3">
+                {posts.map((post) => (
+                  <div
+                    key={post.id}
+                    className="relative border-2 border-red-500"
+                  >
+                    <div className="flex justify-center gap-x-4 bg-amber-300 aspect-[19/8]">
+                      <img src={post.logo} className="w-1/4 aspect-square" />
+                      {post.logo2 && (
+                        <img src={post.logo2} className="w-1/4 aspect-square" />
+                      )}
+                    </div>
+                    <ul className="pt-6 pb-2 flex items-end gap-x-2">
+                      <h3 className="">{post.company}</h3>
+                      <a className="flex items-center gap-x-1" href={post.link}>
+                        <img
+                          src="/assets/icons/download.svg"
+                          className="w-5 aspect-square"
+                        />
+                        <p className="text-end">下載PDF</p>
+                      </a>
+                    </ul>
+
+                    <ul className="py-2">
+                      <p>主題：{post.topic}</p>
+                    </ul>
+                  </div>
+                ))}
+              </div>
             </Tab.Panel>
           ))}
         </Tab.Panels>
