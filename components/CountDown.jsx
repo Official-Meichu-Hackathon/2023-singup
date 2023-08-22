@@ -9,41 +9,31 @@ import '@styles/globals.css'
 
 
 const CountDown = () =>{
-    const a = 600;
     const [timerDay,setTimeDay] = useState(0);
     const [timerHour,setTimeHour] = useState(0);
     const [timerMinute,setTimeMinute] = useState(0);
     const [timerSecond,setTimeSecond] = useState(0);
-    let Second;
-    let interval = useRef();
-    const startTimer = () =>{
-        const countDownDate = new Date('01/01/2024 00:00:00').getTime();
-        const now = new Date().getTime();
-        const distance = countDownDate - now;
-        interval = setInterval(() =>{
-            const d = Math.floor(distance/(1000*60*60*24));
-            const h = Math.floor((distance%(1000*60*60*24))/(1000*60*60));
-            const m = Math.floor((distance%(1000*60*60))/(1000*60));
-            const s = (distance%(1000*60))/1000
 
-            Second = s;
-            setTimeDay(d);
-            setTimeHour(h);
-            setTimeMinute(m);
-            setTimeSecond(s);
-            
-        },1000);
-    }
-    useEffect(()=>{
-        startTimer();
-        
-        return () =>{
-            clearInterval(interval.current);
-        }
-    })
+  useEffect(() => {
+    const target = new Date("12/31/2023 23:59:59");
+
+    const interval = setInterval(() => {
+      const now = new Date();
+      const difference = target.getTime() - now.getTime();
+      const d = difference / (1000 * 60 * 60 * 24);
+      const h = (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60);
+      const m = (difference % (1000 * 60 * 60)) / (1000 * 60);      
+      const s = (difference % (1000 * 60)) / 1000;
+      setTimeDay(d);
+      setTimeHour(h);
+      setTimeMinute(m);
+      setTimeSecond(s);
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
     return(
-        <div className='w-[75%] m-auto'>
-            {timerSecond}
+        <div className='w-[75%] m-auto'> 
             <div className = "w-full h-auto bg-gray-100 flex justify-between">
                 <div className="w-full aspect-[1/1]"><Circle now={timerDay} up = {365} word = "Days"/> </div>
                 <div className="w-full aspect-[1/1]"><Circle now={timerHour} up = {24} word = "Hours"/> </div>
