@@ -82,10 +82,9 @@ const Circle =  ({now, up,word})  =>{
                         >                        
                     </circle>
                 </svg>
-                <div className = " w-full h-full">
-                    {Math.floor(now)}
-                    {up}
-                    {word}
+                <div className = "w-full h-full absolute top-0 left-0 text-center">
+                    <p className = "w-full h-[50%] text-center">{word}</p>
+                    <h2 className = "w-full h-[50%] text-center m-0">{word}</h2>
                 </div>
             </div>
         </>
