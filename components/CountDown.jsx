@@ -82,9 +82,11 @@ const Circle =  ({now, up,word})  =>{
                         >                        
                     </circle>
                 </svg>
-                <div className = "w-full h-full absolute top-0 left-0 text-center">
-                    <p className = "w-full h-[50%] text-center">{word}</p>
-                    <h2 className = "w-full h-[50%] text-center m-0">{word}</h2>
+                <div className = "w-full h-full absolute top-0 left-0">
+                    <div className="w-full h-[50%] flex items-end">
+                        <h3 className = "mx-auto w-fit h-fit items-end">{Math.floor(now)}</h3>
+                    </div>
+                    <h5 className = "w-full h-[50%] text-center pt-[5%]  ">{word}</h5>
                 </div>
             </div>
         </>
