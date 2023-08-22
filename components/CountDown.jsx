@@ -13,9 +13,9 @@ const CountDown = () =>{
     const [timerHour,setTimeHour] = useState(0);
     const [timerMinute,setTimeMinute] = useState(0);
     const [timerSecond,setTimeSecond] = useState(0);
-
-  useEffect(() => {
-    const target = new Date("12/31/2023 23:59:59");
+    let interval = useRef();
+    const startTimer = () =>{
+        const target = new Date("12/31/2023 23:59:59");
 
     const interval = setInterval(() => {
       const now = new Date();
@@ -29,9 +29,11 @@ const CountDown = () =>{
       setTimeMinute(m);
       setTimeSecond(s);
     }, 1000);
-
-    return () => clearInterval(interval);
-  }, []);
+    }
+  useEffect(() => {
+    startTimer();
+    return () => clearInterval(interval.current);
+  });
     return(
         <div className='w-[75%] m-auto'> 
             <div className = "w-full h-auto bg-gray-100 flex justify-between">
@@ -47,7 +49,7 @@ const CountDown = () =>{
 const Circle =  ({now, up,word})  =>{
     const PI = 3.141592650897935;
     const len = 0.94*100*0.75/4*PI
-    const percentage = 0.94*75*0.75/4*PI
+    const percentage = 0.94*100*(now/up)*0.75/4*PI
     const a = now
     const b = up
     
