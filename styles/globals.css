@@ -10,7 +10,9 @@
 
 .bar_gradient{
   background: linear-gradient(90deg, #A8D5CC 24.55%, #F3CD71 74.27%);
-
+}
+.bar_gradient_inverse{
+  background: linear-gradient(-90deg, #a8d5cc 24.55%, #F3CD71 74.27%);
 }
 
 .scroll-progress {
@@ -79,19 +81,32 @@ h5 {
   font-weight: bold;
   line-height: 1;
 }
-
+h6{
+  font-size: 1.25em;
+  font-weight: bold;
+  line-height: 1;
+}
 p {
-  font-size: 1rem;
 
+  font-size: 0.8em;
   line-height: 2;
   text-align: justify;
+  @media screen and (min-width: 576px) {
+    font-size: 1rem;
+
+  }
 }
 
 a {
   font-size: 1rem;
 
+
   line-height: 2;
   text-align: justify;
+  
+  @media screen and (min-width: 576px) {
+    font-size: 1em;
+}
 }
 
 hr {

@@ -1,5 +1,7 @@
+
 import Award from "@components/Award";
 import Team_intro from "@components/Team_intro";
+import Sign_in from "@components/Sign-in"
 
 const Home = () => {
   return (
@@ -7,6 +9,7 @@ const Home = () => {
       <div>page</div>
       <Award />
       <Team_intro />
+      <Sign_in/>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat modi
         corrupti, commodi rerum fugit voluptatum hic. Quidem corrupti explicabo,
