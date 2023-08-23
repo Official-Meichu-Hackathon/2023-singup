@@ -36,7 +36,7 @@ const CountDown = () =>{
   });
     return(
         <div className='w-[60%] m-auto'> 
-            <h3 className = 'm-auto'>距離報名結束還有</h3>
+            <h3 className = 'm-auto mb-10'>距離報名結束還有</h3>
             <div className = "w-full h-auto bg-gray-100 flex justify-between">
                 <div className="w-full aspect-[1/1]"><Circle now={timerDay} up = {365} word = "Days"/> </div>
                 <div className="w-full aspect-[1/1]"><Circle now={timerHour} up = {24} word = "Hours"/> </div>
