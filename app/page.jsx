@@ -1,4 +1,8 @@
+import Topic from "@components/Topic";
+
 const Home = () => {
-  return <div>page</div>;
+  return (<>
+    <Topic />
+  </>);
 };
 export default Home;
