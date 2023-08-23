@@ -15,7 +15,7 @@ const CountDown = () =>{
     const [timerSecond,setTimeSecond] = useState(0);
     let interval = useRef();
     const startTimer = () =>{
-        const target = new Date("12/31/2023 23:59:59");
+        const target = new Date("10/20/2023 23:59:59");
 
     const interval = setInterval(() => {
       const now = new Date();
@@ -35,7 +35,8 @@ const CountDown = () =>{
     return () => clearInterval(interval.current);
   });
     return(
-        <div className='w-[75%] m-auto'> 
+        <div className='w-[60%] m-auto'> 
+            <h3 className = 'm-auto'>距離報名結束還有</h3>
             <div className = "w-full h-auto bg-gray-100 flex justify-between">
                 <div className="w-full aspect-[1/1]"><Circle now={timerDay} up = {365} word = "Days"/> </div>
                 <div className="w-full aspect-[1/1]"><Circle now={timerHour} up = {24} word = "Hours"/> </div>
@@ -48,8 +49,8 @@ const CountDown = () =>{
 
 const Circle =  ({now, up,word})  =>{
     const PI = 3.141592650897935;
-    const len = 0.94*100*0.75/4*PI
-    const percentage = 0.94*100*(now/up)*0.75/4*PI
+    const len = 0.94*100*0.60/4*PI
+    const percentage = 0.94*100*(now/up)*0.60/4*PI
     const a = now
     const b = up
     
