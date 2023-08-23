@@ -31,7 +31,7 @@ const CountDown = () =>{
     return () => clearInterval(interval.current);
   });
     return(
-        <div className ='w-full h-fit relative pt-[20vh] hidden md:block'>
+        <div className ='w-full h-fit  pt-[20vh] hidden md:block'>
             <img src='/assets/images/meta3.png' id='meta' className = 'w-[20vw] absolute top-[10vh] left-[5vw]'/>
             <div className='w-[60%] m-auto'> 
                 <h3 className = 'm-auto mb-10 text-[#6A747B]'>距離報名結束還有</h3>
@@ -85,7 +85,9 @@ const Circle =  ({now, up,word})  =>{
                     <div className="w-full h-[50%] flex items-end">
                         <h3 className = "mx-auto w-fit h-fit items-end">{Math.floor(now)}</h3> 
                     </div>
-                    <h5 className = "w-full h-[50%] text-center pt-[5%]  ">{word}</h5>
+                    <div className="w-full h-[50%] flex items-start">
+                        <h5 className ="mx-auto w-fit h-fit ">{word}</h5>
+                    </div>
                 </div>
             </div>
         </>
