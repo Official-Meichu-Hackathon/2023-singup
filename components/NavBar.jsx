@@ -2,8 +2,8 @@
 "use client"; 
 import React, { Fragment } from 'react';
 import { Menu, Transition } from '@headlessui/react';
+import '@styles/globals.css'
 import ScrollProgressIndicator from "@components/ScrollProgressIndicator";
-
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -12,7 +12,6 @@ function classNames(...classes) {
 const Navbar = () => {
   return(
   <>
-    
     <div className='hidden md:block '>
       {/* <div className ='h-14 w-full mt-1 bg-black fixed'> </div> */}
       <ScrollProgressIndicator/>
