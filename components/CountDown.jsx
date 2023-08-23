@@ -31,7 +31,7 @@ const CountDown = () =>{
     return () => clearInterval(interval.current);
   });
     return(
-        <div className ='w-full h-fit relative pt-[20vh]'>
+        <div className ='w-full h-fit relative pt-[20vh] hidden md:block'>
             <img src='/assets/images/meta3.png' id='meta' className = 'w-[20vw] absolute top-[10vh] left-[5vw]'/>
             <div className='w-[60%] m-auto'> 
                 <h3 className = 'm-auto mb-10 text-[#6A747B]'>距離報名結束還有</h3>
@@ -56,7 +56,6 @@ const Circle =  ({now, up,word})  =>{
 
     return (
     <>  
-            {/* <p className = "bg-gray-400">Countdown Timer</p> */}
             <div className ="h-full w-full relative">
                 <svg className="w-full h-full top-0">
                     <circle className="count"
