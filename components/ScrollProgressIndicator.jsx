@@ -20,7 +20,7 @@ const ScrollProgressIndicator = () => {
   }, []);
 
   return (
-    <div className="fixed w-full h-14 mt-1 scale-x-0 bg-[#ccc] origin-left scroll-progress" style={{ transform: `scaleX(${scrollProgress / 100})` }}>test</div>
+    <div className="fixed w-full h-14 mt-1 scale-x-0 bar_gradient origin-left scroll-progress" style={{ transform: `scaleX(${scrollProgress / 100})` }}>test</div>
   );
 };
 
