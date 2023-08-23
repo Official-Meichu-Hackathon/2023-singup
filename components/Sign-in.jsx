@@ -6,7 +6,7 @@ const Sign_in = () =>{
 
     return(
         <>
-        <div className = "w-[90vw] m-auto my-12">
+        <div className = "mx-[2.5%] m-auto my-12 block md:hidden">
             <div className = 'flex w-full my-8'>
                 <h4 className = 'w-fit m-auto'>如何報名</h4>
             </div>
@@ -48,7 +48,8 @@ const Sign_in = () =>{
                 </div>
             </div>
         </div>
-        <div className ='mx-[5%] hidden md:block'>
+
+        <div className ='mx-[5%] my-12 hidden md:block'>
             <h2 className = 'ml-[2%]'>如何報名</h2>
             <div className = 'w-full h-fit bg-gray-100 rounded-[3rem] flex border-2 border-black'>
                 <div className="w-[30%] ">
