@@ -21,6 +21,7 @@ module.exports = {
       colors: {
         "primary-orange": "#FF5722",
         "divider-gray": "#EAEAEC",
+        "topic-gray": "#EAEAEC",
       },
     },
   },

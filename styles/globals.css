@@ -7,6 +7,137 @@
 /* 
   Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them! 
 */
+.scroll-progress {
+  transition: transform 0.2s ease-out;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.content.show {
+  height: auto;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+}
+
+@font-face {
+  font-family: "GenYoMin TW";
+  src: url(/fonts/GenYoMinTW-M.woff);
+}
+body {
+  font-family: "GenYoMin TW", serif;
+}
+
+h1,
+h2,
+h3 {
+  max-width: fit-content;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  line-height: 2;
+
+  @media screen and (min-width: 576px) {
+    font-size: 4.5rem;
+  }
+}
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  line-height: 1.5;
+
+  @media screen and (min-width: 576px) {
+    font-size: 3.5rem;
+  }
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1;
+}
+h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 2;
+  text-align: justify;
+}
+
+a {
+  font-size: 1rem;
+  line-height: 2;
+  text-align: justify;
+}
+
+hr {
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.timeTable_bg1 {
+  background: linear-gradient(#a8d5cc 0%, rgba(187, 207, 203, 0) 100%);
+}
+
+.timeTable_bg2 {
+  background: linear-gradient(180deg, #f3cd71 0%, rgba(255, 238, 198, 0) 100%);
+}
+
+.timeTable_bg1,
+.timeTable_bg2 {
+  height: 10rem;
+  font-family: GenYoMin TW TTF;
+  font-size: 13vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 10rem; /* 40% */
+  letter-spacing: 1.25rem;
+  opacity: 0.5;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title_vertical {
+  writing-mode: vertical-rl;
+}
+
+.timeTable_day {
+  color: #6a747b;
+  font-family: GenYoMin TW TTF;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 5rem; /* 166.667% */
+  letter-spacing: 0.3rem;
+}
+
+.timeTable_context {
+  color: #6a747b;
+  font-family: Manrope;
+}
 
 .main {
   width: 100vw;
@@ -74,6 +205,16 @@ p {
   .main {
     padding: 0;
   }
+}
+
+.news_box {
+  border-radius: 1.25rem;
+  border: 1px solid var(--3, #6a747b);
+}
+
+.news_box_title {
+  border-radius: 0.75rem;
+  background: var(--3, #6a747b);
 }
 
 /* Tailwind Styles */
