@@ -6,7 +6,22 @@ const Sign_in = () =>{
 
     return(
         <>
-        <div className ='mx-[5%]'>
+        <div className = "w-[90vw] m-auto">
+            <div className = 'flex w-full my-8'>
+                <h4 className = 'w-fit m-auto'>如何報名</h4>
+            </div>
+            <div className = 'w-full h-fit bg-gray-100 rounded-[3rem] flex border-2 border-black '>
+                <div className = 'px-[4%] py-[2%] w-full grid grid-rows-3 grid-flow-col'>
+                        <p className = 'py-3 px-2 font-bold'> 9/5（一）~ 10/3（一）08:00</p>
+                        <p className = 'py-3 px-2 font-bold'> 10/3（一）23:59</p>
+                        <p className = 'py-3 px-2 font-bold'> 10/7（五）23:59</p>
+                        <p className = 'py-3 px-2 font-bold'> 開始報名</p>
+                        <p className = 'py-3 px-2 font-bold'> 正取隊伍與所屬企業公布</p>
+                        <p className = 'py-3 px-2 font-bold font-[]'> 繳費截止</p>
+                </div>
+            </div>
+        </div>
+        <div className ='mx-[5%] hidden md:block'>
             <h2 className = 'ml-[2%]'>如何報名</h2>
             <div className = 'w-full h-fit bg-gray-100 rounded-[3rem] flex border-2 border-black'>
                 <div className="w-[30%] ">
