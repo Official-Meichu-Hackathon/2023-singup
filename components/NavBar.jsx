@@ -1,11 +1,12 @@
 // ref: https://www.youtube.com/watch?v=hwfiYvzH9s4
-"use client";
+"use client"; 
 import React, { Fragment } from 'react';
 import { Menu, Transition } from '@headlessui/react';
 import ScrollProgressIndicator from "@components/ScrollProgressIndicator";
 
+
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ');
+  return classes.filter(Boolean).join(" ");
 }
 
 const Navbar = () => {
