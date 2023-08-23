@@ -85,7 +85,9 @@ const Circle =  ({now, up,word})  =>{
                     <div className="w-full h-[50%] flex items-end">
                         <h3 className = "mx-auto w-fit h-fit items-end">{Math.floor(now)}</h3> 
                     </div>
-                    <h5 className = "w-full h-[50%] text-center pt-[5%]  ">{word}</h5>
+                    <div className="w-full h-[50%] flex items-start">
+                        <h5 className ="mx-auto w-fit h-fit ">{word}</h5>
+                    </div>
                 </div>
             </div>
         </>
