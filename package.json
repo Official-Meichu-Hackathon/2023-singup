@@ -14,28 +14,16 @@
     "@fortawesome/free-regular-svg-icons": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "@headlessui/react": "^1.7.17",
+    "@headlessui/react": "^1.7.16",
     "autoprefixer": "10.4.14",
     "eslint": "8.46.0",
     "eslint-config-next": "13.4.12",
     "next": "13.4.12",
     "postcss": "8.4.27",
     "react": "18.2.0",
+    "react-collapsed": "^4.0.4",
     "react-dom": "18.2.0",
     "react-router-dom": "^6.15.0",
     "tailwindcss": "3.3.3"
-  },
-  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
-  "main": "next.config.js",
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Official-Meichu-Hackathon/2023-singup.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Official-Meichu-Hackathon/2023-singup/issues"
-  },
-  "homepage": "https://github.com/Official-Meichu-Hackathon/2023-singup#readme"
+  }
 }
