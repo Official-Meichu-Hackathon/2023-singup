@@ -32,26 +32,45 @@ const Award = () =>{
     ]
     return(
         <>
-        <div className='mx-[5%] text-[#6A747B]' id='Award'>
+        <div className='md:mx-[5%] text-[#6A747B]' id='Award'>
             <h2 className = 'w-full mx-auto text-black'>獎項資訊 </h2>
-            <img src = 'assets/images/award.png' alt = 'hackathron award' className = 'my-[8vh]'/>
-            <div className ="flex items-center ml-[1%]">
-                <div className ="flex-1   h-full">
-                    <div className='w-[90%] border-t-2 border-solid border-[#6A747B]'></div>
+            <img src = 'assets/images/award.png' alt = 'hackathron award' className = 'my-[8vh] w-full h-auto'/>
+            <div className = 'block md:hidden mx-[5%]'>
+                <div className ="flex items-center ml-[1%] my-[3%]">
+                    <div className ="flex-1 border-t-2  border-solid border-[#6A747B]"></div>
+                    <div className='rounded-full w-2 h-2 bg-[#6A747B]'></div>
                 </div>
-                <div className ="flex-1 border-t-2  border-solid border-[#6A747B]"></div>
-                <div className='rounded-full w-2 h-2 bg-[#6A747B]'></div>
-            </div>
-            <div className='flex mb-7'>
                 <Award_each item = {items[0]}/>
+                <div className ="flex items-center ml-[1%] my-[3%]">
+                    <div className ="flex-1 border-t-2  border-solid border-[#6A747B]"></div>
+                    <div className='rounded-full w-2 h-2 bg-[#6A747B]'></div>
+                </div>
                 <Award_each item = {items[1]}/>
-            </div>
-            <div className ="flex items-center ml-[1%]">
-                <div className ="flex-1 border-t-2  border-solid border-[#6A747B]"></div>
-                <div className='rounded-full w-2 h-2 bg-[#6A747B]'></div>
-            </div>
-            <div className='flex h-auto'>
+                <div className ="flex items-center ml-[1%] my-[3%]">
+                    <div className ="flex-1 border-t-2  border-solid border-[#6A747B]"></div>
+                    <div className='rounded-full w-2 h-2 bg-[#6A747B]'></div>
+                </div>
                 <Award_each item = {items[2]}/>
+            </div>
+            <div className = 'hidden md:block'>
+                <div className ="flex items-center ml-[1%]">
+                    <div className ="flex-1   h-full">
+                        <div className='w-[90%] border-t-2 border-solid border-[#6A747B]'></div>
+                    </div>
+                    <div className ="flex-1 border-t-2  border-solid border-[#6A747B]"></div>
+                    <div className='rounded-full w-2 h-2 bg-[#6A747B]'></div>
+                </div>
+                <div className='flex mb-7'>
+                    <Award_each item = {items[0]}/>
+                    <Award_each item = {items[1]}/>
+                </div>
+                <div className ="flex items-center ml-[1%]">
+                    <div className ="flex-1 border-t-2  border-solid border-[#6A747B]"></div>
+                    <div className='rounded-full w-2 h-2 bg-[#6A747B]'></div>
+                </div>
+                <div className='flex h-auto'>
+                    <Award_each item = {items[2]}/>
+                </div>
             </div>
         </div>
         </>
@@ -61,19 +80,20 @@ const Award_each = ({item}) => {
     // const [isSelected,setIsSelected] = useState(false)
     // const toggle = () =>{
     //     setIsSelected(!isSelected)
-    // }
+    // } 
     return(
         <>
             <div className={item.block_css} >
                     <div className ="flex flex-wrap items-end w-[90%]">
-                        <h3 className ="w-fit mr-5 text-black">{item.team}</h3>
-                        <p>{item.description}</p>
+                        <h3 className ="w-fit mr-5 text-black hidden md:block ">{item.team}</h3>
+                        <h6 className ="w-fit mr-5 text-black block md:hidden">{item.team}</h6>
+                        <p className = 'leading-none text-[0.75em]'>{item.description}</p>
                     </div>
                 <div className='ml-[1%]'>
                     <div className="h-auto transition  duration-500 ease-[cubic-bezier(1,0,1,0)]">
                     {/* // "max-h-0 overflow-hidden transition  duration-500 ease-[cubic-bezier(0,1,0,1)]"}> */}
                     {item.award.map((item,index) => {
-                            return <p className='mt-4 pr-[10%]'>{item}</p>
+                            return <p className=' mt-2 md:mt-4 pr-[10%]'>{item}</p>
                         })}
                     </div>
                 </div>
