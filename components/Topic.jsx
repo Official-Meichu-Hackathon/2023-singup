@@ -147,7 +147,7 @@ export default function Topic() {
                           src="/assets/icons/download.svg"
                           className="w-5 aspect-square"
                         />
-                        <p className="text-end">下載PDF</p>
+                        <p className="text-end text-[#6A747B]">下載PDF</p>
                       </a>
                     </ul>
                     <ul className="flex flex-row gap-x-4">
@@ -159,10 +159,10 @@ export default function Topic() {
                         />
                       )}
                     </ul>
-                    <ul className="py-2">
+                    <ul className="py-2 font-light">
                       <p>主題：{post.topic}</p>
                     </ul>
-                    <ul className="pb-6">
+                    <ul className="pb-6 font-light">
                       <p>說明：{post.description}</p>
                     </ul>
                   </li>
@@ -189,7 +189,9 @@ export default function Topic() {
                     <div className="p-[1rem] flex flex-col gap-y-[0.25rem] bg-[#EAEAEC]">
                       <h3 className="text-[0.75rem]">{post.company}</h3>
 
-                      <p className="text-[0.625rem]">主題：{post.topic}</p>
+                      <p className="text-[0.625rem] font-light">
+                        主題：{post.topic}
+                      </p>
                       <a
                         className="flex pt-[1rem] items-center gap-x-1"
                         href={post.link}
@@ -198,7 +200,9 @@ export default function Topic() {
                           src="/assets/icons/download.svg"
                           className="w-auto aspect-square"
                         />
-                        <p className="text-[0.625rem]">下載PDF</p>
+                        <p className="text-[0.625rem] text-[#6A747B]">
+                          下載PDF
+                        </p>
                       </a>
                     </div>
                   </div>
