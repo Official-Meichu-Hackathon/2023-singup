@@ -32,8 +32,11 @@ const Award = () =>{
     ]
     return(
         <>
-        <div className='md:mx-[5%] text-[#6A747B]' id='Award'>
-            <h2 className = 'w-full mx-auto text-black'>獎項資訊 </h2>
+        <div className='md:mx-[5%] text-[#6A747B] my-12' id='Award'>
+            <h2 className = 'w-full mx-auto text-black hidden md:block'>獎項資訊 </h2>
+            <div className = "block md:hidden w-full">
+                <h4 className = 'w-fit m-auto text-black'>獎項資訊 </h4>
+            </div>
             <img src = 'assets/images/award.png' alt = 'hackathron award' className = 'my-[8vh] w-full h-auto'/>
             <div className = 'block md:hidden mx-[5%]'>
                 <div className ="flex items-center ml-[1%] my-[3%]">
@@ -50,7 +53,7 @@ const Award = () =>{
                     <div className ="flex-1 border-t-2  border-solid border-[#6A747B]"></div>
                     <div className='rounded-full w-2 h-2 bg-[#6A747B]'></div>
                 </div>
-                <Award_each item = {items[2]}/>
+                <Award_each item = {items[2]}/> 
             </div>
             <div className = 'hidden md:block'>
                 <div className ="flex items-center ml-[1%]">
