@@ -7,7 +7,7 @@ const Sign_in = () =>{
     return(
         <>
         <div className ='mx-[5%]'>
-            <h1>如何報名</h1>
+            <h2 className = 'ml-[2%]'>如何報名</h2>
             <div className = 'w-full h-fit bg-gray-100 rounded-[3rem] flex border-2 border-black'>
                 <div className="w-[30%] ">
                     <div className = 'px-[8%] py-[5%] h-[25%]'>
