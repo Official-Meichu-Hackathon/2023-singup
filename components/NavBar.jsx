@@ -9,7 +9,6 @@ function classNames(...classes) {
 }
 
 const Navbar = () => {
-<<<<<<< HEAD
   return (
     <>
       <div className="hidden md:block">
@@ -192,22 +191,6 @@ const Navbar = () => {
               </Menu>
             </li>
           </ul>
-=======
-  return(
-  <>
-    
-    <div className='hidden md:block '>
-      {/* <div className ='h-14 w-full mt-1 bg-black fixed'> </div> */}
-      <ScrollProgressIndicator/>
-      <div className='w-full h-14 flex justify-between items-center px-8 bg-gray-200 fixed'>
-        <div className='text-xl font-bold  flex items-center h-full'>
-          <img className = "object-contain mat h-5/6 " 
-              src='/assets/images/logo.svg'
-              alt='logo'/>
-            <div className = "ml-6 hackathon_title">
-              MeiChu Hackthon
-            </div>
->>>>>>> 6814d62bdc9594aed8c8ef848e53176e8db511a0
         </div>
         <div className="h-14"> </div>
       </div>
