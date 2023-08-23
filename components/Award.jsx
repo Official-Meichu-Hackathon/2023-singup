@@ -33,7 +33,8 @@ const Award = () =>{
     return(
         <>
         <div className='mx-[5%] text-[#6A747B]' id='Award'>
-            <h1 className = 'w-full mx-auto text-black'>獎項資訊 </h1>
+            <h2 className = 'w-full mx-auto text-black'>獎項資訊 </h2>
+            <img src = 'assets/images/award.png' alt = 'hackathron award' className = 'my-[8vh]'/>
             <div className ="flex items-center ml-[1%]">
                 <div className ="flex-1   h-full">
                     <div className='w-[90%] border-t-2 border-solid border-[#6A747B]'></div>
