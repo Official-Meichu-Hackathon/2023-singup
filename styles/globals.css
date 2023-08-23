@@ -7,6 +7,12 @@
 /* 
   Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them! 
 */
+
+.bar_gradient{
+  background: linear-gradient(90deg, #A8D5CC 24.55%, #F3CD71 74.27%);
+
+}
+
 .scroll-progress {
   transition: transform 0.2s ease-out;
 }
@@ -36,7 +42,9 @@ h1 {
   line-height: 2;
 
   @media screen and (min-width: 576px) {
+
     font-size: 4.5rem;
+ 
   }
 }
 h2 {
@@ -47,6 +55,7 @@ h2 {
 
   @media screen and (min-width: 576px) {
     font-size: 3.5rem;
+
   }
 }
 
@@ -56,12 +65,16 @@ h3 {
   line-height: 1.2;
 }
 
+
 h4 {
+
   font-size: 2rem;
   font-weight: bold;
   line-height: 1;
 }
+
 h5 {
+
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1;
@@ -69,12 +82,14 @@ h5 {
 
 p {
   font-size: 1rem;
+
   line-height: 2;
   text-align: justify;
 }
 
 a {
   font-size: 1rem;
+
   line-height: 2;
   text-align: justify;
 }
