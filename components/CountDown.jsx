@@ -1,11 +1,7 @@
 "use client"
 import React, { useEffect, useRef, useState } from "react";
 import '@styles/globals.css'
-// import { Dimensions, StyleSheet } from "react-native";
-// import Svg, {
-//   Defs, LinearGradient, Stop, Circle,
-// } from "react-native-svg";
-// import Animated from "react-native-reanimated";
+import '@styles/animation.css'
 
 
 const CountDown = () =>{
@@ -35,13 +31,16 @@ const CountDown = () =>{
     return () => clearInterval(interval.current);
   });
     return(
-        <div className='w-[60%] m-auto'> 
-            <h3 className = 'm-auto mb-10'>距離報名結束還有</h3>
-            <div className = "w-full h-auto bg-gray-100 flex justify-between">
-                <div className="w-full aspect-[1/1]"><Circle now={timerDay} up = {365} word = "Days"/> </div>
-                <div className="w-full aspect-[1/1]"><Circle now={timerHour} up = {24} word = "Hours"/> </div>
-                <div className="w-full aspect-[1/1]"> <Circle now={timerMinute} up = {60} word = "Mins"/> </div>
-                <div className="w-full aspect-[1/1]"><Circle now={timerSecond} up = {60} word = "Seconds"/> </div>
+        <div className ='w-full h-fit relative pt-[20vh]'>
+            <img src='/assets/images/meta3.png' id='meta' className = 'w-[20vw] absolute top-[10vh] left-[5vw]'/>
+            <div className='w-[60%] m-auto'> 
+                <h3 className = 'm-auto mb-10 text-[#6A747B]'>距離報名結束還有</h3>
+                <div className = "w-full h-auto flex justify-between">
+                    <div className="w-full aspect-[1/1]"><Circle now={timerDay} up = {365} word = "Days"/> </div>
+                    <div className="w-full aspect-[1/1]"><Circle now={timerHour} up = {24} word = "Hours"/> </div>
+                    <div className="w-full aspect-[1/1]"> <Circle now={timerMinute} up = {60} word = "Mins"/> </div>
+                    <div className="w-full aspect-[1/1]"><Circle now={timerSecond} up = {60} word = "Seconds"/> </div>
+                </div>
             </div>
         </div>
     );
@@ -65,21 +64,21 @@ const Circle =  ({now, up,word})  =>{
                         cy='50%'
                         r="47%" 
                         fill="none" 
-                        stroke="black" 
+                        stroke="#6A747B" 
                         stroke-width="3%">
                     </circle>
                 </svg>
                 <svg className="w-full h-full  top-0 left-0 static -rotate-90 absolute">
-                    <circle className=""
+                    <circle className="color-[#A8D5CC]"
                         stroke-dasharray={`${len}`+'vw'} 
                         stroke-dashoffset={`${percentage}`+'vw'}
                         cx='50%'
                         cy='50%'
                         r="47%" 
                         fill="none" 
-                        stroke-width="4.5%"
+                        stroke-width="4%"
                         stroke-linecap="round" 
-                        stroke="lightgreen" 
+                        stroke="#A8D5CC" 
                         >                        
                     </circle>
                 </svg>
