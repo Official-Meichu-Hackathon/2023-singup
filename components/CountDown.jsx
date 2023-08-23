@@ -49,7 +49,7 @@ const CountDown = () =>{
 const Circle =  ({now, up,word})  =>{
     const PI = 3.141592650897935;
     const len = 0.94*100*0.60/4*PI
-    const percentage = 0.94*100*(now/up)*0.60/4*PI
+    const percentage = (1-now/up)*0.94*100*0.60/4*PI
     const a = now
     const b = up
     
@@ -68,7 +68,7 @@ const Circle =  ({now, up,word})  =>{
                         stroke-width="3%">
                     </circle>
                 </svg>
-                <svg className="w-full h-full  top-0 left-0 static -rotate-90 absolute">
+                <svg className="w-full h-full  top-0 left-0 static -rotate-90 absolute -scale-y-100">
                     <circle className="color-[#A8D5CC]"
                         stroke-dasharray={`${len}`+'vw'} 
                         stroke-dashoffset={`${percentage}`+'vw'}
