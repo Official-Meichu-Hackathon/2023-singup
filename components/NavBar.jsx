@@ -1,8 +1,8 @@
 // ref: https://www.youtube.com/watch?v=hwfiYvzH9s4
 "use client";
-import React, { Fragment } from 'react';
-import { Menu, Transition } from '@headlessui/react';
-import '@styles/globals.css'
+import React, { Fragment } from "react";
+import { Menu, Transition } from "@headlessui/react";
+import "@styles/globals.css";
 import ScrollProgressIndicator from "@components/ScrollProgressIndicator";
 
 function classNames(...classes) {
