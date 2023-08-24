@@ -61,12 +61,13 @@ const Timetable = () => {
             <h3 className="text-[1rem] lg:text-[1.25rem] pt-8  tracking-[0.125rem] font-semibold whitespace-break-spaces xl:whitespace-nowrap">
               時間｜2023/10/21(六) - 10/22(日)
             </h3>
+            <p className="pt-6 text-[#6A747B]">本次活動不提供過夜場地</p>
           </div>
           <div className="flex basis-2/5 left-5 flex-grow flex-col relative">
             <div className="absolute top-[6rem] timeTable_bg1 2xl:text-[12.5rem]">
               21
             </div>
-            <div className="relative left-[6vw] lg:left-[8vw] 2xl:left-[36%] top-[30%] xl:top-[36%]">
+            <div className="relative left-[6vw] lg:left-[8vw] 2xl:left-[36%] top-[24%] xl:top-[28%]">
               {" "}
               <div className="timeTable_day">Saturday</div>
               <div className="relative flex flex-col gap-y-4 right-12">
@@ -80,7 +81,7 @@ const Timetable = () => {
             <h4 className="absolute top-[6rem] timeTable_bg2 2xl:text-[12.5rem]">
               22
             </h4>
-            <div className="relative left-[6vw] lg:left-[8vw] 2xl:left-[36%] top-[30%] xl:top-[36%] ">
+            <div className="relative left-[6vw] lg:left-[8vw] 2xl:left-[36%] top-[24%] xl:top-[28%]">
               {" "}
               <div className="timeTable_day">Sunday</div>
               <div className="relative flex flex-col gap-y-4 right-12">
