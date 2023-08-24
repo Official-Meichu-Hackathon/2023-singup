@@ -107,7 +107,7 @@ export default function Topic() {
   }, [activeTabIndex]);
 
   return (
-    <div className="container mx-auto max-w-full 2xl:max-w-[90%] py-16 px-12">
+    <div className="container mx-auto max-w-full py-16 px-12">
       <Tab.Group>
         <div className="relative mb-3">
           <Tab.List className="relative flex ">
@@ -133,41 +133,46 @@ export default function Topic() {
         <Tab.Panels className="">
           {Object.values(categories).map((posts, idx) => (
             <Tab.Panel key={idx} className="py-3 px-0 focus:outline-none">
-              <ul className="divide-y divide-[#6A747B] hidden md:block">
+              <div className="hidden md:grid grid-cols-2 xl:grid-cols-3 gap-3 container mx-auto justify-center flex-col">
                 {posts.map((post) => (
-                  <li key={post.id} className="relative px-1">
-                    <ul className="pt-6 pb-2 flex items-end gap-x-2">
-                      {" "}
-                      <h3 className="">{post.company}</h3>
+                  <div
+                    key={post.id}
+                    className="relative border-[0.5px] border-[#6A747B] w-full"
+                  >
+                    <div className="flex justify-center gap-x-4 bg-white aspect-[19/8]">
+                      <img
+                        src={post.logo}
+                        className="w-2/5 sm:w-1/3 aspect-square"
+                      />
+                      {post.logo2 && (
+                        <img
+                          src={post.logo2}
+                          className="w-2/5 sm:w-1/3 aspect-square"
+                        />
+                      )}
+                    </div>
+                    <div className="p-[1rem] flex flex-col gap-y-[0.25rem] bg-[#EAEAEC]">
+                      <h3 className="text-[0.75rem]">{post.company}</h3>
+
+                      <p className="text-[0.625rem] font-light">
+                        主題：{post.topic}
+                      </p>
                       <a
-                        className="flex pl-2 items-center gap-x-3"
+                        className="flex pt-[1rem] items-center gap-x-1"
                         href={post.link}
                       >
                         <img
                           src="/assets/icons/download.svg"
-                          className="w-5 aspect-square"
-                        />
-                        <p className="text-end text-[#6A747B]">下載PDF</p>
-                      </a>
-                    </ul>
-                    <ul className="flex flex-row gap-x-4">
-                      <img src={post.logo} className="w-auto aspect-square" />
-                      {post.logo2 && (
-                        <img
-                          src={post.logo2}
                           className="w-auto aspect-square"
                         />
-                      )}
-                    </ul>
-                    <ul className="py-2 font-light">
-                      <p>主題：{post.topic}</p>
-                    </ul>
-                    <ul className="pb-6 font-light">
-                      <p>說明：{post.description}</p>
-                    </ul>
-                  </li>
+                        <p className="text-[0.625rem] text-[#6A747B]">
+                          下載PDF
+                        </p>
+                      </a>
+                    </div>
+                  </div>
                 ))}
-              </ul>
+              </div>
               <div className="md:hidden flex container mx-auto justify-center max-w-sm flex-col gap-y-3">
                 {posts.map((post) => (
                   <div
