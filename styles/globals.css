@@ -11,9 +11,11 @@
   transition: transform 0.2s ease-out;
 }
 
+
 .content {
   max-height: 0;
   overflow: hidden;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
   transition: all 0.5s cubic-bezier(0, 1, 0, 1);
 }
 
@@ -22,13 +24,6 @@
   transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }
 
-@font-face {
-  font-family: "GenYoMin TW";
-  src: url(/fonts/GenYoMinTW-M.woff);
-}
-body {
-  font-family: "GenYoMin TW", serif;
-}
 
 h1,
 h2,
@@ -39,429 +34,65 @@ h3 {
 
 h1 {
   font-size: 3rem;
+  font-size: 3rem;
   font-weight: bold;
+  letter-spacing: 0.05rem;
   letter-spacing: 0.05rem;
   line-height: 2;
 
   @media screen and (min-width: 576px) {
     font-size: 4.5rem;
+    font-size: 4.5rem;
   }
 }
+
 h2 {
   font-size: 3rem;
+  font-size: 3rem;
   font-weight: bold;
+  letter-spacing: 0.05rem;
   letter-spacing: 0.05rem;
   line-height: 1.5;
 
   @media screen and (min-width: 576px) {
+    font-size: 3.5rem;
     font-size: 3.5rem;
   }
 }
 
 h3 {
   font-size: 2.5rem;
-  font-weight: bold;
-  line-height: 1.2;
-}
-
-h4 {
-  font-size: 2rem;
-  font-weight: bold;
-  line-height: 1;
-}
-h5 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  line-height: 1;
-}
-
-p {
-  font-size: 1rem;
-  line-height: 2;
-  text-align: justify;
-}
-
-a {
-  font-size: 1rem;
-  line-height: 2;
-  text-align: justify;
-}
-
-hr {
-  display: block;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  border-width: 1px;
-}
-
-.timeTable_bg1 {
-  background: linear-gradient(#a8d5cc 0%, rgba(187, 207, 203, 0) 100%);
-}
-
-.timeTable_bg2 {
-  background: linear-gradient(180deg, #f3cd71 0%, rgba(255, 238, 198, 0) 100%);
-}
-
-.timeTable_bg1,
-.timeTable_bg2 {
-  height: 10rem;
-  font-family: GenYoMin TW TTF;
-  font-size: 13vw;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 10rem; /* 40% */
-  letter-spacing: 1.25rem;
-  opacity: 0.5;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.title_vertical {
-  writing-mode: vertical-rl;
-}
-
-.timeTable_day {
-  color: #6a747b;
-  font-family: GenYoMin TW TTF;
-  font-size: 3rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 5rem; /* 166.667% */
-  letter-spacing: 0.3rem;
-}
-
-.timeTable_context {
-  color: #6a747b;
-  font-family: Manrope;
-}
-
-.bar_gradient {
-  background: linear-gradient(90deg, #a8d5cc 24.55%, #f3cd71 74.27%);
-}
-.bar_gradient_inverse {
-  background: linear-gradient(-90deg, #a8d5cc 24.55%, #f3cd71 74.27%);
-}
-
-.scroll-progress {
-  transition: transform 0.2s ease-out;
-}
-
-.content {
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
-}
-
-.content.show {
-  height: auto;
-  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
-}
-
-h1,
-h2,
-h3 {
-  max-width: fit-content;
-  text-wrap: balance;
-}
-
-h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  letter-spacing: 0.05rem;
-  line-height: 2;
-
-  @media screen and (min-width: 576px) {
-    font-size: 4.5rem;
-  }
-}
-h2 {
-  font-size: 3rem;
-  font-weight: bold;
-  letter-spacing: 0.05rem;
-  line-height: 1.5;
-
-  @media screen and (min-width: 576px) {
-    font-size: 3.5rem;
-  }
-}
-
-h3 {
   font-size: 2.5rem;
   font-weight: bold;
   line-height: 1.2;
 }
 
 h4 {
-  font-size: 2rem;
+  font-size: 2em;
   font-weight: bold;
   line-height: 1;
 }
 
 h5 {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   font-weight: bold;
   line-height: 1;
 }
-h6 {
-  font-size: 1.25em;
-  font-weight: bold;
-  line-height: 1;
-}
+
 p {
-  font-size: 0.8em;
+  font-size: 1em;
   line-height: 2;
   text-align: justify;
-  @media screen and (min-width: 576px) {
-    font-size: 1rem;
-  }
-}
-
-a {
-  font-size: 1rem;
-
-  line-height: 2;
-  text-align: justify;
-
-  @media screen and (min-width: 576px) {
-    font-size: 1em;
-  }
 }
 
 hr {
   display: block;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
   margin-left: auto;
   margin-right: auto;
   border-style: inset;
   border-width: 1px;
-}
-
-.timeTable_bg1 {
-  background: linear-gradient(#a8d5cc 0%, rgba(187, 207, 203, 0) 100%);
-}
-
-.timeTable_bg2 {
-  background: linear-gradient(180deg, #f3cd71 0%, rgba(255, 238, 198, 0) 100%);
-}
-
-.timeTable_bg1,
-.timeTable_bg2 {
-  height: 10rem;
-  font-family: GenYoMin TW TTF;
-  font-size: 13vw;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 10rem; /* 40% */
-  letter-spacing: 1.25rem;
-  opacity: 0.5;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.title_vertical {
-  writing-mode: vertical-rl;
-}
-
-.timeTable_day {
-  color: #6a747b;
-  font-family: GenYoMin TW TTF;
-  font-size: 3rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 5rem; /* 166.667% */
-  letter-spacing: 0.3rem;
-}
-
-.timeTable_context {
-  color: #6a747b;
-  font-family: Manrope;
-}
-
-.countdown_box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  margin: auto;
-}
-.countdown_circle {
-  transform: rotateY(-180deg) rotateZ(-90deg);
-}
-.scroll-progress {
-  transition: transform 0.2s ease-out;
-}
-
-.content {
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
-}
-
-.content.show {
-  height: auto;
-  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
-}
-
-@font-face {
-  font-family: "GenYoMin TW";
-  src: url(/fonts/GenYoMinTW-M.woff);
-}
-
-body {
-  font-family: "GenYoMin TW", serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  max-width: fit-content;
-  text-wrap: balance;
-}
-
-h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  letter-spacing: 0.05rem;
-  line-height: 2;
-
-  @media screen and (min-width: 576px) {
-    font-size: 4.5rem;
-  }
-}
-h2 {
-  font-size: 3rem;
-  font-weight: bold;
-  letter-spacing: 0.05rem;
-  line-height: 1.5;
-
-  @media screen and (min-width: 576px) {
-    font-size: 3.5rem;
-  }
-}
-
-h3 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  line-height: 1.2;
-}
-
-h4 {
-  font-size: 2rem;
-  font-weight: bold;
-  line-height: 1;
-}
-h5 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  line-height: 1;
-}
-
-h6 {
-  font-size: 1.25em;
-  font-weight: bold;
-  line-height: 1;
-}
-p {
-  font-size: 0.8em;
-  line-height: 2;
-  text-align: justify;
-  @media screen and (min-width: 576px) {
-    font-size: 1rem;
-  }
-}
-
-a {
-  font-size: 1rem;
-
-  line-height: 2;
-  text-align: justify;
-
-  @media screen and (min-width: 576px) {
-    font-size: 1em;
-  }
-}
-
-hr {
-  display: block;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  border-width: 1px;
-}
-
-.bar_gradient {
-  background: linear-gradient(90deg, #a8d5cc 24.55%, #f3cd71 74.27%);
-}
-.bar_gradient_inverse {
-  background: linear-gradient(-90deg, #a8d5cc 24.55%, #f3cd71 74.27%);
-}
-
-.scroll-progress {
-  transition: transform 0.2s ease-out;
-}
-
-.content {
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
-}
-
-.content.show {
-  height: auto;
-  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
-}
-
-.timeTable_bg1 {
-  background: linear-gradient(#a8d5cc 0%, rgba(187, 207, 203, 0) 100%);
-}
-
-.timeTable_bg2 {
-  background: linear-gradient(180deg, #f3cd71 0%, rgba(255, 238, 198, 0) 100%);
-}
-
-.timeTable_bg1,
-.timeTable_bg2 {
-  height: 10rem;
-  font-family: GenYoMin TW TTF;
-  font-size: 13vw;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 10rem; /* 40% */
-  letter-spacing: 1.25rem;
-  opacity: 0.5;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.title_vertical {
-  writing-mode: vertical-rl;
-}
-
-.timeTable_day {
-  color: #6a747b;
-  font-family: GenYoMin TW TTF;
-  font-size: 3rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 5rem; /* 166.667% */
-  letter-spacing: 0.3rem;
-}
-
-.timeTable_context {
-  color: #6a747b;
-  font-family: Manrope;
 }
 
 .main {
@@ -501,11 +132,9 @@ hr {
   z-index: 3;
   width: 100%;
   max-width: 640px;
-  background-image: radial-gradient(
-      at 27% 37%,
+  background-image: radial-gradient(at 27% 37%,
       hsla(215, 98%, 61%, 1) 0px,
-      transparent 0%
-    ),
+      transparent 0%),
     radial-gradient(at 97% 21%, hsla(125, 98%, 72%, 1) 0px, transparent 50%),
     radial-gradient(at 52% 99%, hsla(354, 98%, 61%, 1) 0px, transparent 50%),
     radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 1) 0px, transparent 50%),
@@ -527,34 +156,25 @@ hr {
   }
 }
 
-.news_box {
-  border-radius: 1.25rem;
-  border: 1px solid var(--3, #6a747b);
-}
-
-.news_box_title {
-  border-radius: 0.75rem;
-  background: var(--3, #6a747b);
-}
-
 /* Tailwind Styles */
 .hackathon_title {
   font-style: italic;
 }
+
 .app {
-  @apply z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
+  @apply z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm: px-16 px-6;
 }
 
 .black_btn {
-  @apply rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm font-inter flex items-center justify-center;
+  @apply rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover: bg-white hover:text-black text-center text-sm font-inter flex items-center justify-center;
 }
 
 .outline_btn {
-  @apply rounded-full border border-black bg-transparent py-1.5 px-5 text-black transition-all hover:bg-black hover:text-white text-center text-sm font-inter flex items-center justify-center;
+  @apply rounded-full border border-black bg-transparent py-1.5 px-5 text-black transition-all hover: bg-black hover:text-white text-center text-sm font-inter flex items-center justify-center;
 }
 
 .head_text {
-  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl;
+  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm: text-6xl;
 }
 
 .orange_gradient {
@@ -570,23 +190,23 @@ hr {
 }
 
 .desc {
-  @apply mt-5 text-lg text-gray-600 sm:text-xl max-w-2xl;
+  @apply mt-5 text-lg text-gray-600 sm: text-xl max-w-2xl;
 }
 
 .search_input {
-  @apply block w-full rounded-md border border-gray-200 bg-white py-2.5 font-satoshi pl-5 pr-12 text-sm shadow-lg font-medium focus:border-black focus:outline-none focus:ring-0;
+  @apply block w-full rounded-md border border-gray-200 bg-white py-2.5 font-satoshi pl-5 pr-12 text-sm shadow-lg font-medium focus: border-black focus:outline-none focus:ring-0;
 }
 
 .copy_btn {
-  @apply w-7 h-7 rounded-full bg-white/10 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur flex justify-center items-center cursor-pointer;
+  @apply w-7 h-7 rounded-full bg-white/10 shadow-[inset_10px_-50px_94px_0_rgb(199, 199, 199, 0.2)] backdrop-blur flex justify-center items-center cursor-pointer;
 }
 
 .glassmorphism {
-  @apply rounded-xl border border-gray-200 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-5;
+  @apply rounded-xl border border-gray-200 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199, 199, 199, 0.2)] backdrop-blur p-5;
 }
 
 .prompt_layout {
-  @apply space-y-6 py-8 sm:columns-2 sm:gap-6 xl:columns-3;
+  @apply space-y-6 py-8 sm: columns-2 sm:gap-6 xl:columns-3;
 }
 
 /* Feed Component */
@@ -605,7 +225,7 @@ hr {
 
 /* Nav Component */
 .logo_text {
-  @apply max-sm:hidden font-satoshi font-semibold text-lg text-black tracking-wide;
+  @apply max-sm: hidden font-satoshi font-semibold text-lg text-black tracking-wide;
 }
 
 .dropdown {
@@ -613,12 +233,12 @@ hr {
 }
 
 .dropdown_link {
-  @apply text-sm font-inter text-gray-700 hover:text-gray-500 font-medium;
+  @apply text-sm font-inter text-gray-700 hover: text-gray-500 font-medium;
 }
 
 /* PromptCard Component */
 .prompt_card {
-  @apply flex-1 break-inside-avoid rounded-lg border border-gray-300 bg-white/20 bg-clip-padding p-6 pb-4 backdrop-blur-lg backdrop-filter md:w-[360px] w-full h-fit;
+  @apply flex-1 break-inside-avoid rounded-lg border border-gray-300 bg-white/20 bg-clip-padding p-6 pb-4 backdrop-blur-lg backdrop-filter md: w-[360px] w-full h-fit;
 }
 
 .flex-center {
