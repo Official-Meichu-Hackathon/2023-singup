@@ -4,6 +4,14 @@ import Timetable from "@components/Timetable";
 const Home = () => {
   return (
     <>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+        dignissimos. Minus hic natus debitis praesentium quos doloribus
+        voluptate enim deserunt ut maiores esse delectus earum reprehenderit,
+        quidem facere harum vitae facilis. Tempora nulla ipsa placeat deserunt!
+        Voluptas, aliquam possimus unde similique, natus excepturi facilis
+        quibusdam quaerat ab eum nobis repudiandae!
+      </div>
       <Timetable />
       <div>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,

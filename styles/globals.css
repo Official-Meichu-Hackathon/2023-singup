@@ -22,6 +22,15 @@
   transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }
 
+@font-face {
+  font-family: "GenYoMin TW";
+  src: url(/fonts/GenYoMinTW-M.woff);
+}
+
+body {
+  font-family: "GenYoMin TW", serif;
+}
+
 h1,
 h2,
 h3 {
@@ -99,8 +108,8 @@ hr {
 
 .timeTable_bg1,
 .timeTable_bg2 {
+  font-family: "GenYoMin TW", serif;
   height: 10rem;
-  font-family: GenYoMin TW TTF;
   font-size: 13vw;
   font-style: normal;
   font-weight: 700;
@@ -118,17 +127,21 @@ hr {
 
 .timeTable_day {
   color: #6a747b;
-  font-family: GenYoMin TW TTF;
-  font-size: 3rem;
+  font-family: "GenYoMin TW", serif;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 700;
   line-height: 5rem; /* 166.667% */
   letter-spacing: 0.3rem;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 3rem;
+  }
 }
 
 .timeTable_context {
   color: #6a747b;
-  font-family: Manrope;
+  font-family: "GenYoMin TW", serif;
 }
 
 .main {
