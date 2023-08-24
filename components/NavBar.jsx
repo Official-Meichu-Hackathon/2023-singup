@@ -51,7 +51,7 @@ const Navbar = () => {
                   leaveFrom='transform opacity-100 scale-100'
                   leaveTo='transform opacity-0 scale-95'
                 >
-                  <Menu.Items className='origin-top-left absolute left-0 mt-2 w-28 rounded-md shadow-lg bg-white divide-y divide-gray-100 focus:outline-none z-30 bg-gray-500 text-white'>
+                  <Menu.Items className='origin-top-left absolute left-0 mt-2 w-28 rounded-md shadow-lg bg-white divide-y divide-gray-100 focus:outline-none z-30 bg-gray-400 text-white'>
                     <div className='py-1'>
                       <Menu.Item>
                         {({ active }) => (
@@ -60,7 +60,7 @@ const Navbar = () => {
                             className={classNames(
                               active
                                 ? 'bg-gray-100 text-gray-900'
-                                : 'text-gray-700',
+                                : '',
                               'block px-4 py-2 text-sm'
                             )}
                           >
@@ -115,7 +115,7 @@ const Navbar = () => {
                   leaveFrom='transform opacity-100 scale-100'
                   leaveTo='transform opacity-0 scale-95'
                 >
-                  <Menu.Items className='origin-top-left absolute left-0 mt-2 w-28 rounded-md shadow-lg bg-white divide-y divide-gray-100 focus:outline-none z-30 bg-gray-500 text-white'>
+                  <Menu.Items className='origin-top-left absolute left-0 mt-2 w-28 rounded-md shadow-lg bg-white divide-y divide-gray-100 focus:outline-none z-30 bg-gray-400 text-white'>
                     <div className='py-1'>
                       <Menu.Item>
                         {({ active }) => (
@@ -164,7 +164,7 @@ const Navbar = () => {
                   leaveFrom='transform opacity-100 scale-100'
                   leaveTo='transform opacity-0 scale-95'
                 >
-                  <Menu.Items className='origin-top-left absolute left-0 mt-2 w-24 rounded-md shadow-lg bg-white divide-y divide-gray-100 focus:outline-none z-30 bg-gray-500 text-white'>
+                  <Menu.Items className='origin-top-left absolute left-0 mt-2 w-24 rounded-md shadow-lg bg-white divide-y divide-gray-100 focus:outline-none z-30 bg-gray-400 text-white'>
                     <div className='py-1'>
                       <Menu.Item>
                         {({ active }) => (
