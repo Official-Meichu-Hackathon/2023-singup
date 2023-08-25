@@ -21,12 +21,7 @@ const ScrollProgressIndicator = () => {
   }, []);
 
   return (
-    <div
-      className="z-[100] fixed w-full h-14 mt-1 scale-x-0 bar_gradient origin-left scroll-progress"
-      style={{ transform: `scaleX(${scrollProgress / 100})` }}
-    >
-      test
-    </div>
+    <div className="w-full h-1  scale-x-0 bar_gradient origin-left scroll-progress" style={{ transform: `scaleX(${scrollProgress / 100})` }}></div>
   );
 };
 
