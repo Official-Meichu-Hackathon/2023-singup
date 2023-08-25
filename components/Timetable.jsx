@@ -34,17 +34,17 @@ const Timetable = () => {
   ];
   return (
     <>
-      <div className="container mx-auto relative w-full h-[50rem] lg:h-[60rem]">
+      <div className="px-[5%] relative w-full h-[50rem] lg:h-[60rem] overflow-x-hidden">
         <div className="hidden md:flex justify-center gap-x-2 2xl:gap-x-5">
           <div className="basis-1/5 flex flex-shrink-0 flex-col xl:w-auto">
             {" "}
             <img
-              className="-z-10 absolute aspect-auto w-[60vw] left-[-8vw] bottom-4"
+              className="-z-10 absolute aspect-auto max-w-[60vw] left-[-8vw] bottom-4"
               src="/assets/icons/time_deco_l.svg"
               alt=""
             />
             <img
-              className="-z-10 absolute aspect-auto w-[60vw] right-[-10vw] bottom-0"
+              className="-z-10 absolute aspect-auto max-w-[60vw] right-[-10vw] bottom-0"
               src="/assets/icons/time_deco_r.svg"
               alt=""
             />
@@ -62,6 +62,7 @@ const Timetable = () => {
               時間｜2023/10/21(六) - 10/22(日)
             </h3>
             <p className="pt-6 text-[#6A747B]">本次活動不提供過夜場地</p>
+            {}
           </div>
           <div className="flex basis-2/5 left-5 flex-grow flex-col relative">
             <div className="absolute top-[6rem] timeTable_bg1 2xl:text-[12.5rem]">
@@ -124,4 +125,3 @@ const Context = ({ day }) => {
 };
 
 export default Timetable;
-/*`hello*/
