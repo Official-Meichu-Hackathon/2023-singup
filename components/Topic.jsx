@@ -107,8 +107,7 @@ export default function Topic() {
   }, [activeTabIndex]);
 
   return (
-
-    <div className="container mx-auto max-w-full py-16 px-12">
+    <div className="container px-[5%] max-w-full py-16">
       <Tab.Group>
         <div className="relative mb-3">
           <Tab.List className="relative flex ">

@@ -26,7 +26,7 @@ const Team_intro = () => {
   ];
   return (
     <>
-      <div className="hidden md:container md:mx-auto md:flex md:gap-x-[5%] md:flex-row md:justify-center">
+      <div className="hidden md:container md:mx-auto md:px-[4%] md:flex md:gap-x-[5%] md:flex-row md:justify-center">
         {team_intro_data.map((data, index) => (
           <Team_each key={index} {...data} />
         ))}

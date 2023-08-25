@@ -34,17 +34,17 @@ const Timetable = () => {
   ];
   return (
     <>
-      <div className="container mx-auto relative w-full h-[50rem] lg:h-[60rem]">
+      <div className="px-[5%] relative w-full h-[50rem] lg:h-[60rem] overflow-x-hidden">
         <div className="hidden md:flex justify-center gap-x-2 2xl:gap-x-5">
           <div className="basis-1/5 flex flex-shrink-0 flex-col xl:w-auto">
             {" "}
             <img
-              className="-z-10 absolute aspect-auto w-[60vw] left-[-8vw] bottom-4"
+              className="-z-10 absolute aspect-auto w-[60vw] 2xl:w-[54rem] left-[-1vw] bottom-4"
               src="/assets/icons/time_deco_l.svg"
               alt=""
             />
             <img
-              className="-z-10 absolute aspect-auto w-[60vw] right-[-10vw] bottom-0"
+              className="-z-10 absolute aspect-auto w-[60vw] 2xl:w-[54rem] right-[-8vw] bottom-0"
               src="/assets/icons/time_deco_r.svg"
               alt=""
             />
