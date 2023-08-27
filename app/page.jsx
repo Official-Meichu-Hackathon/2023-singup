@@ -11,8 +11,8 @@ const Home = () => {
     <>
       <CountDown />
       <Activity />
-      <Team_intro />
       <Timetable />
+      <Team_intro />
       <Sign_in />
       <Award />
       <Topic />
