@@ -107,8 +107,7 @@ export default function Topic() {
   }, [activeTabIndex]);
 
   return (
-
-    <div className="container mx-auto max-w-full py-16 px-12">
+    <div className="container px-[5%] max-w-full py-16">
       <Tab.Group>
         <div className="relative mb-3">
           <Tab.List className="relative flex ">
@@ -134,7 +133,7 @@ export default function Topic() {
         <Tab.Panels className="">
           {Object.values(categories).map((posts, idx) => (
             <Tab.Panel key={idx} className="py-3 px-0 focus:outline-none">
-              <div className="hidden md:grid grid-cols-2 xl:grid-cols-3 gap-3 container mx-auto justify-center flex-col">
+              <div className="hidden md:grid grid-cols-2 xl:grid-cols-3 gap-6 container mx-auto justify-center flex-col">
                 {posts.map((post) => (
                   <div
                     key={post.id}

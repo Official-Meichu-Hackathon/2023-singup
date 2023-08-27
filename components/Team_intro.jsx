@@ -30,7 +30,7 @@ const Team_intro = () => {
       <div className="block md:hidden w-full">
         <h4 className='w-fit m-auto text-black'>組別介紹 </h4>
       </div>
-      <div className="hidden md:container md:mx-auto md:flex md:gap-x-[5%] md:flex-row md:justify-center">
+      <div className="hidden md:container md:mx-auto md:px-[4%] md:flex md:gap-x-[5%] md:flex-row md:justify-center">
         {team_intro_data.map((data, index) => (
           <Team_each key={index} {...data} />
         ))}
