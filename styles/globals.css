@@ -7,6 +7,29 @@
 /* 
   Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them! 
 */
+@font-face {
+  font-family: 'GenYoMin TW';
+  src: url('../fonts/GenYoMinTW-M.woff');
+  /* Add more src lines for different font weights and styles if available */
+}
+.hack_font{
+  font-family: 'GenYoMin TW', sans-serif  ;
+}
+.title_bg{
+  background: linear-gradient(180deg, #9C9C9C 0%, rgba(156, 156, 156, 0) 100%);
+  font-family: GenYoMin TW TTF;
+  font-size: 13vw;
+  font-style: normal;
+  font-weight: 700;
+  
+  /* 40% */
+  letter-spacing: 1.25rem;
+  opacity: 0.5;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 
 .countdown_box {
   display: flex;
@@ -137,6 +160,7 @@ hr {
 
 .bar_gradient_inverse {
   background: linear-gradient(-90deg, #a8d5cc 24.55%, #f3cd71 74.27%);
+  opacity: 0.7
 }
 
 .scroll-progress {

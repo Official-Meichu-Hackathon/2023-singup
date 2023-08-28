@@ -10,8 +10,8 @@ const Sign_in = () =>{
             <div className = 'flex w-full my-8'>
                 <h4 className = 'w-fit m-auto'>如何報名</h4>
             </div>
-            <div className = 'w-full h-fit bg-gray-100 rounded-[3rem]  border-2 border-black '>
-                <div className = 'px-[4%] py-[2%] w-full grid grid-rows-3 grid-flow-col bar_gradient_inverse overflow-hidden rounded-t-[3rem] border-b-2 border-black'>
+            <div className = 'w-full h-fit bg-gray-100 rounded-[1.5rem]  border-2 border-[#6A747B] '>
+                <div className = 'px-[4%] py-[2%] w-full grid grid-rows-3 grid-flow-col bar_gradient_inverse overflow-hidden rounded-t-[1.5rem] border-b-2 border-[#6A747B]'>
                         <p className = 'px-2 font-bold text-[0.8em]'> 9/5（一）~ 10/3（一）08:00</p>
                         <p className = 'px-2 font-bold text-[0.8em]'> 10/3（一）23:59</p>
                         <p className = 'px-2 font-bold text-[0.8em]'> 10/7（五）23:59</p>
@@ -51,13 +51,13 @@ const Sign_in = () =>{
 
         <div className ='mx-[5%] my-12 hidden md:block'>
             <h2 className = 'ml-[2%]'>如何報名</h2>
-            <div className = 'w-full h-fit bg-gray-100 rounded-[3rem] flex border-2 border-black'>
+            <div className = 'w-full h-fit bg-gray-100 rounded-[3rem] flex border-2 border-[#6A747B]'>
                 <div className="w-[30%] ">
                     <div className = 'px-[8%] py-[5%] h-[25%]'>
                         <h5 className = 'py-5'> 9/5（一）~ 10/3（一）08:00</h5>
                         <h4 className = 'py-5 pb-10'>開始報名</h4>
                     </div>
-                    <div className = 'px-[8%] py-[5%] border-y-2 border-black h-[35%]'>
+                    <div className = 'px-[8%] py-[5%] border-y-2 border-[#6A747B] h-[35%]'>
                         <h5 className = 'py-5'> 10/3（一）23:59</h5>
                         <h4 className = 'py-5 pb-10'>正取隊伍與所屬企業公布</h4>
                     </div>
@@ -66,7 +66,7 @@ const Sign_in = () =>{
                         <h4 className = 'py-5 pb-10'>繳費截止</h4>
                     </div>
                 </div>
-                <div className = 'w-[70%] border-l-2 border-black px-[3%] pt-[3%]'>
+                <div className = 'w-[70%] border-l-2 border-[#6A747B] px-[3%] pt-[3%]'>
                     <div className = 'mb-5'>
                         <h5>報名費用  </h5>
                         <p>$600 / 人（須另繳保證金 $200）</p>

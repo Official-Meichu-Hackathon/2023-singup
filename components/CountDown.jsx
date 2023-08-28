@@ -31,15 +31,15 @@ const CountDown = () => {
         return () => clearInterval(interval.current);
     });
     return (
-        <div className='w-full h-fit  pt-[20vh] hidden md:block'>
-            <img src='/assets/images/meta3.png' id='meta' className='w-[20vw] absolute top-[10vh] left-[5vw]' />
+        <div className='w-full h-fit  pt-[20vh] hidden md:block relative'>
+            <img src='/assets/images/meta3.png' id='meta' className='w-[20%] absolute top-[10vh] left-[5%]' />
             <div className='w-[60%] m-auto'>
                 <h3 className='m-auto mb-10 text-[#6A747B]'>距離報名結束還有</h3>
                 <div className="w-full h-auto flex justify-between">
-                    <div className="w-full aspect-[1/1]"><Circle now={timerDay} up={365} word="Days" /> </div>
-                    <div className="w-full aspect-[1/1]"><Circle now={timerHour} up={24} word="Hours" /> </div>
-                    <div className="w-full aspect-[1/1]"> <Circle now={timerMinute} up={60} word="Mins" /> </div>
-                    <div className="w-full aspect-[1/1]"><Circle now={timerSecond} up={60} word="Seconds" /> </div>
+                    <div className="w-[20%] aspect-[1/1]"><Circle now={timerDay} up={365} word="Days" /> </div>
+                    <div className="w-[20%] aspect-[1/1]"><Circle now={timerHour} up={24} word="Hours" /> </div>
+                    <div className="w-[20%] aspect-[1/1]"> <Circle now={timerMinute} up={60} word="Mins" /> </div>
+                    <div className="w-[20%] aspect-[1/1]"><Circle now={timerSecond} up={60} word="Seconds" /> </div>
                 </div>
             </div>
         </div>
@@ -47,7 +47,7 @@ const CountDown = () => {
 };
 
 const Circle = ({ now, up, word }) => {
-    const ratio = 90
+    const ratio = 80
     const PI = 3.141592650897935;
     const len = 0.94 * ratio * 0.60 / 4 * PI
     const percentage = (1 - now / up) * len
@@ -57,7 +57,7 @@ const Circle = ({ now, up, word }) => {
 
     return (
         <>
-            <div className={`h-[${ratio}%] w-[${ratio}%] relative`}>
+            <div className={`h-full w-full relative`}>
                 <svg className="w-full h-full top-0">
                     <circle className="count"
                         cx='50%'
@@ -68,7 +68,7 @@ const Circle = ({ now, up, word }) => {
                         stroke-width="3%">
                     </circle>
                 </svg>
-                <svg className="w-full h-full  top-0 left-0 static -rotate-90 absolute -scale-y-100">
+                <svg className="w-full h-full  top-0 left-0 static -rotate-90 absolute ">
                     <circle className="color-[#A8D5CC]"
                         stroke-dasharray={`${len}` + 'vw'}
                         stroke-dashoffset={`${percentage}` + 'vw'}
@@ -76,18 +76,18 @@ const Circle = ({ now, up, word }) => {
                         cy='50%'
                         r="47%"
                         fill="none"
-                        stroke-width="4%"
+                        stroke-width="3.7%"
                         stroke-linecap="round"
                         stroke="#A8D5CC"
                     >
                     </circle>
                 </svg>
-                <div className="w-full h-full absolute top-0 left-0">
+                <div className="w-full h-full absolute top-0 left-0 text-[#6A747B]">
                     <div className="w-full h-[50%] flex items-end">
-                        <h3 className="mx-auto w-fit h-fit items-end">{Math.floor(now)}</h3>
+                        <h3 className="mx-auto w-fit h-fit items-end text-[200%] lg:text-[250%]">{Math.floor(now)}</h3>
                     </div>
-                    <div className="w-full h-[50%] flex items-start">
-                        <h5 className="mx-auto w-fit h-fit ">{word}</h5>
+                    <div className="w-full h-[50%] flex items-start ">
+                        <h5 className="mx-auto w-fit h-fit text-[100%] lg:text-[175%]">{word}</h5>
                     </div>
                 </div>
             </div>
