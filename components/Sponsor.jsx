@@ -22,7 +22,7 @@ const Sponsor = () => {
 
     {
       imgSrc: "/assets/images/sponsors/KKCompany.svg",
-      size: "max-h-[60%] pr-[0.5rem] pr-[0.8rem] xl:pr-[1.2rem]",
+      size: "max-h-[60%] pr-[0.45rem] md:pr-[0.8rem] xl:pr-[1.2rem]",
     },
     {
       imgSrc: "/assets/images/sponsors/NXP.svg",
@@ -30,7 +30,7 @@ const Sponsor = () => {
     },
     {
       imgSrc: "/assets/images/sponsors/ETToday.svg",
-      size: "max-h-[60%] px-3",
+      size: "max-h-[80%] xl:max-h-[60%] pt-1 px-3",
     },
   ];
   const cooperation_sp = [
@@ -57,7 +57,7 @@ const Sponsor = () => {
     },
     {
       imgSrc: "/assets/images/sponsors/Akatsuki.svg",
-      size: "max-h-[60%] xl:max-h-full px-2",
+      size: "max-h-[60%] xl:max-h-full pr-2",
     },
   ];
   const golds = [
@@ -156,6 +156,38 @@ const Sponsor = () => {
       size: "max-h-[65%] xl:max-h-full px-3",
     },
   ];
+  const media = [];
+  const coorganizers = [
+    {
+      imgSrc: "/assets/images/sponsors/清大校友總會.svg",
+      size: "max-h-[80%] p-1 xl:p-3",
+    },
+    {
+      imgSrc: "/assets/images/sponsors/教育部計畫.svg",
+      size: "max-h-[80%] p-1 xl:p-3",
+    },
+    {
+      imgSrc: "/assets/images/sponsors/思源.svg",
+      size: "max-h-[45%] px-2",
+    },
+  ];
+  const coorganizers_word = [
+    {
+      name: "國立清華大學電機資訊學院學士班",
+    },
+    {
+      name: "國立陽明交通大學資訊工程學系",
+    },
+    {
+      name: "國立清華大學資訊工程學系",
+    },
+  ];
+  const sp_thanks = [
+    { name: "國立陽明交通大學產學運籌中心" },
+    { name: "大新竹社會與產業連結網路計畫" },
+    { name: "國立陽明交通大學電機工程學系" },
+    { name: "Colde Garage" },
+  ];
   return (
     <>
       <div className="mx-[5%]">
@@ -165,9 +197,7 @@ const Sponsor = () => {
             return <Sponsor_each key={index} cooperation={cooperation} />;
           })}
         </div>
-        <p className="text-xl font-medium text-center tracking-[0.15em]">
-          特殊合作單位
-        </p>
+        <Sponsor_subtitle subtitle="特殊合作單位" />
         <div className="sponsor_box">
           {cooperation_sp.map((cooperation, index) => {
             return <Sponsor_each key={index} cooperation={cooperation} />;
@@ -180,50 +210,38 @@ const Sponsor = () => {
           })}
         </div>
         <Sponsor_title title="贊助企業" />
-        <p className="text-xl font-medium text-center tracking-[0.15em]">
-          Platinum
-        </p>
+        <Sponsor_subtitle subtitle="Plantium" />
         <div className="sponsor_box">
           {platinums.map((cooperation, index) => {
             return <Sponsor_each key={index} cooperation={cooperation} />;
           })}
         </div>
-        <p className="text-xl font-medium text-center tracking-[0.15em]">
-          Gold
-        </p>
+        <Sponsor_subtitle subtitle="Gold" />
         <div className="sponsor_box">
           {golds.map((gold, index) => {
             return <Sponsor_each key={index} cooperation={gold} />;
           })}
         </div>
-        <p className="text-xl font-medium text-center tracking-[0.15em]">
-          Silver
-        </p>
+        <Sponsor_subtitle subtitle="Silver" />
         <div className="sponsor_box">
           {silvers.map((silver, index) => {
             return <Sponsor_each key={index} cooperation={silver} />;
           })}
         </div>
-        <p className="text-xl font-medium text-center tracking-[0.15em]">
-          Bronze
-        </p>
+        <Sponsor_subtitle subtitle="Bronze" />
         <div className="sponsor_box">
           {bronzes.map((bronze, index) => {
             return <Sponsor_each key={index} cooperation={bronze} />;
           })}
         </div>
         <Sponsor_title title="特殊贊助" />
-        <p className="text-xl font-medium text-center tracking-[0.15em]">
-          Bronze
-        </p>
+        <Sponsor_subtitle subtitle="Bronze" />
         <div className="sponsor_box">
           {bronzes_sp.map((cooperation, index) => {
             return <Sponsor_each key={index} cooperation={cooperation} />;
           })}
         </div>
-        <p className="text-xl font-medium text-center tracking-[0.15em] ">
-          Freshmen
-        </p>
+        <Sponsor_subtitle subtitle="Freshmen" />
         <div className="sponsor_box">
           {freshmen.map((cooperation, index) => {
             return <Sponsor_each key={index} cooperation={cooperation} />;
@@ -232,9 +250,7 @@ const Sponsor = () => {
         <div className="flex w-full justify-center flex-row gap-[0.5rem] md:gap-[2rem] flex-wrap">
           <div>
             {" "}
-            <p className="text-xl font-medium text-center tracking-[0.15em] ">
-              前期系列活動A級
-            </p>
+            <Sponsor_subtitle subtitle="前期系列活動A級" />
             <div className="sponsor_box_sm">
               {sp_A.map((cooperation, index) => {
                 return <Sponsor_each key={index} cooperation={cooperation} />;
@@ -243,9 +259,7 @@ const Sponsor = () => {
           </div>
           <div>
             {" "}
-            <p className="text-xl font-medium text-center tracking-[0.15em] ">
-              前期系列活動B級
-            </p>
+            <Sponsor_subtitle subtitle="前期系列活動B級" />
             <div className="sponsor_box_sm">
               {sp_B.map((cooperation, index) => {
                 return <Sponsor_each key={index} cooperation={cooperation} />;
@@ -254,9 +268,7 @@ const Sponsor = () => {
           </div>
           <div>
             {" "}
-            <p className="font-medium text-xl text-center tracking-[0.15em] ">
-              前期系列活動C級
-            </p>
+            <Sponsor_subtitle subtitle="前期系列活動C級" />
             <div className="sponsor_box_sm">
               {sp_C.map((cooperation, index) => {
                 return <Sponsor_each key={index} cooperation={cooperation} />;
@@ -266,7 +278,22 @@ const Sponsor = () => {
         </div>
         <Sponsor_title title="媒體合作名單" />
         <Sponsor_title title="協辦單位" />
+        <div className="sponsor_box">
+          {coorganizers.map((cooperation, index) => {
+            return <Sponsor_each key={index} cooperation={cooperation} />;
+          })}
+        </div>
+        <div className="sponsor_box_word">
+          {coorganizers_word.map((cooperation, index) => {
+            return <Sponsor_each_word key={index} cooperation={cooperation} />;
+          })}
+        </div>
         <Sponsor_title title="特別感謝" />
+        <div className="sponsor_box_word">
+          {sp_thanks.map((cooperation, index) => {
+            return <Sponsor_each_word key={index} cooperation={cooperation} />;
+          })}
+        </div>
         <Sponsor_title title="這是廣告" />
         <div className="flex justify-center">
           <a
@@ -291,11 +318,21 @@ const Sponsor_title = ({ title }) => {
     <>
       <div class="flex items-center">
         <div class="grow w-full border-t border-black"></div>
-        <h3 class="text-[1.5rem] md:text-[2.5rem] whitespace-nowrap flex-shrink w-1/2 px-[3%] py-6 md:py-8 xl:py-12 text-[#6A747B]">
+        <h3 class="text-[1.5rem] md:text-[2rem] xl:text-[2.5rem] whitespace-nowrap flex-shrink w-1/2 px-[3%] py-6 md:py-8 xl:py-12 text-[#6A747B]">
           {title}
         </h3>
         <div class="grow w-full border-t border-black"></div>
       </div>
+    </>
+  );
+};
+
+const Sponsor_subtitle = ({ subtitle }) => {
+  return (
+    <>
+      <p className="text-[0.675rem] md:text-base xl:text-xl font-medium text-center tracking-[0.15em]">
+        {subtitle}
+      </p>
     </>
   );
 };
@@ -307,6 +344,18 @@ const Sponsor_each = ({ cooperation }) => {
         className={`${cooperation.order} flex items-center h-[3rem] md:h-[5rem] xl:h-[6.75rem] bg-white`}
       >
         <img className={cooperation.size} src={cooperation.imgSrc} alt="" />
+      </div>
+    </>
+  );
+};
+
+const Sponsor_each_word = ({ cooperation }) => {
+  return (
+    <>
+      <div className={`${cooperation.order} flex items-center`}>
+        <p className="text-[0.675rem] md:text-base xl:text-xl font-normal text-center">
+          {cooperation.name}
+        </p>
       </div>
     </>
   );

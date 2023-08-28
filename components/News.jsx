@@ -19,13 +19,15 @@ const News = () => {
 
   return (
     <>
-      <div className="news_box w-full flex flex-col">
-        <div class="relative w-full flex py-5 items-center">
-          <div class="shrink w-[2rem] border-t border-black"></div>
-          <span class="whitespace-nowrap text-center news_box_title shrink px-8 py-2 text-white">
-            <h5>新聞專區</h5>
-          </span>
-          <div class="grow w-full border-t border-black"></div>
+      <div className="news_box mx-[5%] flex flex-col">
+        <div className="relative w-full flex py-5 items-center">
+          <div className="shrink w-[2rem] border-t border-black"></div>
+
+          <h3 className="whitespace-nowrap text-center news_box_title shrink w-fit py-[0.3rem] md:py-[0.5rem] px-6 md:px-12 xl:px-16 text-white text-[1.25rem] md:text-[1.5rem] xl:text-[1.75rem]">
+            新聞專區
+          </h3>
+
+          <div className="grow w-full border-t border-black"></div>
         </div>
         <div className="flex flex-col px-[2rem] pb-5">
           {news.map((news, index) => {
