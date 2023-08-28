@@ -107,7 +107,7 @@ const Context = ({ day }) => {
           day.additional ? "py-0" : "py-2"
         } flex w-full content-stretch gap-x-2`}
       >
-        <p className="text-[0.9rem] lg:text-[1rem] w-[35%] 2xl:w-[7rem] timeTable_context text-start whitespace-nowrap bg-slate-300">
+        <p className="text-[0.9rem] lg:text-[1rem] w-[35%] 2xl:w-[7rem] timeTable_context text-start whitespace-nowrap ">
           {day.time}
         </p>
         <div className="w-2/3 flex gap-x-1 ">

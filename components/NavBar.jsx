@@ -70,6 +70,7 @@ const Navbar = () => {
             <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley' target="_blank">立即報名</a>
           </li>
         </ul>
+        <ScrollProgressIndicator />
       </div >
       <div className='hidden md:block z-50 fixed w-full'>
         <div className='w-full h-14 flex justify-between items-center px-[2%] bg-gray-200  '>
