@@ -26,7 +26,11 @@ const Team_intro = () => {
   ];
   return (
     <>
-      <div className="hidden md:container md:mx-auto md:flex md:gap-x-[5%] md:flex-row md:justify-center">
+      <h2 className='w-fit mx-auto text-black hidden md:block'>組別介紹 </h2>
+      <div className="block md:hidden w-full">
+        <h4 className='w-fit m-auto text-black'>組別介紹 </h4>
+      </div>
+      <div className="hidden md:container md:mx-auto md:px-[4%] md:flex md:gap-x-[5%] md:flex-row md:justify-center">
         {team_intro_data.map((data, index) => (
           <Team_each key={index} {...data} />
         ))}
@@ -48,51 +52,50 @@ const Team_each = ({ team, imageSrc, description, link }) => {
   };
 
   return (
-    <div
-      className={`${
-        isHovered ? "bg-[#6A747B]" : "bg-[#F5F5F6]"
-      } duration-500 transition-colors relative overflow-hidden w-[75vw] sm:w-[65vw] md:w-[32rem] aspect-[20/21] border border-gray-300 rounded shadow-md`}
-      onMouseEnter={handleHover}
-      onMouseLeave={handleHover}
-    >
-      <div className="w-auto h-auto relative">
-        <img
-          src={imageSrc}
-          alt="Transforming"
-          className={`w-full aspect-[11/8] object-cover transition-opacity duration-500 ${
-            isHovered ? "opacity-0" : "opacity-100"
-          }`}
-        />
-        {isHovered && (
-          <div className="absolute w-full h-full top-0 pt-[6%] px-[6%] lg:pt-[10%] lg:px-[10%] bg-gray-200  bg-opacity-80 transition-opacity duration-500">
-            <p className="font-semibold text-[14px] lg:text-[16px]">
-              {description}
-            </p>
-          </div>
-        )}
-      </div>
-      <div className="w-1/2 pl-[5%] py-[2%] text-[#6A747B] mt-[0.75rem] bg-white ">
-        <h3 className="text-[1.5rem] xl:text-[2.5rem]">{team}</h3>
-      </div>
+    <>
       <div
-        className={`${
-          isHovered ? "text-white" : "text-[#6A747B]"
-        } absolute flex bottom-[4%] gap-x-1 sm:gap-x-2 pl-[5%] text-base`}
+        className={`${isHovered ? "bg-[#6A747B]" : "bg-[#F5F5F6]"
+          } duration-500 transition-colors relative overflow-hidden w-[75vw] sm:w-[65vw] md:w-[32rem] aspect-[20/21] border border-gray-300 rounded shadow-md`}
+        onMouseEnter={handleHover}
+        onMouseLeave={handleHover}
       >
-        <img
-          src={
-            isHovered
-              ? "/assets/icons/topic_arrow_w.svg"
-              : "/assets/icons/topic_arrow.svg"
-          }
-          alt=""
-          className="w-[25%] lg:w-auto aspect-square"
-        />
-        <p className="text-[12px] lg:text-[16px] whitespace-nowrap">
-          工作坊細節
-        </p>
+        <div className="w-auto h-auto relative">
+          <img
+            src={imageSrc}
+            alt="Transforming"
+            className={`w-full aspect-[11/8] object-cover transition-opacity duration-500 ${isHovered ? "opacity-0" : "opacity-100"
+              }`}
+          />
+          {isHovered && (
+            <div className="absolute w-full h-full top-0 pt-[6%] px-[6%] lg:pt-[10%] lg:px-[10%] bg-gray-200  bg-opacity-80 transition-opacity duration-500">
+              <p className="font-semibold text-[14px] lg:text-[16px]">
+                {description}
+              </p>
+            </div>
+          )}
+        </div>
+        <div className="w-1/2 pl-[5%] py-[2%] text-[#6A747B] mt-[0.75rem] bg-white ">
+          <h3 className="text-[1.5rem] xl:text-[2.5rem]">{team}</h3>
+        </div>
+        <div
+          className={`${isHovered ? "text-white" : "text-[#6A747B]"
+            } absolute flex bottom-[4%] gap-x-1 sm:gap-x-2 pl-[5%] text-base`}
+        >
+          <img
+            src={
+              isHovered
+                ? "/assets/icons/topic_arrow_w.svg"
+                : "/assets/icons/topic_arrow.svg"
+            }
+            alt=""
+            className="w-[25%] lg:w-auto aspect-square"
+          />
+          <p className="text-[12px] lg:text-[16px] whitespace-nowrap">
+            工作坊細節
+          </p>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

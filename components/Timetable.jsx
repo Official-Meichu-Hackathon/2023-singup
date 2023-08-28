@@ -36,39 +36,40 @@ const Timetable = () => {
     <>
       <div className="px-[5%] relative w-full h-[50rem] lg:h-[60rem] overflow-x-hidden">
         <div className="hidden md:flex justify-center gap-x-2 2xl:gap-x-5">
-          <div className="basis-1/5 flex flex-shrink-0 flex-col xl:w-auto">
+          <div className="basis-1/5 2xl:basis-1/3 flex flex-shrink-0 flex-col xl:w-auto">
             {" "}
             <img
-              className="-z-10 absolute aspect-auto max-w-[60vw] left-[-8vw] bottom-4"
+              className="-z-10 absolute aspect-auto w-[60vw] 2xl:w-[54rem] left-[-1vw] bottom-4"
               src="/assets/icons/time_deco_l.svg"
               alt=""
             />
             <img
-              className="-z-10 absolute aspect-auto max-w-[60vw] right-[-10vw] bottom-0"
+              className="-z-10 absolute aspect-auto w-[60vw] 2xl:w-[54rem] right-[-8vw] bottom-0"
               src="/assets/icons/time_deco_r.svg"
               alt=""
             />
-            <h2 className="text-[2.5rem] mt-[6rem] tracking-[2rem]">
-              比<br />賽<br />資<br />訊
-            </h2>
-            <h2 className="text-[2.5rem] pt-5 leading-[3rem]">
-              Oct, <br />
-              2023
-            </h2>
-            <h3 className="text-[1rem] lg:text-[1.25rem] pt-8  tracking-[0.125rem] font-semibold">
-              地點｜國立清華大學新體育館
-            </h3>
-            <h3 className="text-[1rem] lg:text-[1.25rem] pt-8  tracking-[0.125rem] font-semibold whitespace-break-spaces xl:whitespace-nowrap">
-              時間｜2023/10/21(六) - 10/22(日)
-            </h3>
-            <p className="pt-6 text-[#6A747B]">本次活動不提供過夜場地</p>
-            {}
+            <div className="relative 2xl:left-[4rem]">
+              <h2 className="text-[2.5rem] mt-[6rem] tracking-[2rem]">
+                比<br />賽<br />資<br />訊
+              </h2>
+              <h2 className="text-[2.5rem] pt-5 leading-[3rem]">
+                Oct, <br />
+                2023
+              </h2>
+              <h3 className="text-[1rem] lg:text-[1.25rem] pt-8  tracking-[0.125rem] font-semibold">
+                地點｜國立清華大學新體育館
+              </h3>
+              <h3 className="text-[1rem] lg:text-[1.25rem] pt-8  tracking-[0.125rem] font-semibold whitespace-break-spaces xl:whitespace-nowrap">
+                時間｜2023/10/21(六) - 10/22(日)
+              </h3>
+              <p className="pt-6 text-[#6A747B]">本次活動不提供過夜場地</p>
+            </div>
           </div>
-          <div className="flex basis-2/5 left-5 flex-grow flex-col relative">
+          <div className="flex basis-2/5 2xl:basis-1/3 left-5 flex-grow flex-col relative">
             <div className="absolute top-[6rem] timeTable_bg1 2xl:text-[12.5rem]">
               21
             </div>
-            <div className="relative left-[6vw] lg:left-[8vw] 2xl:left-[36%] top-[24%] xl:top-[28%]">
+            <div className="relative left-[6vw] lg:left-[8vw] 2xl:left-[28%] top-[24%] xl:top-[28%]">
               {" "}
               <div className="timeTable_day">Saturday</div>
               <div className="relative flex flex-col gap-y-4 right-12">
@@ -78,11 +79,11 @@ const Timetable = () => {
               </div>
             </div>
           </div>
-          <div className="flex basis-2/5 flex-grow flex-col relative">
+          <div className="flex basis-2/5 2xl:basis-1/3 flex-grow flex-col relative">
             <h4 className="absolute top-[6rem] timeTable_bg2 2xl:text-[12.5rem]">
               22
             </h4>
-            <div className="relative left-[6vw] lg:left-[8vw] 2xl:left-[36%] top-[24%] xl:top-[28%]">
+            <div className="relative left-[6vw] lg:left-[8vw] 2xl:left-[28%] top-[24%] xl:top-[28%]">
               {" "}
               <div className="timeTable_day">Sunday</div>
               <div className="relative flex flex-col gap-y-4 right-12">
@@ -106,7 +107,7 @@ const Context = ({ day }) => {
           day.additional ? "py-0" : "py-2"
         } flex w-full content-stretch gap-x-2`}
       >
-        <p className="text-[0.9rem] lg:text-[1rem] w-[35%] timeTable_context text-start whitespace-nowrap">
+        <p className="text-[0.9rem] lg:text-[1rem] w-[35%] 2xl:w-[7rem] timeTable_context text-start whitespace-nowrap bg-slate-300">
           {day.time}
         </p>
         <div className="w-2/3 flex gap-x-1 ">
