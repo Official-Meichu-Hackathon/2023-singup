@@ -7,13 +7,9 @@
 /* 
   Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them! 
 */
-@font-face {
-  font-family: 'GenYoMin TW';
-  src: url('../fonts/GenYoMinTW-M.woff');
-  /* Add more src lines for different font weights and styles if available */
-}
+
 .hack_font{
-  font-family: 'GenYoMin TW', sans-serif  ;
+  font-family: 'GenYoMin TW';
 }
 .title_bg{
   background: linear-gradient(180deg, #9C9C9C 0%, rgba(156, 156, 156, 0) 100%);
@@ -134,7 +130,7 @@
 
 @font-face {
   font-family: "GenYoMin TW";
-  src: url(/fonts/GenYoMinTW-M.woff);
+  src: local('GenYoMin Tw')url(/fonts/GenYoMinTW-M.woff) format('woff');
 }
 
 body {

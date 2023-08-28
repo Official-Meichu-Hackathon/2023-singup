@@ -107,7 +107,7 @@ export default function Topic() {
   }, [activeTabIndex]);
 
   return (
-    <div className="container px-[5%] max-w-full py-16">
+    <div className="container px-[5%] max-w-full py-16"> 
       <Tab.Group>
         <div className="relative mb-3">
           <Tab.List className="relative flex ">
@@ -135,9 +135,11 @@ export default function Topic() {
             <Tab.Panel key={idx} className="py-3 px-0 focus:outline-none">
               <div className="hidden md:grid grid-cols-2 xl:grid-cols-3 gap-6 container mx-auto justify-center flex-col">
                 {posts.map((post) => (
-                  <div
+                  <a href = {post.link}>
+                    <div
                     key={post.id}
                     className="relative border-[0.5px] border-[#6A747B] w-full"
+                    href = {post.link}
                   >
                     <div className="flex justify-center gap-x-4 bg-white aspect-[19/8]">
                       <img
@@ -157,9 +159,8 @@ export default function Topic() {
                       <p className="text-[0.625rem] font-light">
                         主題：{post.topic}
                       </p>
-                      <a
+                      <div
                         className="flex pt-[1rem] items-center gap-x-1"
-                        href={post.link}
                       >
                         <img
                           src="/assets/icons/download.svg"
@@ -168,13 +169,15 @@ export default function Topic() {
                         <p className="text-[0.625rem] text-[#6A747B]">
                           下載PDF
                         </p>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                    </div>
+                  </a>
                 ))}
               </div>
               <div className="md:hidden flex container mx-auto justify-center max-w-sm flex-col gap-y-3">
                 {posts.map((post) => (
+                  <a href = {post.link}>
                   <div
                     key={post.id}
                     className="relative border-[0.5px] border-[#6A747B] w-full"
@@ -197,9 +200,8 @@ export default function Topic() {
                       <p className="text-[0.625rem] font-light">
                         主題：{post.topic}
                       </p>
-                      <a
+                      <div
                         className="flex pt-[1rem] items-center gap-x-1"
-                        href={post.link}
                       >
                         <img
                           src="/assets/icons/download.svg"
@@ -208,9 +210,10 @@ export default function Topic() {
                         <p className="text-[0.625rem] text-[#6A747B]">
                           下載PDF
                         </p>
-                      </a>
+                      </div>
                     </div>
                   </div>
+                  </a>
                 ))}
               </div>
             </Tab.Panel>
