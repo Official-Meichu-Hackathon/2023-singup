@@ -46,8 +46,9 @@ const Timetable = () => {
   ];
   return (
     <>
-      <div className="px-[5%] relative w-full h-[50rem] lg:h-[60rem] overflow-x-hidden">
-        <div className="hidden md:flex justify-center gap-x-4 2xl:gap-x-6">
+      {/* Desktop */}
+      <div className="hidden md:block px-[5%] relative w-full h-[50rem] lg:h-[60rem] overflow-x-hidden">
+        <div className="flex justify-center gap-x-4 2xl:gap-x-6">
           <div className="basis-1/5 2xl:basis-1/3 flex flex-shrink-0 flex-col xl:w-auto">
             {" "}
             <img
@@ -110,6 +111,21 @@ const Timetable = () => {
             </div>
           </div>
         </div>
+      </div>
+      {/* Mobile */}
+      <div className="md:hidden flex flex-col items-center">
+        <h2 className="">比賽資訊</h2>
+        <div className="flex items-center">
+          <h3 className=" basis-1/3">
+            Oct, <br />
+            2023
+          </h3>
+          <div className="flex flex-col basis-2/3">
+            <h3 className="">地點｜國立清華大學新體育館</h3>
+            <h3 className="">時間｜2023/10/21(六) - 10/22(日)</h3>
+          </div>
+        </div>
+        <p>本次活動不提供過夜場地</p>
       </div>
     </>
   );
