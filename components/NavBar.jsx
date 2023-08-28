@@ -139,7 +139,7 @@ const Navbar = () => {
         <ScrollProgressIndicator />
         {/* <div className='h-14'> </div> */}
       </div>
-
+      <div className = 'w-full h-14'></div>
     </>
   );
 };
