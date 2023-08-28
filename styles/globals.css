@@ -160,6 +160,7 @@ hr {
 
 .bar_gradient_inverse {
   background: linear-gradient(-90deg, #a8d5cc 24.55%, #f3cd71 74.27%);
+  opacity: 0.7
 }
 
 .scroll-progress {

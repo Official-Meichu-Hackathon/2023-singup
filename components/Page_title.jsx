@@ -15,6 +15,9 @@ const Page_title = () => {
             <img src = '/assets/images/console.png' alt = "bg" className = 'w-[15%] left-[17%] bottom-[8%] h-auto absolute'/>
 
         </div> 
+        <div className = "block md:hidden aspect-[411/725] w-full relative bg-gray-400">
+
+        </div>
     </>
   );
 };

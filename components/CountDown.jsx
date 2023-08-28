@@ -68,7 +68,7 @@ const Circle = ({ now, up, word }) => {
                         stroke-width="3%">
                     </circle>
                 </svg>
-                <svg className="w-full h-full  top-0 left-0 static -rotate-90 absolute -scale-y-100">
+                <svg className="w-full h-full  top-0 left-0 static -rotate-90 absolute ">
                     <circle className="color-[#A8D5CC]"
                         stroke-dasharray={`${len}` + 'vw'}
                         stroke-dashoffset={`${percentage}` + 'vw'}
@@ -76,18 +76,18 @@ const Circle = ({ now, up, word }) => {
                         cy='50%'
                         r="47%"
                         fill="none"
-                        stroke-width="4%"
+                        stroke-width="3.7%"
                         stroke-linecap="round"
                         stroke="#A8D5CC"
                     >
                     </circle>
                 </svg>
-                <div className="w-full h-full absolute top-0 left-0">
+                <div className="w-full h-full absolute top-0 left-0 text-[#6A747B]">
                     <div className="w-full h-[50%] flex items-end">
-                        <h3 className="mx-auto w-fit h-fit items-end">{Math.floor(now)}</h3>
+                        <h3 className="mx-auto w-fit h-fit items-end text-[200%] lg:text-[250%]">{Math.floor(now)}</h3>
                     </div>
-                    <div className="w-full h-[50%] flex items-start">
-                        <h5 className="mx-auto w-fit h-fit ">{word}</h5>
+                    <div className="w-full h-[50%] flex items-start ">
+                        <h5 className="mx-auto w-fit h-fit text-[100%] lg:text-[175%]">{word}</h5>
                     </div>
                 </div>
             </div>
