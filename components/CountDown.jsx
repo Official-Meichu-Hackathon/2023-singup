@@ -36,10 +36,10 @@ const CountDown = () => {
             <div className='w-[60%] m-auto'>
                 <h3 className='m-auto mb-10 text-[#6A747B]'>距離報名結束還有</h3>
                 <div className="w-full h-auto flex justify-between">
-                    <div className="w-full aspect-[1/1]"><Circle now={timerDay} up={365} word="Days" /> </div>
-                    <div className="w-full aspect-[1/1]"><Circle now={timerHour} up={24} word="Hours" /> </div>
-                    <div className="w-full aspect-[1/1]"> <Circle now={timerMinute} up={60} word="Mins" /> </div>
-                    <div className="w-full aspect-[1/1]"><Circle now={timerSecond} up={60} word="Seconds" /> </div>
+                    <div className="w-[20%] aspect-[1/1]"><Circle now={timerDay} up={365} word="Days" /> </div>
+                    <div className="w-[20%] aspect-[1/1]"><Circle now={timerHour} up={24} word="Hours" /> </div>
+                    <div className="w-[20%] aspect-[1/1]"> <Circle now={timerMinute} up={60} word="Mins" /> </div>
+                    <div className="w-[20%] aspect-[1/1]"><Circle now={timerSecond} up={60} word="Seconds" /> </div>
                 </div>
             </div>
         </div>
@@ -47,7 +47,7 @@ const CountDown = () => {
 };
 
 const Circle = ({ now, up, word }) => {
-    const ratio = 90
+    const ratio = 80
     const PI = 3.141592650897935;
     const len = 0.94 * ratio * 0.60 / 4 * PI
     const percentage = (1 - now / up) * len
@@ -57,7 +57,7 @@ const Circle = ({ now, up, word }) => {
 
     return (
         <>
-            <div className={`h-[${ratio}%] w-[${ratio}%] relative`}>
+            <div className={`h-full w-full relative`}>
                 <svg className="w-full h-full top-0">
                     <circle className="count"
                         cx='50%'
