@@ -105,7 +105,7 @@ const Team_each = ({ team, imageSrc, description, link, view }) => {
   );
 };
 
-const Team_each_m = ({ team, imageSrc, description, link }) => {
+const Team_each_m = ({ team, imageSrc, description, link, view }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleHover = () => {
@@ -133,10 +133,12 @@ const Team_each_m = ({ team, imageSrc, description, link }) => {
           </h3>
         </div>
         <div className="px-[5%]">
-          <p className="text-[12px] sm:text-[16px] pt-[2%] font-semibold text-white">
+          <p className="text-[12px] sm:text-[16px] pt-[2%] font-semibold text-white pb-[5%]">
             {description}
           </p>
-          <div className="flex py-[5%] gap-x-1 sm:gap-x-2 text-base justify-end">
+          <div
+            className={`${view} flex py-[5%] gap-x-1 sm:gap-x-2 text-base justify-end`}
+          >
             <img
               src="/assets/icons/topic_arrow_w.svg"
               alt=""
