@@ -92,6 +92,7 @@ export default function Topic() {
   const [activeTabIndex, setActiveTabIndex] = useState(0);
   const [tabUnderlineWidth, setTabUnderlineWidth] = useState(0);
   const [tabUnderlineLeft, setTabUnderlineLeft] = useState(0);
+
   const tabsRef = useRef([]);
   useEffect(() => {
     function setTabPosition() {
@@ -107,7 +108,7 @@ export default function Topic() {
   }, [activeTabIndex]);
 
   return (
-    <div className="container px-[5%] max-w-full py-16"> 
+    <div className="container px-[5%] max-w-full py-16">
       <Tab.Group>
         <div className="relative mb-3">
           <Tab.List className="relative flex ">
@@ -133,87 +134,16 @@ export default function Topic() {
         <Tab.Panels className="">
           {Object.values(categories).map((posts, idx) => (
             <Tab.Panel key={idx} className="py-3 px-0 focus:outline-none">
+              {/* Desktop */}
               <div className="hidden md:grid grid-cols-2 xl:grid-cols-3 gap-6 container mx-auto justify-center flex-col">
                 {posts.map((post) => (
-                  <a href = {post.link}>
-                    <div
-                    key={post.id}
-                    className="relative border-[0.5px] border-[#6A747B] w-full"
-                    href = {post.link}
-                  >
-                    <div className="flex justify-center gap-x-4 bg-white aspect-[19/8]">
-                      <img
-                        src={post.logo}
-                        className="w-2/5 sm:w-1/3 aspect-square"
-                      />
-                      {post.logo2 && (
-                        <img
-                          src={post.logo2}
-                          className="w-2/5 sm:w-1/3 aspect-square"
-                        />
-                      )}
-                    </div>
-                    <div className="p-[1rem] flex flex-col gap-y-[0.25rem] bg-[#EAEAEC]">
-                      <h3 className="text-[0.75rem]">{post.company}</h3>
-
-                      <p className="text-[0.625rem] font-light">
-                        主題：{post.topic}
-                      </p>
-                      <div
-                        className="flex pt-[1rem] items-center gap-x-1"
-                      >
-                        <img
-                          src="/assets/icons/download.svg"
-                          className="w-auto aspect-square"
-                        />
-                        <p className="text-[0.625rem] text-[#6A747B]">
-                          下載PDF
-                        </p>
-                      </div>
-                    </div>
-                    </div>
-                  </a>
+                  <Topic_each key={post.id} post={post} />
                 ))}
               </div>
+              {/* Mobile */}
               <div className="md:hidden flex container mx-auto justify-center max-w-sm flex-col gap-y-3">
                 {posts.map((post) => (
-                  <a href = {post.link}>
-                  <div
-                    key={post.id}
-                    className="relative border-[0.5px] border-[#6A747B] w-full"
-                  >
-                    <div className="flex justify-center gap-x-4 bg-white aspect-[19/8]">
-                      <img
-                        src={post.logo}
-                        className="w-2/5 sm:w-1/3 aspect-square"
-                      />
-                      {post.logo2 && (
-                        <img
-                          src={post.logo2}
-                          className="w-2/5 sm:w-1/3 aspect-square"
-                        />
-                      )}
-                    </div>
-                    <div className="p-[1rem] flex flex-col gap-y-[0.25rem] bg-[#EAEAEC]">
-                      <h3 className="text-[0.75rem]">{post.company}</h3>
-
-                      <p className="text-[0.625rem] font-light">
-                        主題：{post.topic}
-                      </p>
-                      <div
-                        className="flex pt-[1rem] items-center gap-x-1"
-                      >
-                        <img
-                          src="/assets/icons/download.svg"
-                          className="w-auto aspect-square"
-                        />
-                        <p className="text-[0.625rem] text-[#6A747B]">
-                          下載PDF
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  </a>
+                  <Topic_each_m key={post.id} post={post} />
                 ))}
               </div>
             </Tab.Panel>
@@ -224,24 +154,119 @@ export default function Topic() {
   );
 }
 
-/*
-          <Tab.List className="relative flex border-b pb-[] border-black ">
-            {Object.keys(categories).map((category) => (
-              <Tab
-                key={category}
-                className={({ selected }) =>
-                  classNames(
-                    "w-fit mx-3 pb-1 font-medium leading-5 text-black",
-                    "focus:outline-none",
-                    selected
-                      ? "border-b-4 border-orange-500"
-                      : "border-b-4 border-transparent"
-                  )
+const Topic_each = ({ post }) => {
+  const [isHovered, setIsHovered] = useState(false);
+  const handleHover = () => {
+    setIsHovered(!isHovered);
+  };
+  return (
+    <>
+      <a href={post.link}>
+        <div
+          key={post.id}
+          className="relative border-[0.5px] border-[#6A747B] w-full"
+          onMouseEnter={handleHover}
+          onMouseLeave={handleHover}
+        >
+          <div className="flex justify-center gap-x-4 bg-white aspect-[19/8]">
+            <img src={post.logo} className="w-2/5 sm:w-1/3 aspect-square" />
+            {post.logo2 && (
+              <img src={post.logo2} className="w-2/5 sm:w-1/3 aspect-square" />
+            )}
+          </div>
+          <div
+            className={`${
+              isHovered && "topic_box_hover"
+            } p-[1.25rem] xl:p-[1.5rem] flex flex-col gap-y-[1rem] topic_box`}
+          >
+            <h3 className={`${isHovered && "text-white"} text-base xl:text-xl`}>
+              {post.company}
+            </h3>
+            <p
+              className={`${
+                isHovered && "text-white"
+              } text-sm xl:text-base font-light`}
+            >
+              主題：{post.topic}
+            </p>
+            <div className="flex w-full pt-[1rem] items-center justify-end gap-x-1">
+              <img
+                src={
+                  isHovered
+                    ? "/assets/icons/download_w.svg"
+                    : "/assets/icons/download.svg"
                 }
+              />
+              <p
+                className={`${
+                  isHovered && "text-white"
+                } text-sm xl:text-base text-[#6A747B] `}
               >
-                <h3 className="text-center whitespace-nowrap">{category}</h3>
-              </Tab>
-            ))}
-          </Tab.List>      
+                下載PDF
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </>
+  );
+};
+const Topic_each_m = ({ post }) => {
+  const [isHovered, setIsHovered] = useState(false);
+  const handleHover = () => {
+    setIsHovered(!isHovered);
+  };
+  return (
+    <>
+      <a href={post.link}>
+        <div
+          key={post.id}
+          className="relative border-[0.5px] border-[#6A747B] w-full"
+          onMouseEnter={handleHover}
+          onMouseLeave={handleHover}
+        >
+          <div className="flex justify-center gap-x-4 bg-white aspect-[19/8]">
+            <img src={post.logo} className="w-2/5 sm:w-1/3 aspect-square" />
+            {post.logo2 && (
+              <img src={post.logo2} className="w-2/5 sm:w-1/3 aspect-square" />
+            )}
+          </div>
+          <div
+            className={`${
+              isHovered && "topic_box_hover"
+            } p-[1rem] flex flex-col gap-y-[0.25rem] bg-[#EAEAEC] topic_box`}
+          >
+            <h3 className={`${isHovered && "text-white"} text-[0.75rem]`}>
+              {post.company}
+            </h3>
 
-<div class="absolute top-[4.73rem] shrink w-full border-b border-black"></div>*/
+            <p
+              className={`${
+                isHovered && "text-white"
+              } text-[0.625rem] font-light`}
+            >
+              主題：{post.topic}
+            </p>
+            <div className="flex pt-[1rem] items-center gap-x-1">
+              <img
+                src={
+                  isHovered
+                    ? "/assets/icons/download_w.svg"
+                    : "/assets/icons/download.svg"
+                }
+                className="w-auto aspect-square"
+              />
+              <p
+                className={`${
+                  isHovered && "text-white"
+                } text-[0.625rem] text-[#6A747B]`}
+              >
+                下載PDF
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </>
+  );
+};
