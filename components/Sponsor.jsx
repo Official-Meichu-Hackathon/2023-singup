@@ -99,7 +99,7 @@ const Sponsor = () => {
       order: "order-last md:order-none",
     },
     {
-      imgSrc: "/assets/images/sponsors/WifiBoy.svg",
+      imgSrc: "/assets/images/sponsors/Wifiboy.svg",
       size: "max-h-[60%] xl:max-h-full px-3",
     },
   ];
@@ -197,7 +197,7 @@ const Sponsor = () => {
             return <Sponsor_each key={index} cooperation={cooperation} />;
           })}
         </div>
-        <Sponsor_subtitle subtitle="特殊合作企業" />
+        <Sponsor_subtitle subtitle="特別合作企業" />
         <div className="sponsor_box">
           {cooperation_sp.map((cooperation, index) => {
             return <Sponsor_each key={index} cooperation={cooperation} />;
