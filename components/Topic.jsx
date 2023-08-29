@@ -15,7 +15,7 @@ export default function Topic() {
         logo: "/assets/images/新竹市政府.svg",
         link: "/assets/pdfs/新竹市政府_2023.pdf",
         topic: "新竹科技Ｘ文創產業",
-        extra: null,
+        extra: "",
       },
     ],
     黑客組: [
@@ -23,38 +23,35 @@ export default function Topic() {
         id: 1,
         company: "ETtoday東森新媒體",
         logo: "/assets/images/ETToday.svg",
-        logo2: null,
         link: "/assets/pdfs/ETtoday_2023.pdf",
         topic: "利用人工智能輔助新聞編輯提升不重覆訪客數、瀏覽數、翻頁數",
-        extra: null,
+        extra: "w-[70%]",
       },
       {
         id: 2,
         company: "Google",
         logo: "/assets/images/Google.svg",
-        logo2: null,
         link: "/assets/pdfs/Google_2023.pdf",
         topic: "Supportive Phone for all people",
-        extra: null,
+        extra: "w-[50%]",
       },
       {
         id: 3,
         company: "台灣積體電路有限公司",
         logo: "/assets/images/TSMC.svg",
-        logo2: null,
+
         link: "/assets/pdfs/TSMC_2023.pdf",
         topic: "Safety Helmet Wearing Detection",
         description: "NULL",
-        extra: null,
+        extra: "",
       },
       {
         id: 4,
         company: "LINE",
         logo: "/assets/images/LINE.svg",
-        logo2: null,
         link: "/assets/pdfs/LINE_2023.pdf",
         topic: "透過生成式 AI 來打造學生相關應用的 LINE Bot 聊天機器人",
-        extra: null,
+        extra: "w-[35%]",
       },
       {
         id: 5,
@@ -63,18 +60,17 @@ export default function Topic() {
         logo2: "/assets/images/文曄科技.svg",
         link: "/assets/pdfs/NXP_2023.pdf",
         topic: "智慧應用改善人類生活並達到永續發展",
-
-        extra: null,
+        extra: "w-[45%]",
+        extra2: "w-[23%] pr-6",
       },
       {
         id: 6,
         company: "KKCompany Technologies",
         logo: "/assets/images/KKCompany.svg",
-        logo2: null,
         link: "/assets/pdfs/KKCompany_2023.pdf",
         topic:
           "結合 BlendVision Streaming & Interactive API，打造深富創意的影音應用",
-        extra: null,
+        extra: "w-[80%]",
       },
     ],
   });
@@ -149,7 +145,7 @@ const Topic_each = ({ post }) => {
     setIsHovered(!isHovered);
   };
   return (
-    <div id='contest'>
+    <div id="contest">
       <a href={post.link}>
         <div
           key={post.id}
@@ -158,9 +154,10 @@ const Topic_each = ({ post }) => {
           onMouseLeave={handleHover}
         >
           <div className="flex justify-center gap-x-4 bg-white aspect-[19/8]">
-            <img src={post.logo} className="h-4/5 sm:h-2/3 " />
+            <img src={post.logo} className={`${post.extra}`} />
             {post.logo2 && (
-              <img src={post.logo2} className="4-2/5 sm:h-2/3 " />
+              <img src={post.logo2} className={`${post.extra2}`} />
+ 
             )}
           </div>
           <div
@@ -215,9 +212,10 @@ const Topic_each_m = ({ post }) => {
           onMouseLeave={handleHover}
         >
           <div className="flex justify-center gap-x-4 bg-white aspect-[19/8]">
-            <img src={post.logo} className="h-4/5 sm:h-2/3  " />
+            <img src={post.logo} className={`${post.extra}`} />
             {post.logo2 && (
-              <img src={post.logo2} className="h-4/5 sm:h-2/3  m-auto" />
+              <img src={post.logo2} className={`${post.extra2}`} />
+
             )}
           </div>
           <div
