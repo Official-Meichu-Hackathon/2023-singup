@@ -99,7 +99,7 @@ const Navbar = () => {
                   <Menu.Items className='origin-top-left absolute left-0 mt-2 w-28 rounded-md shadow-lg divide-y divide-gray-100 focus:outline-none z-30 bg-gray-400 text-white'>
                     <div className='py-1'>
                       {contest_data.map((data, index) => (
-                        <Menu.Item>
+                        <Menu.Item key = {index}>
                           {({ active }) => (
                             <a
                               href={data._id}
