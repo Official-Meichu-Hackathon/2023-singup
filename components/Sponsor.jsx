@@ -189,7 +189,7 @@ const Sponsor = () => {
     { name: "Colde Garage" },
   ];
   return (
-    <>
+    <div id ='sponsor'>
       <div className="px-[5%] py-12 bg-white">
         <Sponsor_title title="合作企業" />
         <div className="sponsor_box">
@@ -309,7 +309,7 @@ const Sponsor = () => {
           </a>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -18,9 +18,6 @@ const Navbar = () => {
       name: "組別介紹",
       _id: "#team_intro"
     }, {
-      name: "工作坊",
-      _id: "#workshop"
-    }, {
       name: "獎項資訊",
       _id: "#award"
     }
@@ -48,7 +45,7 @@ const Navbar = () => {
         </div>
         <ul className={`pb-4 px-6 absolute bg-gray-300 z-[-1] left-0 w-full transition-all duration-500 ease-in ${phone_click ? 'top-14 ' : 'top-[-490px]'}`}>
           <li className='w-full text-xl my-4 px-4'>
-            <a href='#temp'>活動願景</a>
+            <a href='#activity_hope'>活動願景</a>
           </li>
           {
             contest_data.map((link) => (
@@ -58,13 +55,13 @@ const Navbar = () => {
             ))
           }
           <li className='w-full text-xl my-4 px-4'>
-            <a href='#temp'>報名辦法</a>
+            <a href='#sign-in'>報名辦法</a>
           </li>
           <li className='w-full text-xl my-4 px-4'>
-            <a href='#temp'>競賽題目</a>
+            <a href='#contest'>競賽題目</a>
           </li>
           <li className='w-full text-xl my-4 px-4'>
-            <a href='#temp'>贊助</a>
+            <a href='#sponsor'>贊助</a>
           </li>
           <li className='w-full bg-[#A8D5CC] text-white px-4 py-1 rounded-2xl'>
             <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley' target="_blank">立即報名</a>
@@ -85,7 +82,7 @@ const Navbar = () => {
 
           <ul className='flex items-center max-h-10'>
             <li className='w-auto  mx-2'>
-              <a href='#temp'>活動願景</a>
+              <a href='#activity_hope'>活動願景</a>
             </li>
             <li className='w-auto  mx-2'>
               <Menu as='div' className='relative inline-block text-left'>
@@ -124,13 +121,13 @@ const Navbar = () => {
               </Menu>
             </li>
             <li className='w-auto  mx-2'>
-              <a href='#temp'>報名辦法</a>
+              <a href='#sign-in'>報名辦法</a>
             </li>
             <li className='w-auto  mx-2'>
-              <a href='#temp'>競賽題目</a>
+              <a href='#contest'>競賽題目</a>
             </li>
             <li className='w-auto  mx-2'>
-              <a href='#temp'>贊助</a>
+              <a href='#sponsor'>贊助</a>
             </li>
             <li className='w-auto ml-1 bg-[#A8D5CC] text-white px-4 py-1 font-bold rounded-2xl'>
               <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley' target="_blank">立即報名</a>

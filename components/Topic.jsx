@@ -149,7 +149,7 @@ const Topic_each = ({ post }) => {
     setIsHovered(!isHovered);
   };
   return (
-    <>
+    <div id='contest'>
       <a href={post.link}>
         <div
           key={post.id}
@@ -197,7 +197,7 @@ const Topic_each = ({ post }) => {
           </div>
         </div>
       </a>
-    </>
+    </div>
   );
 };
 const Topic_each_m = ({ post }) => {

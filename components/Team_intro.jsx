@@ -26,7 +26,7 @@ const Team_intro = () => {
     },
   ];
   return (
-    <>
+    <div id ='team_intro'>
       <h2 className="w-fit mx-auto text-black hidden md:block">組別介紹 </h2>
       <div className="block md:hidden w-full">
         <h4 className="w-fit m-auto text-black">組別介紹 </h4>
@@ -41,7 +41,7 @@ const Team_intro = () => {
           <Team_each_m key={index} {...data} />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

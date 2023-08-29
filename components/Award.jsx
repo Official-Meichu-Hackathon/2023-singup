@@ -32,7 +32,7 @@ const Award = () =>{
     ]
     return(
         <>
-        <div className='md:mx-[5%] text-[#6A747B] my-12' id='Award'>
+        <div className='md:mx-[5%] text-[#6A747B] my-12' id='award'>
             <h2 className = 'w-full mx-auto text-black hidden md:block'>獎項資訊 </h2>
             <div className = "block md:hidden w-full">
                 <h4 className = 'w-fit m-auto text-black'>獎項資訊 </h4>
