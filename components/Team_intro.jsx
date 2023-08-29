@@ -22,13 +22,14 @@ const Team_intro = () => {
       description:
         "由新竹市政府命題，融入新竹居民真實生活情境與議題，鼓勵運用分享、學習與實作，實際的解決問題與提出方案，並促進創作過程人才交流，體現創新創意、數位應用及動手實作、解決問題的黑客精神！",
       link: "/team/maker",
+      view: "hidden",
     },
   ];
   return (
     <>
-      <h2 className='w-fit mx-auto text-black hidden md:block'>組別介紹 </h2>
+      <h2 className="w-fit mx-auto text-black hidden md:block">組別介紹 </h2>
       <div className="block md:hidden w-full">
-        <h4 className='w-fit m-auto text-black'>組別介紹 </h4>
+        <h4 className="w-fit m-auto text-black">組別介紹 </h4>
       </div>
       <div className="hidden md:container md:mx-auto md:px-[4%] md:flex md:gap-x-[5%] md:flex-row md:justify-center">
         {team_intro_data.map((data, index) => (
@@ -44,7 +45,7 @@ const Team_intro = () => {
   );
 };
 
-const Team_each = ({ team, imageSrc, description, link }) => {
+const Team_each = ({ team, imageSrc, description, link, view }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleHover = () => {
@@ -54,8 +55,9 @@ const Team_each = ({ team, imageSrc, description, link }) => {
   return (
     <>
       <div
-        className={`${isHovered ? "bg-[#6A747B]" : "bg-[#F5F5F6]"
-          } duration-500 transition-colors relative overflow-hidden w-[75vw] sm:w-[65vw] md:w-[32rem] aspect-[20/21] border border-gray-300 rounded shadow-md`}
+        className={`${
+          isHovered ? "bg-[#6A747B]" : "bg-[#F5F5F6]"
+        } duration-500 transition-colors relative overflow-hidden w-[75vw] sm:w-[65vw] md:w-[32rem] aspect-[20/21] border border-gray-300 rounded shadow-md`}
         onMouseEnter={handleHover}
         onMouseLeave={handleHover}
       >
@@ -63,8 +65,9 @@ const Team_each = ({ team, imageSrc, description, link }) => {
           <img
             src={imageSrc}
             alt="Transforming"
-            className={`w-full aspect-[11/8] object-cover transition-opacity duration-500 ${isHovered ? "opacity-0" : "opacity-100"
-              }`}
+            className={`w-full aspect-[11/8] object-cover transition-opacity duration-500 ${
+              isHovered ? "opacity-0" : "opacity-100"
+            }`}
           />
           {isHovered && (
             <div className="absolute w-full h-full top-0 pt-[6%] px-[6%] lg:pt-[10%] lg:px-[10%] bg-gray-200  bg-opacity-80 transition-opacity duration-500">
@@ -78,8 +81,7 @@ const Team_each = ({ team, imageSrc, description, link }) => {
           <h3 className="text-[1.5rem] xl:text-[2.5rem]">{team}</h3>
         </div>
         <div
-          className={`${isHovered ? "text-white" : "text-[#6A747B]"
-            } absolute flex bottom-[4%] gap-x-1 sm:gap-x-2 pl-[5%] text-base`}
+          className={`${view} absolute flex bottom-[4%] gap-x-1 sm:gap-x-2 pl-[5%] text-base`}
         >
           <img
             src={
@@ -90,7 +92,11 @@ const Team_each = ({ team, imageSrc, description, link }) => {
             alt=""
             className="w-[25%] lg:w-auto aspect-square"
           />
-          <p className="text-[12px] lg:text-[16px] whitespace-nowrap">
+          <p
+            className={`${
+              isHovered ? "text-white" : "text-[#6A747B]"
+            } text-[12px] lg:text-[16px] whitespace-nowrap`}
+          >
             工作坊細節
           </p>
         </div>
@@ -99,7 +105,7 @@ const Team_each = ({ team, imageSrc, description, link }) => {
   );
 };
 
-const Team_each_m = ({ team, imageSrc, description, link }) => {
+const Team_each_m = ({ team, imageSrc, description, link, view }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleHover = () => {
@@ -127,10 +133,12 @@ const Team_each_m = ({ team, imageSrc, description, link }) => {
           </h3>
         </div>
         <div className="px-[5%]">
-          <p className="text-[12px] sm:text-[16px] pt-[2%] font-semibold text-white">
+          <p className="text-[12px] sm:text-[16px] pt-[2%] font-semibold text-white pb-[5%]">
             {description}
           </p>
-          <div className="flex py-[5%] gap-x-1 sm:gap-x-2 text-base justify-end">
+          <div
+            className={`${view} flex py-[5%] gap-x-1 sm:gap-x-2 text-base justify-end`}
+          >
             <img
               src="/assets/icons/topic_arrow_w.svg"
               alt=""
