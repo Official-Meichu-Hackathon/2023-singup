@@ -16,8 +16,8 @@ const Timetable = () => {
     },
     { time: "18:00 - 19:30", context: ["晚餐時間"] },
     {
-      time: "19:30 - 22:30",
-      context: ["Coding.../企業博覽會\n/娛樂交流活動"],
+      time: "19:30 - 22:00",
+      context: ["Coding.../娛樂交流活動"],
     },
   ];
   const time_d2 = [

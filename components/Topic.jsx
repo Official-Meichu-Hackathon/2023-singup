@@ -158,9 +158,9 @@ const Topic_each = ({ post }) => {
           onMouseLeave={handleHover}
         >
           <div className="flex justify-center gap-x-4 bg-white aspect-[19/8]">
-            <img src={post.logo} className="w-2/5 sm:w-1/3 aspect-square" />
+            <img src={post.logo} className="h-4/5 sm:h-2/3 " />
             {post.logo2 && (
-              <img src={post.logo2} className="w-2/5 sm:w-1/3 aspect-square" />
+              <img src={post.logo2} className="4-2/5 sm:h-2/3 " />
             )}
           </div>
           <div
@@ -215,9 +215,9 @@ const Topic_each_m = ({ post }) => {
           onMouseLeave={handleHover}
         >
           <div className="flex justify-center gap-x-4 bg-white aspect-[19/8]">
-            <img src={post.logo} className="w-2/5 sm:w-1/3 aspect-square" />
+            <img src={post.logo} className="h-4/5 sm:h-2/3  " />
             {post.logo2 && (
-              <img src={post.logo2} className="w-2/5 sm:w-1/3 aspect-square" />
+              <img src={post.logo2} className="h-4/5 sm:h-2/3  m-auto" />
             )}
           </div>
           <div

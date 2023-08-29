@@ -29,8 +29,8 @@ const Footer = () => {
     },
     {
       dept: "設計部",
-      leaders: ["陳樂穎"],
-      members: ["詹詠甯", "林立上", "王若禎", "陳宛萱", "袁孟華", "洪顥耘"],
+      leaders: ["陳樂穎","詹詠甯"],
+      members: ["林立上", "王若禎", "陳宛萱", "袁孟華", "洪顥耘"],
     },
     {
       dept: "開發部",
@@ -52,9 +52,9 @@ const Footer = () => {
           <div className="container mx-auto md:basis-3/5 lg:basis-1/2 lg:whitespace-nowrap">
             {dept_list.map((dept, index) => (
               <div key={index} className="">
-                <p className="font-bold ">{dept.dept}</p>
+                <p className="font-bold underline underline underline-offset-2 ">{dept.dept}</p>
                 <p>
-                  <strong>{dept.leaders.join(" / ")}</strong>&nbsp;|&nbsp;
+                  <strong>{dept.leaders.join(" / ")}</strong>&nbsp;/&nbsp;
                   {dept.members.join(" / ")}
                 </p>
               </div>

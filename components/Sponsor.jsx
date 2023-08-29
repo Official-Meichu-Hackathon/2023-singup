@@ -52,7 +52,7 @@ const Sponsor = () => {
       size: "max-h-[60%] xl:max-h-full px-3",
     },
     {
-      imgSrc: "/assets/images/sponsors/micron.svg",
+      imgSrc: "/assets/images/sponsors/Micron.svg",
       size: "max-h-[60%] xl:max-h-full px-3",
     },
     {
@@ -197,7 +197,7 @@ const Sponsor = () => {
             return <Sponsor_each key={index} cooperation={cooperation} />;
           })}
         </div>
-        <Sponsor_subtitle subtitle="特殊合作單位" />
+        <Sponsor_subtitle subtitle="特殊合作企業" />
         <div className="sponsor_box">
           {cooperation_sp.map((cooperation, index) => {
             return <Sponsor_each key={index} cooperation={cooperation} />;
@@ -210,38 +210,38 @@ const Sponsor = () => {
           })}
         </div>
         <Sponsor_title title="贊助企業" />
-        <Sponsor_subtitle subtitle="Plantium" />
+        <Sponsor_subtitle subtitle="PLATINUM" />
         <div className="sponsor_box">
           {platinums.map((cooperation, index) => {
             return <Sponsor_each key={index} cooperation={cooperation} />;
           })}
         </div>
-        <Sponsor_subtitle subtitle="Gold" />
+        <Sponsor_subtitle subtitle="GOLD" />
         <div className="sponsor_box">
           {golds.map((gold, index) => {
             return <Sponsor_each key={index} cooperation={gold} />;
           })}
         </div>
-        <Sponsor_subtitle subtitle="Silver" />
+        <Sponsor_subtitle subtitle="SILVER" />
         <div className="sponsor_box">
           {silvers.map((silver, index) => {
             return <Sponsor_each key={index} cooperation={silver} />;
           })}
         </div>
-        <Sponsor_subtitle subtitle="Bronze" />
+        <Sponsor_subtitle subtitle="BRONZE" />
         <div className="sponsor_box">
           {bronzes.map((bronze, index) => {
             return <Sponsor_each key={index} cooperation={bronze} />;
           })}
         </div>
         <Sponsor_title title="特殊贊助" />
-        <Sponsor_subtitle subtitle="Bronze" />
+        <Sponsor_subtitle subtitle="BRONZE" />
         <div className="sponsor_box">
           {bronzes_sp.map((cooperation, index) => {
             return <Sponsor_each key={index} cooperation={cooperation} />;
           })}
         </div>
-        <Sponsor_subtitle subtitle="Freshmen" />
+        <Sponsor_subtitle subtitle="FRESHMAN" />
         <div className="sponsor_box">
           {freshmen.map((cooperation, index) => {
             return <Sponsor_each key={index} cooperation={cooperation} />;
