@@ -33,7 +33,7 @@ const Navbar = () => {
               src='/assets/images/logo.svg'
               alt='logo' />
             <div className="ml-3 hackathon_title ">
-              MeiChu Hackthon
+              Meichu Hackathon
             </div>
           </div>
           <div onClick={() => set_phone_click(!phone_click)} className='h-[40%] '>

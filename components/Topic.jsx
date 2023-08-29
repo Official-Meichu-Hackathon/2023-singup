@@ -157,6 +157,7 @@ const Topic_each = ({ post }) => {
             <img src={post.logo} className={`${post.extra}`} />
             {post.logo2 && (
               <img src={post.logo2} className={`${post.extra2}`} />
+ 
             )}
           </div>
           <div
@@ -214,6 +215,7 @@ const Topic_each_m = ({ post }) => {
             <img src={post.logo} className={`${post.extra}`} />
             {post.logo2 && (
               <img src={post.logo2} className={`${post.extra2}`} />
+
             )}
           </div>
           <div
