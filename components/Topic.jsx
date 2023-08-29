@@ -12,11 +12,9 @@ export default function Topic() {
       {
         id: 1,
         company: "新竹市政府",
-        logo: "/assets/images/TSMC.svg",
-        link: "https://www.google.com",
-        topic: "發揮公私協力，打造包容丶靭性丶永續丶安全的智慧新竹！",
-        description:
-          "新冠疫情丶氣候變遷丶快速變化的政經局勢，刺激著社會及青年世代不斷地反思，聯合國「2030永續發展目標」（Sustainable Development Goals, SDG ），SDGs 目標 11 是「建構具包容、安全、韌性及永續特質的城市與鄉村」，世界各大城市也紛紛朝此目標努力！ 創客交流組期望報名團隊能夠以永續發展目標為題，洞察市民生活、校園生活中的關鍵議題，融入公私協力精神，發想創意並提出解決方案，共同合作打造包容丶靭性丶永續丶安全的智慧新竹！ ",
+        logo: "/assets/images/新竹市政府.svg",
+        link: "/assets/pdfs/新竹市政府_2023.pdf",
+        topic: "新竹科技Ｘ文創產業",
         extra: null,
       },
     ],
@@ -26,10 +24,8 @@ export default function Topic() {
         company: "ETtoday東森新媒體",
         logo: "/assets/images/ETToday.svg",
         logo2: null,
-        link: "https://youtu.be/4Z7y27pHhXw?si=BKz8VksSzwNOS1HW",
-        topic: "Safety Helmet Wearing Detection",
-        description:
-          "這次題目期望能建立準確偵測員工是否有配戴工地帽的AI模型，同時，串接雲端應用程式，確保工地安全，當AI模型判別出員工在危險區域並未配戴安全帽時，系統自動做出及時的action或alert。 此外，參賽者也可以結合軟硬體，做出額外的延伸應用(本組不提供硬體配件，若有需要請參賽者自行準備)。",
+        link: "/assets/pdfs/ETtoday_2023.pdf",
+        topic: "利用人工智能輔助新聞編輯提升不重覆訪客數、瀏覽數、翻頁數",
         extra: null,
       },
       {
@@ -37,10 +33,8 @@ export default function Topic() {
         company: "Google",
         logo: "/assets/images/Google.svg",
         logo2: null,
-        link: "https://youtu.be/dQw4w9WgXcQ?si=VvSBT3865TfWIFQw",
-        topic: "Safety Helmet Wearing Detection",
-        description:
-          "這次題目期望能建立準確偵測員工是否有配戴工地帽的AI模型，同時，串接雲端應用程式，確保工地安全，當AI模型判別出員工在危險區域並未配戴安全帽時，系統自動做出及時的action或alert。 此外，參賽者也可以結合軟硬體，做出額外的延伸應用(本組不提供硬體配件，若有需要請參賽者自行準備)。",
+        link: "/assets/pdfs/Google_2023.pdf",
+        topic: "Supportive Phone for all people",
         extra: null,
       },
       {
@@ -48,10 +42,9 @@ export default function Topic() {
         company: "台灣積體電路有限公司",
         logo: "/assets/images/TSMC.svg",
         logo2: null,
-        link: "https://youtu.be/GqNB_mZGoxY?si=cACw_TMXyvjAtTXM",
+        link: "/assets/pdfs/TSMC_2023.pdf",
         topic: "Safety Helmet Wearing Detection",
-        description:
-          "這次題目期望能建立準確偵測員工是否有配戴工地帽的AI模型，同時，串接雲端應用程式，確保工地安全，當AI模型判別出員工在危險區域並未配戴安全帽時，系統自動做出及時的action或alert。 此外，參賽者也可以結合軟硬體，做出額外的延伸應用(本組不提供硬體配件，若有需要請參賽者自行準備)。",
+        description: "NULL",
         extra: null,
       },
       {
@@ -59,10 +52,8 @@ export default function Topic() {
         company: "LINE",
         logo: "/assets/images/LINE.svg",
         logo2: null,
-        link: "/assets/pdf/NXP_2023.pdf",
-        topic: "Safety Helmet Wearing Detection",
-        description:
-          "這次題目期望能建立準確偵測員工是否有配戴工地帽的AI模型，同時，串接雲端應用程式，確保工地安全，當AI模型判別出員工在危險區域並未配戴安全帽時，系統自動做出及時的action或alert。 此外，參賽者也可以結合軟硬體，做出額外的延伸應用(本組不提供硬體配件，若有需要請參賽者自行準備)。",
+        link: "/assets/pdfs/LINE_2023.pdf",
+        topic: "透過生成式 AI 來打造學生相關應用的 LINE Bot 聊天機器人",
         extra: null,
       },
       {
@@ -70,10 +61,9 @@ export default function Topic() {
         company: "恩智浦半導體與文曄科技",
         logo: "/assets/images/NXP.svg",
         logo2: "/assets/images/文曄科技.svg",
-        link: "/assets/pdf/NXP_2023.pdf",
-        topic: "Safety Helmet Wearing Detection",
-        description:
-          "這次題目期望能建立準確偵測員工是否有配戴工地帽的AI模型，同時，串接雲端應用程式，確保工地安全，當AI模型判別出員工在危險區域並未配戴安全帽時，系統自動做出及時的action或alert。 此外，參賽者也可以結合軟硬體，做出額外的延伸應用(本組不提供硬體配件，若有需要請參賽者自行準備)。",
+        link: "/assets/pdfs/NXP_2023.pdf",
+        topic: "智慧應用改善人類生活並達到永續發展",
+
         extra: null,
       },
       {
@@ -81,10 +71,9 @@ export default function Topic() {
         company: "KKCompany Technologies",
         logo: "/assets/images/KKCompany.svg",
         logo2: null,
-        link: "www.google.com",
-        topic: "Safety Helmet Wearing Detection",
-        description:
-          "這次題目期望能建立準確偵測員工是否有配戴工地帽的AI模型，同時，串接雲端應用程式，確保工地安全，當AI模型判別出員工在危險區域並未配戴安全帽時，系統自動做出及時的action或alert。 此外，參賽者也可以結合軟硬體，做出額外的延伸應用(本組不提供硬體配件，若有需要請參賽者自行準備)。",
+        link: "/assets/pdfs/KKCompany_2023.pdf",
+        topic:
+          "結合 BlendVision Streaming & Interactive API，打造深富創意的影音應用",
         extra: null,
       },
     ],
@@ -164,7 +153,7 @@ const Topic_each = ({ post }) => {
       <a href={post.link}>
         <div
           key={post.id}
-          className="relative border-[0.5px] border-[#6A747B] w-full"
+          className="relative border-[0.5px] border-[#6A747B] w-full h-full"
           onMouseEnter={handleHover}
           onMouseLeave={handleHover}
         >
@@ -177,7 +166,7 @@ const Topic_each = ({ post }) => {
           <div
             className={`${
               isHovered && "topic_box_hover"
-            } p-[1.25rem] xl:p-[1.5rem] flex flex-col gap-y-[1rem] topic_box`}
+            } p-[1.25rem] xl:p-[1.5rem] flex flex-col gap-y-[1rem] topic_box h-[12rem] relative`}
           >
             <h3 className={`${isHovered && "text-white"} text-base xl:text-xl`}>
               {post.company}
@@ -189,7 +178,7 @@ const Topic_each = ({ post }) => {
             >
               主題：{post.topic}
             </p>
-            <div className="flex w-full pt-[1rem] items-center justify-end gap-x-1">
+            <div className="absolute bottom-6 right-6 flex w-full items-center justify-end gap-x-1">
               <img
                 src={
                   isHovered
