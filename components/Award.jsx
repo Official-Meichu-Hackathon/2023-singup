@@ -103,7 +103,7 @@ const Award_each = ({item}) => {
                     <div className="h-auto transition  duration-500 ease-[cubic-bezier(1,0,1,0)]">
                     {/* // "max-h-0 overflow-hidden transition  duration-500 ease-[cubic-bezier(0,1,0,1)]"}> */}
                     {item.award.map((item,index) => {
-                            return <p className=' mt-2 md:mt-4 pr-[10%]'>{item}</p>
+                            return <p className=' mt-2 md:mt-4 pr-[10%]' key = {index}>{item}</p>
                         })}
                     </div>
                 </div>
