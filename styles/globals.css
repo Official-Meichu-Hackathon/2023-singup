@@ -8,6 +8,11 @@
   Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them! 
 */
 
+.vertical-text {
+  writing-mode: vertical-rl; /* 垂直排列 */
+  text-orientation: upright; /* 确保文字正立显示 */
+}
+
 .hack_font {
   font-family: "GenYoMin TW";
 }
