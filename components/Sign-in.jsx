@@ -66,20 +66,20 @@ const Sign_in = () =>{
                 <div className="w-[30%]  bar_gradient_straight">
                     <div onMouseEnter={handleHover_a}
                         onMouseLeave={handleHover_a}
-                        className = {` ${isHovered_a ? "":"bg-gray-100"} px-[8%] py-[5%] h-[25%]`}
+                        className = {` ${isHovered_a ? "":"bg-gray-100"}  ease-in-out duration-500 px-[8%] py-[5%] h-[25%]`}
                     >
                         <h5 className = 'py-5'> 9/5（一）~ 10/3（一）08:00</h5>
                         <h4 className = 'py-5 pb-10'>開始報名</h4>
                     </div>
                     <div onMouseEnter={handleHover_b}
                         onMouseLeave={handleHover_b} 
-                    className = {` ${isHovered_b ? "":"bg-gray-100" } px-[8%] py-[5%] border-y-2 border-[#6A747B] h-[35%]`}>
+                    className = {` ${isHovered_b ? "":"bg-gray-100" } ease-in-out duration-500 px-[8%] py-[5%] border-y-2 border-[#6A747B] h-[35%]`}>
                         <h5 className = 'py-5'> 10/3（一）23:59</h5>
                         <h4 className = 'py-5 pb-10'>正取隊伍與所屬企業公布</h4>
                     </div>
                     <div onMouseEnter={handleHover_c}
                         onMouseLeave={handleHover_c} 
-                    className = {` ${isHovered_c ? "":"bg-gray-100" } px-[8%] py-[5%] h-[40%]`}>
+                    className = {` ${isHovered_c ? "":"bg-gray-100" } ease-in-out duration-500 px-[8%] py-[5%] h-[40%]`}>
                         <h5 className = 'py-5'> 10/7（五）23:59</h5>
                         <h4 className = 'py-5 pb-10'>繳費截止</h4>
                     </div>
