@@ -316,12 +316,12 @@ const Sponsor = () => {
 const Sponsor_title = ({ title }) => {
   return (
     <>
-      <div class="flex items-center">
-        <div class="grow w-full border-t border-black"></div>
-        <h3 class="text-[1.5rem] md:text-[2rem] xl:text-[2.5rem] whitespace-nowrap flex-shrink w-1/2 px-[3%] py-6 md:py-8 xl:py-12 text-[#6A747B]">
+      <div className="flex items-center">
+        <div className="grow w-full border-t border-black"></div>
+        <h3 className="text-[1.5rem] md:text-[2rem] xl:text-[2.5rem] whitespace-nowrap flex-shrink w-1/2 px-[3%] py-6 md:py-8 xl:py-12 text-[#6A747B]">
           {title}
         </h3>
-        <div class="grow w-full border-t border-black"></div>
+        <div className="grow w-full border-t border-black"></div>
       </div>
     </>
   );
