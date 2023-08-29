@@ -59,7 +59,7 @@ export default function Topic() {
         company: "LINE",
         logo: "/assets/images/LINE.svg",
         logo2: null,
-        link: "www.google.com",
+        link: "/assets/pdf/NXP_2023.pdf",
         topic: "Safety Helmet Wearing Detection",
         description:
           "這次題目期望能建立準確偵測員工是否有配戴工地帽的AI模型，同時，串接雲端應用程式，確保工地安全，當AI模型判別出員工在危險區域並未配戴安全帽時，系統自動做出及時的action或alert。 此外，參賽者也可以結合軟硬體，做出額外的延伸應用(本組不提供硬體配件，若有需要請參賽者自行準備)。",
@@ -70,7 +70,7 @@ export default function Topic() {
         company: "恩智浦半導體與文曄科技",
         logo: "/assets/images/NXP.svg",
         logo2: "/assets/images/文曄科技.svg",
-        link: "www.google.com",
+        link: "/assets/pdf/NXP_2023.pdf",
         topic: "Safety Helmet Wearing Detection",
         description:
           "這次題目期望能建立準確偵測員工是否有配戴工地帽的AI模型，同時，串接雲端應用程式，確保工地安全，當AI模型判別出員工在危險區域並未配戴安全帽時，系統自動做出及時的action或alert。 此外，參賽者也可以結合軟硬體，做出額外的延伸應用(本組不提供硬體配件，若有需要請參賽者自行準備)。",

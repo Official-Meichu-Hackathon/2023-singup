@@ -268,9 +268,9 @@ hr {
 
 .timeTable_bg1,
 .timeTable_bg2 {
-  height: 10rem;
+  height: 8rem;
   font-family: GenYoMin TW TTF;
-  font-size: 13vw;
+  font-size: 7rem;
   font-style: normal;
   font-weight: 700;
   line-height: 10rem;
@@ -280,6 +280,10 @@ hr {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  @media screen and (min-width: 768px) {
+    font-size: 13vw;
+    height: 10rem;
+  }
 }
 
 .timeTable_day {
