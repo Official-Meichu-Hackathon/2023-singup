@@ -19,7 +19,7 @@ const News = () => {
       link: "https://tw.news.yahoo.com/news/2022-%E6%96%B0%E7%AB%B9-x-%E6%A2%85%E7%AB%B9%E9%BB%91%E5%AE%A2%E6%9D%BE%E7%AB%B6%E7%88%AD%E5%A4%AF-%E5%85%B1450%E5%90%8D%E5%A5%BD%E6%89%8B%E8%A7%92%E9%80%90%E5%89%B5%E6%84%8F-072050298.html"
     },
     {
-      title: "2022新竹X梅竹黑客松落幕　參賽者從日常激發靈感",
+      title: "2022 新竹X梅竹黑客松落幕　參賽者從日常激發靈感",
       link: "https://www.ettoday.net/news/20221121/2384809.htm"
     }
   ];
@@ -37,10 +37,10 @@ const News = () => {
 
             <div className="grow w-full border-t border-black"></div>
           </div>
-          <div className="flex flex-col px-[2rem] pb-5">
+          <div className="flex flex-col px-[2rem] pb-5 underline-offset-auto">
             {news.map((news, index) => {
               return (
-                <a href={news.link} key={index}>
+                <a href={news.link} key={index} className = 'underline underline-offset-4'>
                   {news.title}
                 </a>
               );
