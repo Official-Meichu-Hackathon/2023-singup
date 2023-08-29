@@ -242,6 +242,10 @@ hr {
   background: linear-gradient(-90deg, #a8d5cc 24.55%, #f3cd71 74.27%);
   opacity: 0.7;
 }
+.bar_gradient_straight{
+  background: linear-gradient(180deg, #a8d5cc 24.55%, #f3cd71 74.27%);
+  opacity: 0.8;
+}
 
 .scroll-progress {
   transition: transform 0.2s ease-out;

@@ -1,9 +1,20 @@
 "use client"
 import "@styles/globals.css"
-
+import { useState, useRef, useEffect } from "react";
 
 const Sign_in = () =>{
-
+    const [isHovered_a, setIsHovered_a] = useState(false);
+    const [isHovered_b, setIsHovered_b] = useState(false);
+    const [isHovered_c, setIsHovered_c] = useState(false);
+    const handleHover_a = () => {
+        setIsHovered_a(!isHovered_a);
+      };
+      const handleHover_b = () => {
+        setIsHovered_b(!isHovered_b);
+      };
+      const handleHover_c = () => {
+        setIsHovered_c(!isHovered_c);
+      };
     return(
         <>
         <div className = "mx-[2.5%] m-auto my-12 block md:hidden">
@@ -49,19 +60,26 @@ const Sign_in = () =>{
             </div>
         </div>
 
-        <div className ='mx-[5%] my-12 hidden md:block'>
+        <div className ='mx-[5%] my-12 hidden md:block '>
             <h2 className = 'ml-[2%]'>如何報名</h2>
-            <div className = 'w-full h-fit bg-gray-100 rounded-[3rem] flex border-2 border-[#6A747B]'>
-                <div className="w-[30%] ">
-                    <div className = 'px-[8%] py-[5%] h-[25%]'>
+            <div className = 'w-full h-fit bg-gray-100 rounded-[3rem] flex border-2 border-[#6A747B] overflow-hidden'>
+                <div className="w-[30%]  bar_gradient_straight">
+                    <div onMouseEnter={handleHover_a}
+                        onMouseLeave={handleHover_a}
+                        className = {` ${isHovered_a ? "":"bg-gray-100"} px-[8%] py-[5%] h-[25%]`}
+                    >
                         <h5 className = 'py-5'> 9/5（一）~ 10/3（一）08:00</h5>
                         <h4 className = 'py-5 pb-10'>開始報名</h4>
                     </div>
-                    <div className = 'px-[8%] py-[5%] border-y-2 border-[#6A747B] h-[35%]'>
+                    <div onMouseEnter={handleHover_b}
+                        onMouseLeave={handleHover_b} 
+                    className = {` ${isHovered_b ? "":"bg-gray-100" } px-[8%] py-[5%] border-y-2 border-[#6A747B] h-[35%]`}>
                         <h5 className = 'py-5'> 10/3（一）23:59</h5>
                         <h4 className = 'py-5 pb-10'>正取隊伍與所屬企業公布</h4>
                     </div>
-                    <div className = 'px-[8%] py-[5%] h-[40%]'>
+                    <div onMouseEnter={handleHover_c}
+                        onMouseLeave={handleHover_c} 
+                    className = {` ${isHovered_c ? "":"bg-gray-100" } px-[8%] py-[5%] h-[40%]`}>
                         <h5 className = 'py-5'> 10/7（五）23:59</h5>
                         <h4 className = 'py-5 pb-10'>繳費截止</h4>
                     </div>
