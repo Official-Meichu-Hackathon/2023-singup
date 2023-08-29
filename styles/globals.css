@@ -62,7 +62,15 @@
     padding-bottom: 1.5rem;
     padding-left: 6rem;
     padding-right: 6rem;
-    gap: 4rem;
+    gap: 3rem;
+  }
+  @media screen and (min-width: 2000px) {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 12vw;
+    padding-right: 12vw;
+    column-gap: 6rem;
+    row-gap: 3rem;
   }
 }
 
@@ -278,8 +286,6 @@ hr {
 .timeTable_bg1,
 .timeTable_bg2 {
   height: 8rem;
-  font-family: GenYoMin TW;
-
   font-size: 7rem;
   font-style: normal;
   font-weight: 700;
@@ -298,7 +304,6 @@ hr {
 
 .timeTable_day {
   color: #6a747b;
-  font-family: GenYoMin TW;
   font-style: normal;
   font-weight: 700;
   line-height: 5rem;

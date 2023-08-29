@@ -5,97 +5,97 @@ const Sponsor = () => {
   const cooperations = [
     {
       imgSrc: "/assets/images/sponsors/新竹市政府.svg",
-      size: "max-h-full",
+      size: "h-[75%] px-7",
     },
     {
-      imgSrc: "/assets/images/sponsors/Google.svg",
-      size: "max-h-[60%] px-5",
+      imgSrc: "/assets/images/sponsors/Google.jpg",
+      size: "h-[65%] px-7",
     },
     {
       imgSrc: "/assets/images/sponsors/TSMC.svg",
-      size: "max-h-[60%] xl:max-h-full px-5",
+      size: "h-[45%] px-7",
     },
     {
       imgSrc: "/assets/images/sponsors/LINE.svg",
-      size: "max-h-[50%] xl:max-h-full px-5",
+      size: "h-[45%] px-7",
     },
 
     {
       imgSrc: "/assets/images/sponsors/KKCompany.svg",
-      size: "max-h-[60%] pr-[0.45rem] md:pr-[0.8rem] xl:pr-[1.2rem]",
+      size: "h-[110%]",
     },
     {
-      imgSrc: "/assets/images/sponsors/NXP.svg",
-      size: "max-h-[90%]",
+      imgSrc: "/assets/images/sponsors/NXP.png",
+      size: "h-[45%] px-7",
     },
     {
       imgSrc: "/assets/images/sponsors/ETToday.svg",
-      size: "max-h-[80%] xl:max-h-[60%] pt-1 px-3",
+      size: "h-[55%] px-7",
     },
   ];
   const cooperation_sp = [
     {
       imgSrc: "/assets/images/sponsors/文曄科技.svg",
-      size: "max-h-full p-1",
+      size: "h-full",
     },
   ];
   const internet = [
-    { imgSrc: "assets/images/sponsors/中華電信.svg", size: "max-h-full" },
+    { imgSrc: "assets/images/sponsors/中華電信.svg", size: "h-[90%]" },
   ];
   const platinums = [
     {
       imgSrc: "/assets/images/sponsors/台泥.svg",
-      size: "max-h-full p-2 xl:p-3",
+      size: "h-full p-2 xl:p-3",
     },
     {
       imgSrc: "/assets/images/sponsors/國泰.svg",
-      size: "max-h-[60%] xl:max-h-full px-3",
+      size: "h-[60%] px-3",
     },
     {
       imgSrc: "/assets/images/sponsors/Micron.svg",
-      size: "max-h-[60%] xl:max-h-full px-3",
+      size: "h-[60%] px-3",
     },
     {
       imgSrc: "/assets/images/sponsors/Akatsuki.svg",
-      size: "max-h-[60%] xl:max-h-full pr-2",
+      size: "h-[60%] pr-3",
     },
   ];
   const golds = [
     {
-      imgSrc: "/assets/images/sponsors/Logi.svg",
+      imgSrc: "/assets/images/sponsors/Logi.png",
       name: "Logitech",
-      size: "max-h-[60%] xl:max-h-[40%] px-5",
+      size: "max-h-[60%]",
     },
   ];
   const silvers = [
     {
       imgSrc: "/assets/images/sponsors/104.svg",
-      size: "max-h-[60%] xl:max-h-full px-2",
+      size: "h-[55%]",
     },
     {
       imgSrc: "/assets/images/sponsors/PXI.svg",
-      size: "max-h-[60%] xl:max-h-full px-3",
+      size: "h-[60%]",
       order: "order-last md:order-none",
     },
     {
       imgSrc: "/assets/images/sponsors/CTBC.svg",
-      size: "max-h-[65%] xl:max-h-full px-3",
+      size: "h-[65%] ",
     },
   ];
   const bronzes = [
     {
       imgSrc: "/assets/images/sponsors/錦明.svg",
-      size: "max-h-[80%] xl:max-h-full px-3",
+      size: "h-[80%]",
     },
   ];
   const bronzes_sp = [
     {
-      imgSrc: "/assets/images/sponsors/舒希.svg",
-      size: "max-h-[60%] xl:max-h-full px-3",
+      imgSrc: "/assets/images/sponsors/舒希.png",
+      size: "h-[60%] px-3",
     },
     {
       imgSrc: "/assets/images/sponsors/墊腳石.svg",
-      size: "max-h-[35%] xl:max-h-full px-3",
+      size: "h-[55%] px-3",
       order: "order-last md:order-none",
     },
     {
@@ -104,10 +104,10 @@ const Sponsor = () => {
     },
   ];
   const freshmen = [
-    { imgSrc: "/assets/images/sponsors/玩樂小子.svg", size: "max-h-full p-3" },
+    { imgSrc: "/assets/images/sponsors/玩樂小子.svg", size: "h-full p-3" },
     {
       imgSrc: "/assets/images/sponsors/健人餐廚.svg",
-      size: "max-h-[60%] xl:max-h-full px-3",
+      size: "max-h-[60%] xl:max-h-full pt-1 px-3",
     },
     {
       imgSrc: "/assets/images/sponsors/可樂果.svg",
@@ -145,15 +145,15 @@ const Sponsor = () => {
   const sp_C = [
     {
       imgSrc: "/assets/images/sponsors/曼曼餵魚.svg",
-      size: "max-h-full p-2 p-3",
+      size: "h-[80%] p-2 ",
     },
     {
       imgSrc: "/assets/images/sponsors/LALAKitchen.svg",
-      size: "max-h-[70%] xl:max-h-full px-3",
+      size: "h-[65%] px-3",
     },
     {
       imgSrc: "/assets/images/sponsors/RITUS.svg",
-      size: "max-h-[65%] xl:max-h-full px-3",
+      size: "h-[60%] px-3",
     },
   ];
   const media = [];
@@ -189,7 +189,7 @@ const Sponsor = () => {
     { name: "Colde Garage" },
   ];
   return (
-    <div id ='sponsor'>
+    <div id="sponsor">
       <div className="px-[5%] py-12 bg-white">
         <Sponsor_title title="合作企業" />
         <div className="sponsor_box">

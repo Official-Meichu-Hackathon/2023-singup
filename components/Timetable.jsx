@@ -7,17 +7,17 @@ const Timetable = () => {
     { time: "09:00 - 10:30", context: ["開幕式"] },
     {
       time: "10:30 - 11:30",
-      context: ["Coding.../企業博覽會\n/娛樂交流活動"],
+      context: ["Coding... / 企業博覽會\n/ 娛樂交流活動"],
     },
     { time: "12:00 - 13:30", context: ["午餐時間"] },
     {
       time: "13:30 - 18:00",
-      context: ["Coding.../企業博覽會\n/娛樂交流活動"],
+      context: ["Coding... / 企業博覽會\n/ 娛樂交流活動"],
     },
     { time: "18:00 - 19:30", context: ["晚餐時間"] },
     {
       time: "19:30 - 22:00",
-      context: ["Coding.../娛樂交流活動"],
+      context: ["Coding... / 娛樂交流活動"],
     },
   ];
   const time_d2 = [
@@ -45,7 +45,7 @@ const Timetable = () => {
     { time: "17:10 - 19:00", context: ["閉幕式、頒獎、抽獎"] },
   ];
   return (
-    <div id = 'contest_process'>
+    <div id="contest_process">
       {/* Desktop */}
       <div className="hidden md:block px-[5%] relative w-full h-[50rem] lg:h-[60rem] overflow-x-hidden">
         <div className="flex justify-center gap-x-4 2xl:gap-x-6">
