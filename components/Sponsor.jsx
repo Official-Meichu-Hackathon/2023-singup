@@ -62,7 +62,7 @@ const Sponsor = () => {
   ];
   const golds = [
     {
-      imgSrc: "/assets/images/sponsors/logi.svg",
+      imgSrc: "/assets/images/sponsors/Logi.svg",
       name: "Logitech",
       size: "max-h-[60%] xl:max-h-[40%] px-5",
     },
