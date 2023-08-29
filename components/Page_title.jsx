@@ -8,7 +8,7 @@ const Page_title = () => {
               2023
             </h4>
             <img src = '/assets/images/bg-spin.svg' alt = "bg" className = 'w-full h-auto pt-[10%]'/>
-            <div className = 'absolute m-auto h-full top-[9%] left-[47%] text-[4vw] w-[4vw] leading-snug flex flex-col'>
+            <div className = 'absolute m-auto h-full top-[7%] left-[48%] text-[4vw] w-[4vw] leading-snug flex flex-col'>
               <h1 className  ='text-[4vw] w-[4vw] leading-snug'>新</h1>
               <h1 className  ='text-[4vw] w-[4vw] leading-snug'>竹</h1>
               <h1 className  ='text-[4vw] w-[4vw] leading-snug mx-auto'>X</h1>
@@ -30,7 +30,7 @@ const Page_title = () => {
               2023
             </h4>
             <img src = '/assets/images/bg-straight.svg' alt = "bg" className = 'w-full h-auto pt-[10%]'/>
-            <div className = 'absolute m-auto h-full top-[8%] left-[47%] text-[12vw] w-[12vw] leading-normal flex flex-col '>
+            <div className = 'absolute m-auto h-full top-[2%] left-[44%] text-[12vw] w-[12vw] flex flex-col '>
               <h1 className  ='text-[12vw] w-[12vw] leading-snug'>新</h1>
               <h1 className  ='text-[12vw] w-[12vw] leading-snug'>竹</h1>
               <h1 className  ='text-[12vw] w-[12vw] leading-snug mx-auto'>X</h1>
