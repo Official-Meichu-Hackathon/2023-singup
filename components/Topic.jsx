@@ -91,7 +91,7 @@ export default function Topic() {
   }, [activeTabIndex]);
 
   return (
-    <div className="container px-[5%] max-w-full py-16">
+    <div className="container px-[5%] max-w-full py-16" id="contest">
       <Tab.Group>
         <div className="relative mb-3">
           <Tab.List className="relative flex ">
@@ -143,7 +143,7 @@ const Topic_each = ({ post }) => {
     setIsHovered(!isHovered);
   };
   return (
-    <div id="contest">
+    <div>
       <a href={post.link}>
         <div
           key={post.id}

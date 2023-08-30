@@ -26,7 +26,7 @@ const Team_intro = () => {
   ];
   return (
     <div id="team_intro">
-      <h2 className="w-fit mx-auto text-black hidden md:block py-8">
+      <h2 className="w-fit mx-auto text-black hidden md:block pb-8 pt-12">
         組別介紹{" "}
       </h2>
       <div className="block md:hidden w-full py-8">
