@@ -53,7 +53,7 @@ const Footer = () => {
           <div className="container mx-auto flex py-8 md:basis-2/5 lg:basis-1/2 self-start md:self-stretch">
             <img
               className="w-[7rem]"
-              src="/assets/images/Logo_colored.svg"
+              src="/assets/images/logo.svg"
               alt="logo"
             />
           </div>

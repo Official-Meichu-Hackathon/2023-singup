@@ -33,7 +33,7 @@ const Navbar = () => {
           <div className="text-xl font-bold flex items-center h-full">
             <img
               className="object-contain mat h-5/6 "
-              src="/assets/images/Logo_colored.svg"
+              src="/assets/images/logo.svg"
               alt="logo"
             />
             <div className="ml-3 hackathon_title ">Meichu Hackathon</div>
@@ -89,7 +89,7 @@ const Navbar = () => {
           <div className="text-xl font-bold  flex items-center h-full">
             <img
               className="object-contain mat h-5/6 "
-              src="/assets/images/Logo_colored.svg"
+              src="/assets/images/logo.svg"
               alt="logo"
             />
             <div className="ml-3 hackathon_title ">Meichu Hackathon</div>
