@@ -29,7 +29,7 @@ const Team_intro = () => {
       <h2 className="w-fit mx-auto text-black hidden md:block pb-8 pt-12">
         組別介紹{" "}
       </h2>
-      <div className="block md:hidden w-full py-8">
+      <div className="block md:hidden w-full pb-8 pt-16">
         <h4 className="w-fit m-auto text-black">組別介紹 </h4>
       </div>
       <div className="hidden md:container md:mx-auto md:px-[4%] md:flex md:gap-x-[5%] md:flex-row md:justify-center">

@@ -46,7 +46,7 @@ const Timetable = () => {
     { time: "17:10 - 19:00", context: ["閉幕式、頒獎、抽獎"] },
   ];
   return (
-    <div id="contest_process">
+    <div id="contest_process" className="py-12">
       {/* Desktop */}
       <div className="hidden md:block px-[5%] relative w-full h-[50rem] lg:h-[60rem] overflow-x-hidden">
         <div className="flex justify-center gap-x-4 2xl:gap-x-6">

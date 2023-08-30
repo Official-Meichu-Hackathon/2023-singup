@@ -52,7 +52,7 @@ const Award = () => {
         <img
           src="assets/images/award.png"
           alt="hackathron award"
-          className="my-[8vh] w-full h-auto"
+          className="my-[4vh] md:my-[8vh] w-full h-auto"
         />
         <>
           <div className="block md:hidden mx-[5%] relative">
