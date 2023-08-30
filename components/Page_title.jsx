@@ -20,7 +20,7 @@ const Page_title = () => {
               
               </div>
             <h4 className = 'absolute right-[5%] text-[4vw] bottom-[17%] hack_font'>Oct. 21-22</h4>
-            <h6 className = 'absolute right-[7%] text-[2vw] bottom-[13%] hack_font text-[#6A747B]'>11th MeiChu Hackathon</h6>
+            <h6 className = 'absolute right-[7%] text-[2vw] bottom-[13%] hack_font text-[#6A747B]'>11th Meichu Hackathon</h6>
             <img src = '/assets/images/ball.svg' alt = "bg" className = 'w-[8%] right-[15%] top-[8%] h-auto absolute'/>
             <img src = '/assets/images/console.png' alt = "bg" className = 'w-[15%] left-[17%] bottom-[8%] h-auto absolute'/>
 
@@ -41,7 +41,7 @@ const Page_title = () => {
               <h1 className  ='text-[12vw] w-[12vw] leading-snug'>松</h1>
               </div>
             <h4 className = 'absolute right-[5%] text-[6vw] bottom-[21%] hack_font'>Oct. 21-22</h4>
-            <h6 className = 'absolute right-[7%] text-[5vw] bottom-[15%] hack_font text-[#6A747B]'>11th MeiChu Hackathon</h6>
+            <h6 className = 'absolute right-[7%] text-[5vw] bottom-[15%] hack_font text-[#6A747B]'>11th Meichu Hackathon</h6>
         </div>
     </>
   );
