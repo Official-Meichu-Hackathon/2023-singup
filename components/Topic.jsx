@@ -15,7 +15,7 @@ export default function Topic() {
         logo: "/assets/images/新竹市政府.svg",
         link: "/assets/pdfs/新竹市政府_2023.pdf",
         topic: "新竹科技Ｘ文創產業",
-        extra: "",
+        extra: "w-[60%] aspect-auto",
       },
     ],
     黑客組: [
@@ -25,7 +25,7 @@ export default function Topic() {
         logo: "/assets/images/ETToday.svg",
         link: "/assets/pdfs/ETtoday_2023.pdf",
         topic: "利用人工智能輔助新聞編輯提升不重覆訪客數、瀏覽數、翻頁數",
-        extra: "w-[70%]",
+        extra: "w-[75%]",
       },
       {
         id: 2,
@@ -43,7 +43,7 @@ export default function Topic() {
         link: "/assets/pdfs/TSMC_2023.pdf",
         topic: "Safety Helmet Wearing Detection",
         description: "NULL",
-        extra: "",
+        extra: "w-[55%]",
       },
       {
         id: 4,
@@ -70,7 +70,7 @@ export default function Topic() {
         link: "/assets/pdfs/KKCompany_2023.pdf",
         topic:
           "結合 BlendVision Streaming & Interactive API，打造深富創意的影音應用",
-        extra: "w-[80%]",
+        extra: "w-[85%]",
       },
     ],
   });
@@ -111,7 +111,7 @@ export default function Topic() {
             ))}
           </Tab.List>
           <span
-            className="absolute z-10 bottom-0 bg-[#F3CD71] rounded-sm block h-2 transition-all duration-300"
+            className="absolute z-10 bg-[#F3CD71] bottom-0 rounded-sm block h-2 transition-all duration-300"
             style={{ left: tabUnderlineLeft, width: tabUnderlineWidth }}
           />
           <span className="absolute w-full bottom-[0.2rem] block h-[0.0625rem] bg-black" />
@@ -120,13 +120,13 @@ export default function Topic() {
           {Object.values(categories).map((posts, idx) => (
             <Tab.Panel key={idx} className="py-3 px-0 focus:outline-none">
               {/* Desktop */}
-              <div className="hidden md:grid grid-cols-2 xl:grid-cols-3 gap-6 container mx-auto justify-center flex-col">
+              <div className="hidden md:grid grid-cols-2 xl:grid-cols-3 gap-7 container mx-auto justify-center flex-col">
                 {posts.map((post) => (
                   <Topic_each key={post.id} post={post} />
                 ))}
               </div>
               {/* Mobile */}
-              <div className="md:hidden flex container mx-auto justify-center max-w-sm flex-col gap-y-3">
+              <div className="md:hidden flex container mx-auto justify-center max-w-sm flex-col gap-y-10">
                 {posts.map((post) => (
                   <Topic_each_m key={post.id} post={post} />
                 ))}
@@ -149,21 +149,20 @@ const Topic_each = ({ post }) => {
       <a href={post.link}>
         <div
           key={post.id}
-          className="relative border-[0.5px] border-[#6A747B] w-full h-full"
+          className="relative border-[0.5px] border-[#6A747B]"
           onMouseEnter={handleHover}
           onMouseLeave={handleHover}
         >
-          <div className="flex justify-center gap-x-4 bg-white aspect-[19/8]">
+          <div className="flex justify-center gap-x-5 bg-white aspect-[19/8]">
             <img src={post.logo} className={`${post.extra}`} />
             {post.logo2 && (
               <img src={post.logo2} className={`${post.extra2}`} />
- 
             )}
           </div>
           <div
             className={`${
               isHovered && "topic_box_hover"
-            } p-[1.25rem] xl:p-[1.5rem] flex flex-col gap-y-[1rem] topic_box h-[12rem] relative`}
+            } p-[1.25rem] xl:p-[1.5rem] flex flex-col gap-y-[1rem] topic_box h-[11rem] lg:h-[12rem] 2xl:h-[13rem] relative`}
           >
             <h3 className={`${isHovered && "text-white"} text-base xl:text-xl`}>
               {post.company}
@@ -207,7 +206,7 @@ const Topic_each_m = ({ post }) => {
       <a href={post.link}>
         <div
           key={post.id}
-          className="relative border-[0.5px] border-[#6A747B] w-full"
+          className="relative border-[0.5px] border-[#6A747B]"
           onMouseEnter={handleHover}
           onMouseLeave={handleHover}
         >
@@ -215,13 +214,12 @@ const Topic_each_m = ({ post }) => {
             <img src={post.logo} className={`${post.extra}`} />
             {post.logo2 && (
               <img src={post.logo2} className={`${post.extra2}`} />
-
             )}
           </div>
           <div
             className={`${
               isHovered && "topic_box_hover"
-            } p-[1rem] flex flex-col gap-y-[0.25rem] bg-[#EAEAEC] topic_box`}
+            } p-[1rem] flex flex-col gap-y-[0.25rem] bg-[#EAEAEC] topic_box h-[9rem] relative`}
           >
             <h3 className={`${isHovered && "text-white"} text-[0.75rem]`}>
               {post.company}
@@ -234,19 +232,18 @@ const Topic_each_m = ({ post }) => {
             >
               主題：{post.topic}
             </p>
-            <div className="flex pt-[1rem] items-center gap-x-1">
+            <div className="absolute bottom-5 right-5 flex w-full items-center justify-end gap-x-1">
               <img
                 src={
                   isHovered
                     ? "/assets/icons/download_w.svg"
                     : "/assets/icons/download.svg"
                 }
-                className="w-auto aspect-square"
               />
               <p
                 className={`${
                   isHovered && "text-white"
-                } text-[0.625rem] text-[#6A747B]`}
+                } text-sm xl:text-base text-[#6A747B] `}
               >
                 下載PDF
               </p>
