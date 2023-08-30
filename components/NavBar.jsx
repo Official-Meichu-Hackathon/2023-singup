@@ -77,7 +77,7 @@ const Navbar = () => {
             <a href="#sponsor">贊助</a>
           </li>
           <li className="w-full bg-[#A8D5CC] text-white px-4 py-1 rounded-2xl">
-            <a href="" target="_blank">
+            <a href="https://docs.google.com/forms/d/1wqN2bF9rWR0sOVBpFUiP0Q75hMQNMbY6le3kFZDslVI/edit" target="_blank">
               立即報名
             </a>
           </li>
@@ -143,7 +143,7 @@ const Navbar = () => {
               <a href="#sponsor">贊助</a>
             </li>
             <li className="w-auto ml-1 bg-[#A8D5CC] text-white px-4 py-1 font-bold rounded-2xl">
-              <a href="" target="_blank">
+              <a href="https://docs.google.com/forms/d/1wqN2bF9rWR0sOVBpFUiP0Q75hMQNMbY6le3kFZDslVI/edit" target="_blank">
                 立即報名
               </a>
             </li>

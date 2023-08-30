@@ -13,7 +13,7 @@ export default function Topic() {
         id: 1,
         company: "新竹市政府",
         logo: "/assets/images/新竹市政府.svg",
-        link: "/assets/pdfs/新竹市政府_2023.pdf",
+        link: "/assets/pdfs/HsinchuGov_2023.pdf",
         topic: "新竹科技Ｘ文創產業",
         extra: "w-[60%] aspect-auto",
       },

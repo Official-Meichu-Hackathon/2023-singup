@@ -206,6 +206,32 @@ const Sponsor = () => {
     { path:'/assets/images/nxp-page-1.jpg' },
     { path:'/assets/images/nxp-page-2.jpg' }
   ]
+  const delay = 2500;
+  const [index, setIndex] = React.useState(0);
+  const timeoutRef = React.useRef(null);
+
+  function resetTimeout() {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+  }
+
+  React.useEffect(() => {
+    resetTimeout();
+    timeoutRef.current = setTimeout(
+      () =>
+        setIndex((prevIndex) =>
+          prevIndex === nxp_marquee.length - 1 ? 0 : prevIndex + 1
+        ),
+      delay
+    );
+
+    return () => {
+      resetTimeout();
+    };
+  }, [index]);
+
+
   return (
     <div id="sponsor">
       <div className="px-[5%] py-12 bg-white">
@@ -312,18 +338,27 @@ const Sponsor = () => {
             return <Sponsor_each_word key={index} cooperation={cooperation} />;
           })}
         </div>
-        <Sponsor_title title="這是廣告" />
+        <Sponsor_title title="企業廣告" />
         <div className="flex justify-center">
           <a
             href="https://www.nxp.com"
             target="_blank"
-            className="w-[80%] md:w-[70%] lg:w-[60%] my-[1%] block"
+            className="w-[80%] md:w-[70%] lg:w-[60%] my-[1%] block "
           >
-            <object
-              data="/assets/images/sponsor_nxp.svg"
-              type="image/svg+xml"
-              className="w-full rounded-[1.25rem] pointer-events-none"
-            ></object>
+            <div className="w-full overflow-hidden ">
+            <div
+              className="ease-in-out duration-1000 whitespace-nowrap"
+              style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+            >
+              {nxp_marquee.map((item, index) => (
+                <img
+                  src = {item.path}
+                  className="inline-block w-full h-auto "
+                  key={index}
+                ></img>
+              ))}
+            </div>
+          </div>
           </a>
         </div>
       </div>

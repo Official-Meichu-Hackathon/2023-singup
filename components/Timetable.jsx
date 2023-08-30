@@ -35,7 +35,7 @@ const Timetable = () => {
     },
     {
       time: "",
-      context: ["創客組初賽"],
+      context: ["創客交流組決賽"],
       additional: ["(13:00 - 16:00)"],
     },
     {
