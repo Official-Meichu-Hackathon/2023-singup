@@ -13,7 +13,7 @@ const RootLayout = ({ children }) => (
     <body className="bg-[#F5F5F6] top-0 absolute ">
 
       <NavBar />
-      <main className="">{children}</main>
+      <main className="py-14">{children}</main>
       <Footer />
     </body>
   </html>

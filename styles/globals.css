@@ -8,16 +8,16 @@
   Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them! 
 */
 
-.hack_font{
-  font-family: 'GenYoMin TW';
+.vertical-text {
+  writing-mode: vertical-rl; /* 垂直排列 */
+  text-orientation: upright; /* 确保文字正立显示 */
 }
-.title_bg{
-  background: linear-gradient(180deg, #9C9C9C 0%, rgba(156, 156, 156, 0) 100%);
-  font-family: GenYoMin TW TTF;
+
+.title_bg {
+  background: linear-gradient(180deg, #9c9c9c 0%, rgba(156, 156, 156, 0) 100%);
   font-size: 13vw;
   font-style: normal;
   font-weight: 700;
-  
   /* 40% */
   letter-spacing: 1.25rem;
   opacity: 0.5;
@@ -26,6 +26,16 @@
   -webkit-text-fill-color: transparent;
 }
 
+.topic_box {
+  background: linear-gradient(to right, #6a747b 50%, #eaeaec 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+}
+
+.topic_box_hover {
+  background-position: left bottom;
+}
 
 .sponsor_box {
   display: flex;
@@ -47,7 +57,15 @@
     padding-bottom: 1.5rem;
     padding-left: 6rem;
     padding-right: 6rem;
-    gap: 4rem;
+    gap: 3rem;
+  }
+  @media screen and (min-width: 2000px) {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 12vw;
+    padding-right: 12vw;
+    column-gap: 6rem;
+    row-gap: 3rem;
   }
 }
 
@@ -78,6 +96,14 @@
     padding-left: 6rem;
     padding-right: 6rem;
     gap: 4rem;
+  }
+  @media screen and (min-width: 2000px) {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 12vw;
+    padding-right: 12vw;
+    column-gap: 6rem;
+    row-gap: 3rem;
   }
 }
 
@@ -130,7 +156,7 @@
 
 @font-face {
   font-family: "GenYoMin TW";
-  src: local('GenYoMin Tw')url(/fonts/GenYoMinTW-M.woff) format('woff');
+  src: local("GenYoMin Tw") url(/fonts/GenYoMinTW-M.woff) format("woff");
 }
 
 body {
@@ -230,7 +256,11 @@ hr {
 
 .bar_gradient_inverse {
   background: linear-gradient(-90deg, #a8d5cc 24.55%, #f3cd71 74.27%);
-  opacity: 0.7
+  opacity: 0.7;
+}
+.bar_gradient_straight {
+  background: linear-gradient(180deg, #a8d5cc 24.55%, #f3cd71 74.27%);
+  opacity: 0.8;
 }
 
 .scroll-progress {
@@ -258,9 +288,8 @@ hr {
 
 .timeTable_bg1,
 .timeTable_bg2 {
-  height: 10rem;
-  font-family: GenYoMin TW TTF;
-  font-size: 13vw;
+  height: 8rem;
+  font-size: 7rem;
   font-style: normal;
   font-weight: 700;
   line-height: 10rem;
@@ -270,12 +299,14 @@ hr {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  @media screen and (min-width: 768px) {
+    font-size: 13vw;
+    height: 10rem;
+  }
 }
 
 .timeTable_day {
   color: #6a747b;
-  font-family: GenYoMin TW TTF;
-  font-size: 3rem;
   font-style: normal;
   font-weight: 700;
   line-height: 5rem;
@@ -285,7 +316,6 @@ hr {
 
 .timeTable_context {
   color: #6a747b;
-  font-family: Manrope;
 }
 
 .main {

@@ -77,7 +77,7 @@ const Circle = ({ now, up, word }) => {
                         r="47%"
                         fill="none"
                         stroke-width="3.7%"
-                        stroke-linecap="round"
+                        strokeLinecap="round"
                         stroke="#A8D5CC"
                     >
                     </circle>

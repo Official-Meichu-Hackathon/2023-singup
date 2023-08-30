@@ -3,23 +3,30 @@ import React from "react";
 const News = () => {
   const news = [
     {
-      title: "那些重機都是自以為高人一等，他性能再好，沒技術也只是個渣啦！",
-      link: "https://youtu.be/GqNB_mZGoxY",
+      title: "2022 新竹 X 梅竹黑客松回歸實體活動順利落幕！梅竹大獎第一名：邪萬教教我",
+      link: "https://agirls.aotter.net/post/61492",
     },
     {
-      title:
-        "人生總會有些不如意，總會遇到瞎妹暈船，人生不瘋狂枉少年，或許這就是人生的課題吧！",
-      link: "https://youtu.be/xMbOOc7iH1I",
+      title: " LINE 【梅竹黑客松 2022】活動分享",
+      link: "https://engineering.linecorp.com/zh-hant/blog/meichu-hackathon-2022",
     },
     {
-      title: "「就說沒有要抽gogoro 要講幾次？」 -羅傑",
-      link: "https://www.youtube.com/watch?v=3UvgV71ZnfY&ab_channel=%E5%BB%A2%E7%89%87%E4%BA%82%E5%89%AA",
+      title: "2022「新竹X梅竹黑客松」競賽結果出爐！",
+      link: "https://tw.news.yahoo.com/news/2022-%E6%96%B0%E7%AB%B9x%E6%A2%85%E7%AB%B9%E9%BB%91%E5%AE%A2%E6%9D%BE-%E7%AB%B6%E8%B3%BD%E7%B5%90%E6%9E%9C%E5%87%BA%E7%88%90-102750795.html?guccounter=1",
     },
+    {
+      title: "2022 新竹 X 梅竹黑客松競爭夯 共450名好手角逐創意",
+      link: "https://tw.news.yahoo.com/news/2022-%E6%96%B0%E7%AB%B9-x-%E6%A2%85%E7%AB%B9%E9%BB%91%E5%AE%A2%E6%9D%BE%E7%AB%B6%E7%88%AD%E5%A4%AF-%E5%85%B1450%E5%90%8D%E5%A5%BD%E6%89%8B%E8%A7%92%E9%80%90%E5%89%B5%E6%84%8F-072050298.html"
+    },
+    {
+      title: "2022 新竹X梅竹黑客松落幕　參賽者從日常激發靈感",
+      link: "https://www.ettoday.net/news/20221121/2384809.htm"
+    }
   ];
 
   return (
     <>
-      <div className = 'pt-8'>
+      <div className="pt-8">
         <div className="news_box mx-[5%] flex flex-col">
           <div className="relative w-full flex py-5 items-center">
             <div className="shrink w-[2rem] border-t border-black"></div>
@@ -30,10 +37,10 @@ const News = () => {
 
             <div className="grow w-full border-t border-black"></div>
           </div>
-          <div className="flex flex-col px-[2rem] pb-5">
+          <div className="flex flex-col px-[2rem] pb-5 underline-offset-auto">
             {news.map((news, index) => {
               return (
-                <a href={news.link} key={index}>
+                <a href={news.link} key={index} className = 'underline underline-offset-4'>
                   {news.title}
                 </a>
               );
