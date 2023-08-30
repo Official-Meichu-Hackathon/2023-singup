@@ -1,17 +1,17 @@
 import React from "react";
 import WaveAnimation from "@styles/WaveAnimation";
+import Waveanimation from "@styles/wave-animation";
 
 const Page_title = () => {
     return(
     <>
         <div className = "hidden md:block aspect-[1440/800] w-full  relative bg-white">
-            <h4 className="absolute title_bg ">
+            <h4 className="absolute title_bg z-10">
               2023
             </h4>
-            <div className="absolute">
-              <WaveAnimation/>
+            <div className="absolute mt-3 top-[15%] left-0 z-0">
+              <Waveanimation/>
             </div>
-            {/* <img src = '/assets/images/bg-spin.svg' alt = "bg" className = 'w-full h-auto pt-[10%]'/> */}
             <h1 className = 'absolute m-auto h-full top-[9%] left-[47%] text-[6vw] w-0 leading-normal '> 梅竹黑客松</h1>
             <h4 className = 'absolute right-[5%] text-[4vw] bottom-[17%] hack_font'>Oct. 21-22</h4>
             <h6 className = 'absolute right-[7%] text-[2vw] bottom-[13%] hack_font text-[#6A747B]'>11th MeiChu Hackathon</h6>
