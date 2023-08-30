@@ -1,0 +1,419 @@
+"use client"
+import React from "react";
+import "@styles/globals.css";
+import SwiperCore, { Autoplay } from"swiper";
+import { Swiper, SwiperSlide } from"swiper/react";
+
+// Import Swiper styles
+import"swiper/css";
+import"swiper/css/navigation";
+import"swiper/css/pagination";
+import"swiper/css/scrollbar";
+// install Swiper modules
+SwiperCore.use([Autoplay]);
+
+const Sponsor = () => {
+  const cooperations = [
+    {
+      imgSrc: "/assets/images/sponsors/新竹市政府.svg",
+      size: "h-[75%] px-7",
+    },
+    {
+      imgSrc: "/assets/images/sponsors/Google.jpg",
+      size: "h-[65%] px-7",
+      link: "http://goo.gle/TWCareers",
+    },
+    {
+      imgSrc: "/assets/images/sponsors/TSMC.svg",
+      size: "h-[45%] px-7",
+      link: "https://www.tsmc.com/static/chinese/careers/it_career/index.html",
+    },
+    {
+      imgSrc: "/assets/images/sponsors/LINE.svg",
+      size: "h-[45%] px-7",
+    },
+
+    {
+      imgSrc: "/assets/images/sponsors/KKCompany.svg",
+      size: "h-[110%]",
+      link: "https://kkc.tech/kkcompany-official-site",
+    },
+    {
+      imgSrc: "/assets/images/sponsors/NXP.png",
+      size: "h-[45%] px-7",
+    },
+    {
+      imgSrc: "/assets/images/sponsors/ETToday.svg",
+      size: "h-[55%] px-7",
+    },
+  ];
+  const cooperation_sp = [
+    {
+      imgSrc: "/assets/images/sponsors/文曄科技.svg",
+      size: "h-full",
+    },
+  ];
+  const internet = [
+    { imgSrc: "assets/images/sponsors/中華電信.jpeg", size: "h-[90%]" },
+  ];
+  const platinums = [
+    {
+      imgSrc: "/assets/images/sponsors/台泥.svg",
+      size: "h-full p-2 xl:p-3",
+    },
+    {
+      imgSrc: "/assets/images/sponsors/國泰.svg",
+      size: "h-[60%] px-3",
+    },
+    {
+      imgSrc: "/assets/images/sponsors/Micron.svg",
+      size: "h-[60%] px-3",
+    },
+    {
+      imgSrc: "/assets/images/sponsors/Akatsuki.svg",
+      size: "h-[60%] pr-3",
+    },
+  ];
+  const golds = [
+    {
+      imgSrc: "/assets/images/sponsors/Logi.png",
+      name: "Logitech",
+      size: "max-h-[60%]",
+    },
+  ];
+  const silvers = [
+    {
+      imgSrc: "/assets/images/sponsors/104.svg",
+      size: "h-[55%]",
+    },
+    {
+      imgSrc: "/assets/images/sponsors/PXI.svg",
+      size: "h-[60%]",
+      order: "order-last md:order-none",
+    },
+    {
+      imgSrc: "/assets/images/sponsors/CTBC.svg",
+      size: "h-[65%] ",
+    },
+  ];
+  const bronzes = [
+    {
+      imgSrc: "/assets/images/sponsors/錦明.svg",
+      size: "h-[80%]",
+    },
+  ];
+  const bronzes_sp = [
+    {
+      imgSrc: "/assets/images/sponsors/舒希.png",
+      size: "h-[60%] px-3",
+    },
+    {
+      imgSrc: "/assets/images/sponsors/墊腳石.svg",
+      size: "h-[55%] px-3",
+      order: "order-last md:order-none",
+    },
+    {
+      imgSrc: "/assets/images/sponsors/Wifiboy.svg",
+      size: "max-h-[60%] xl:max-h-full px-3",
+    },
+  ];
+  const freshmen = [
+    { imgSrc: "/assets/images/sponsors/玩樂小子.svg", size: "h-full p-3" },
+    {
+      imgSrc: "/assets/images/sponsors/健人餐廚.svg",
+      size: "max-h-[60%] xl:max-h-full pt-1 px-3",
+    },
+    {
+      imgSrc: "/assets/images/sponsors/可樂果.svg",
+      size: "max-h-[60%] xl:max-h-full px-3",
+    },
+    {
+      imgSrc: "/assets/images/sponsors/Epoch.svg",
+      size: "max-h-[60%] xl:max-h-full px-2",
+    },
+  ];
+  const sp_A = [
+    {
+      imgSrc: "/assets/images/sponsors/WithMe.svg",
+      size: "max-h-full p-2 md:p-3",
+    },
+    {
+      imgSrc: "/assets/images/sponsors/信義房屋.svg",
+      size: "max-h-[70%] xl:max-h-full px-3",
+    },
+    {
+      imgSrc: "/assets/images/sponsors/老虎牙子.svg",
+      size: "max-h-[70%] xl:max-h-full px-3",
+    },
+    {
+      imgSrc: "/assets/images/sponsors/SunShing.svg",
+      size: "max-h-[70%] xl:max-h-full px-2",
+    },
+  ];
+  const sp_B = [
+    {
+      imgSrc: "/assets/images/sponsors/木木心予.svg",
+      size: "max-h-[90%] xl:max-h-full p-3",
+    },
+  ];
+  const sp_C = [
+    {
+      imgSrc: "/assets/images/sponsors/曼曼餵魚.svg",
+      size: "h-[80%] p-2 ",
+    },
+    {
+      imgSrc: "/assets/images/sponsors/LALAKitchen.svg",
+      size: "h-[65%] px-3",
+    },
+    {
+      imgSrc: "/assets/images/sponsors/RITUS.svg",
+      size: "h-[60%] px-3",
+    },
+  ];
+  const media = [];
+  const coorganizers = [
+    {
+      imgSrc: "/assets/images/sponsors/清大校友總會.svg",
+      size: "h-[80%] p-2",
+    },
+    {
+      imgSrc: "/assets/images/sponsors/教育部計畫.svg",
+      size: "max-h-[80%] p-1 xl:p-3",
+    },
+    {
+      imgSrc: "/assets/images/sponsors/思源.svg",
+      size: "max-h-[45%] px-2",
+    },
+  ];
+  const coorganizers_word = [
+    {
+      name: "國立清華大學電機資訊學院學士班",
+    },
+    {
+      name: "國立陽明交通大學資訊工程學系",
+    },
+    {
+      name: "國立清華大學資訊工程學系",
+    },
+  ];
+  const sp_thanks = [
+    { name: "國立陽明交通大學產學運籌中心" },
+    { name: "大新竹社會與產業連結網路計畫" },
+    { name: "國立陽明交通大學電機工程學系" },
+    { name: "Colde Garage" },
+  ];
+  const nxp_marquee = [
+    { path:'/assets/images/nxp-page-1.jpg' },
+    { path:'/assets/images/nxp-page-2.jpg' }
+  ]
+  const delay = 2500;
+  const [index, setIndex] = React.useState(0);
+  const timeoutRef = React.useRef(null);
+
+  function resetTimeout() {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+  }
+
+  React.useEffect(() => {
+    resetTimeout();
+    timeoutRef.current = setTimeout(
+      () =>
+        setIndex((prevIndex) =>
+          prevIndex === nxp_marquee.length - 1 ? 0 : prevIndex + 1
+        ),
+      delay
+    );
+
+    return () => {
+      resetTimeout();
+    };
+  }, [index]);
+
+
+  return (
+    <div id="sponsor">
+      <div className="px-[5%] py-12 bg-white">
+        <Sponsor_title title="合作企業" />
+        <div className="sponsor_box">
+          {cooperations.map((cooperation, index) => {
+            return <Sponsor_each key={index} cooperation={cooperation} />;
+          })}
+        </div>
+        <Sponsor_subtitle subtitle="特別合作企業" />
+        <div className="sponsor_box">
+          {cooperation_sp.map((cooperation, index) => {
+            return <Sponsor_each key={index} cooperation={cooperation} />;
+          })}
+        </div>
+        <Sponsor_title title="網路贊助" />
+        <div className="sponsor_box">
+          {internet.map((cooperation, index) => {
+            return <Sponsor_each key={index} cooperation={cooperation} />;
+          })}
+        </div>
+        <Sponsor_title title="贊助企業" />
+        <Sponsor_subtitle subtitle="PLATINUM" />
+        <div className="sponsor_box">
+          {platinums.map((cooperation, index) => {
+            return <Sponsor_each key={index} cooperation={cooperation} />;
+          })}
+        </div>
+        <Sponsor_subtitle subtitle="GOLD" />
+        <div className="sponsor_box">
+          {golds.map((gold, index) => {
+            return <Sponsor_each key={index} cooperation={gold} />;
+          })}
+        </div>
+        <Sponsor_subtitle subtitle="SILVER" />
+        <div className="sponsor_box">
+          {silvers.map((silver, index) => {
+            return <Sponsor_each key={index} cooperation={silver} />;
+          })}
+        </div>
+        <Sponsor_subtitle subtitle="BRONZE" />
+        <div className="sponsor_box">
+          {bronzes.map((bronze, index) => {
+            return <Sponsor_each key={index} cooperation={bronze} />;
+          })}
+        </div>
+        <Sponsor_title title="特殊贊助" />
+        <Sponsor_subtitle subtitle="BRONZE" />
+        <div className="sponsor_box">
+          {bronzes_sp.map((cooperation, index) => {
+            return <Sponsor_each key={index} cooperation={cooperation} />;
+          })}
+        </div>
+        <Sponsor_subtitle subtitle="FRESHMAN" />
+        <div className="sponsor_box">
+          {freshmen.map((cooperation, index) => {
+            return <Sponsor_each key={index} cooperation={cooperation} />;
+          })}
+        </div>
+        <div className="flex w-full justify-center flex-row gap-[0.5rem] md:gap-[2rem] flex-wrap">
+          <div>
+            {" "}
+            <Sponsor_subtitle subtitle="前期系列活動A級" />
+            <div className="sponsor_box_sm">
+              {sp_A.map((cooperation, index) => {
+                return <Sponsor_each key={index} cooperation={cooperation} />;
+              })}
+            </div>
+          </div>
+          <div>
+            {" "}
+            <Sponsor_subtitle subtitle="前期系列活動B級" />
+            <div className="sponsor_box_sm">
+              {sp_B.map((cooperation, index) => {
+                return <Sponsor_each key={index} cooperation={cooperation} />;
+              })}
+            </div>
+          </div>
+          <div>
+            {" "}
+            <Sponsor_subtitle subtitle="前期系列活動C級" />
+            <div className="sponsor_box_sm">
+              {sp_C.map((cooperation, index) => {
+                return <Sponsor_each key={index} cooperation={cooperation} />;
+              })}
+            </div>
+          </div>
+        </div>
+        <Sponsor_title title="媒體合作名單" />
+        <Sponsor_title title="協辦單位" />
+        <div className="sponsor_box">
+          {coorganizers.map((cooperation, index) => {
+            return <Sponsor_each key={index} cooperation={cooperation} />;
+          })}
+        </div>
+        <div className="sponsor_box_word">
+          {coorganizers_word.map((cooperation, index) => {
+            return <Sponsor_each_word key={index} cooperation={cooperation} />;
+          })}
+        </div>
+        <Sponsor_title title="特別感謝" />
+        <div className="sponsor_box_word">
+          {sp_thanks.map((cooperation, index) => {
+            return <Sponsor_each_word key={index} cooperation={cooperation} />;
+          })}
+        </div>
+        <Sponsor_title title="企業廣告" />
+        <div className="flex justify-center">
+          <a
+            href="https://www.nxp.com"
+            target="_blank"
+            className="w-[80%] md:w-[70%] lg:w-[60%] my-[1%] block "
+          >
+            <div className="w-full overflow-hidden ">
+            <div
+              className="ease-in-out duration-1000 whitespace-nowrap"
+              style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+            >
+              {nxp_marquee.map((item, index) => (
+                <img
+                  src = {item.path}
+                  className="inline-block w-full h-auto "
+                  key={index}
+                ></img>
+              ))}
+            </div>
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const Sponsor_title = ({ title }) => {
+  return (
+    <>
+      <div className="flex items-center">
+        <div className="grow w-full border-t border-black"></div>
+        <h3 className="text-[1.5rem] md:text-[2rem] xl:text-[2.5rem] whitespace-nowrap flex-shrink w-1/2 px-[3%] py-6 md:py-8 xl:py-12 text-[#6A747B]">
+          {title}
+        </h3>
+        <div className="grow w-full border-t border-black"></div>
+      </div>
+    </>
+  );
+};
+
+const Sponsor_subtitle = ({ subtitle }) => {
+  return (
+    <>
+      <p className="text-[0.675rem] md:text-base xl:text-xl font-medium text-center tracking-[0.15em]">
+        {subtitle}
+      </p>
+    </>
+  );
+};
+
+const Sponsor_each = ({ cooperation }) => {
+  return (
+    <>
+      <a href={cooperation.link}>
+        <div
+          className={`${cooperation.order} flex items-center h-[3rem] md:h-[5rem] xl:h-[6.75rem] bg-white`}
+        >
+          <img className={cooperation.size} src={cooperation.imgSrc} alt="" />
+        </div>
+      </a>
+    </>
+  );
+};
+
+const Sponsor_each_word = ({ cooperation }) => {
+  return (
+    <>
+      <div className={`${cooperation.order} flex items-center`}>
+        <p className="text-[0.675rem] md:text-base xl:text-xl font-normal text-center">
+          {cooperation.name}
+        </p>
+      </div>
+    </>
+  );
+};
+
+export default Sponsor;
