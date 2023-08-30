@@ -22,13 +22,14 @@ const Waveanimation = () => {
         const sketch = (p) => {
             
             p.setup = () => {
-                // if(p.windowWidth > 1668) {
-                //     p.createCanvas(p.windowWidth, 558);
-                // }
-                // else {
-                //     p.createCanvas(p.windowWidth+500, p.windowHeight * 0.6);    
-                // }   
-                p.createCanvas(p.windowWidth*2, p.windowHeight * 0.6);    
+                // if(p.windowWidth <= 768){
+                //     p.createCanvas(p.windowWidth, p.windowHeight * 0.7);    
+                // } else if(p.windowHeight > 768 && p.windowHeight <= 992) {
+                //     p.createCanvas(p.windowWidth, p.windowHeight * 0.6);    
+                // } else {
+                //     p.createCanvas(p.windowWidth, p.windowHeight * 0.6);    
+                // }                
+                p.createCanvas(p.windowWidth, p.windowHeight * 0.6);    
                 
                 YELLOW = p.color(243, 205, 113);
                 GREEN = p.color(168, 213, 204);
@@ -49,12 +50,20 @@ const Waveanimation = () => {
             };
 
             p.draw = () => {
-                p.background(244, 244, 245);
+                // p.background(244, 244, 245);
+                p.background(234, 234, 236);
                 for (let i = 0; i < waves.length; i++) {
                     calcWave(i);
                     renderWave(i);
                 }
             };
+
+            // p.windowResized = () => {
+            //     p.resizeCanvas(p.windowWidth, p.windowHeight * 0.6);
+            //     w = p.width + 50; 
+            //     dx = (p.TWO_PI / PERIOD) * XSPACING; 
+            //     console.log(p.windowWidth);
+            // };
             
             function calcWave(index) {
                 waves[index].theta += 0.05;  // speed
@@ -67,7 +76,6 @@ const Waveanimation = () => {
 
             function renderWave(index) {
                 p.noStroke();
-                // fill(color(243, 205, 113));
                 for (let x = 0; x < yvalues[index].length; x++) {
                     let y = p.height / 2 + yvalues[index][x];
                     let t = p.map(y, 0, p.height, 0, 1);  
