@@ -19,7 +19,7 @@ const Sponsor = () => {
       size: "h-[75%] px-7",
     },
     {
-      imgSrc: "/assets/images/sponsors/Google.jpg",
+      imgSrc: "/assets/images/sponsors/Google.png",
       size: "h-[65%] px-7",
       link: "http://goo.gle/TWCareers",
     },
