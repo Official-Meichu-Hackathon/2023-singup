@@ -1,5 +1,16 @@
+"use client"
 import React from "react";
 import "@styles/globals.css";
+import SwiperCore, { Autoplay } from"swiper";
+import { Swiper, SwiperSlide } from"swiper/react";
+
+// Import Swiper styles
+import"swiper/css";
+import"swiper/css/navigation";
+import"swiper/css/pagination";
+import"swiper/css/scrollbar";
+// install Swiper modules
+SwiperCore.use([Autoplay]);
 
 const Sponsor = () => {
   const cooperations = [
@@ -191,6 +202,10 @@ const Sponsor = () => {
     { name: "國立陽明交通大學電機工程學系" },
     { name: "Colde Garage" },
   ];
+  const nxp_marquee = [
+    { path:'/assets/images/nxp-page-1.jpg' },
+    { path:'/assets/images/nxp-page-2.jpg' }
+  ]
   return (
     <div id="sponsor">
       <div className="px-[5%] py-12 bg-white">

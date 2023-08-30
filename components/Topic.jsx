@@ -139,8 +139,11 @@ export default function Topic() {
 
 const Topic_each = ({ post }) => {
   const [isHovered, setIsHovered] = useState(false);
-  const handleHover = () => {
-    setIsHovered(!isHovered);
+  const handleHover_in = () => {
+    setIsHovered(true);
+  };
+  const handleHover_out = () => {
+    setIsHovered(false);
   };
   return (
     <div>
@@ -148,8 +151,8 @@ const Topic_each = ({ post }) => {
         <div
           key={post.id}
           className="relative border-[0.5px] border-[#6A747B]"
-          onMouseEnter={handleHover}
-          onMouseLeave={handleHover}
+          onMouseEnter={handleHover_in}
+          onMouseLeave={handleHover_out}
         >
           <div className="flex justify-center gap-x-5 bg-white aspect-[19/8]">
             <img src={post.logo} className={`${post.extra}`} />

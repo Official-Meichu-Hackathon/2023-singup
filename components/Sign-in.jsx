@@ -6,14 +6,23 @@ const Sign_in = () => {
   const [isHovered_a, setIsHovered_a] = useState(false);
   const [isHovered_b, setIsHovered_b] = useState(false);
   const [isHovered_c, setIsHovered_c] = useState(false);
-  const handleHover_a = () => {
-    setIsHovered_a(!isHovered_a);
+  const handleHover_a_in = () => {
+    setIsHovered_a(true);
   };
-  const handleHover_b = () => {
-    setIsHovered_b(!isHovered_b);
+  const handleHover_a_out = () => {
+    setIsHovered_a(false);
   };
-  const handleHover_c = () => {
-    setIsHovered_c(!isHovered_c);
+  const handleHover_b_in = () => {
+    setIsHovered_b(true);
+  };
+  const handleHover_b_out = () => {
+    setIsHovered_b(false);
+  };
+  const handleHover_c_in = () => {
+    setIsHovered_c(true);
+  };
+  const handleHover_c_out = () => {
+    setIsHovered_c(false);
   };
   return (
     <div id="sign-in">
@@ -102,8 +111,8 @@ const Sign_in = () => {
         <div className="w-full h-fit bg-gray-100 rounded-[3rem] flex border-2 border-[#6A747B] overflow-hidden">
           <div className="w-[30%]  bar_gradient_straight">
             <div
-              onMouseEnter={handleHover_a}
-              onMouseLeave={handleHover_a}
+              onMouseEnter={handleHover_a_in}
+              onMouseLeave={handleHover_a_out}
               className={` ${
                 isHovered_a ? "" : "bg-gray-100"
               }  ease-in-out duration-500 px-[8%] py-[5%] h-[25%]`}
@@ -112,8 +121,8 @@ const Sign_in = () => {
               <h4 className="py-5 pb-10">開始報名</h4>
             </div>
             <div
-              onMouseEnter={handleHover_b}
-              onMouseLeave={handleHover_b}
+              onMouseEnter={handleHover_b_in}
+              onMouseLeave={handleHover_b_out}
               className={` ${
                 isHovered_b ? "" : "bg-gray-100"
               } ease-in-out duration-500 px-[8%] py-[5%] border-y-2 border-[#6A747B] h-[35%]`}
@@ -122,8 +131,8 @@ const Sign_in = () => {
               <h4 className="py-5 pb-10">正取隊伍與所屬企業公布</h4>
             </div>
             <div
-              onMouseEnter={handleHover_c}
-              onMouseLeave={handleHover_c}
+              onMouseEnter={handleHover_c_in}
+              onMouseLeave={handleHover_c_out}
               className={` ${
                 isHovered_c ? "" : "bg-gray-100"
               } ease-in-out duration-500 px-[8%] py-[5%] h-[40%]`}
