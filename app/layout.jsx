@@ -10,12 +10,8 @@ export const metadata = {
 
 const RootLayout = ({ children }) => (
   <html lang="en">
-
     <body className="bg-[#F5F5F6] top-0 absolute ">
 
-      {/* <div className='main'>
-          <div className='gradient' />
-        </div> */}
       <NavBar />
       <main className="py-14">{children}</main>
       <Footer />
