@@ -13,16 +13,11 @@
   text-orientation: upright; /* 确保文字正立显示 */
 }
 
-.hack_font {
-  font-family: "GenYoMin TW";
-}
 .title_bg {
   background: linear-gradient(180deg, #9c9c9c 0%, rgba(156, 156, 156, 0) 100%);
-  font-family: GenYoMin TW;
   font-size: 13vw;
   font-style: normal;
   font-weight: 700;
-
   /* 40% */
   letter-spacing: 1.25rem;
   opacity: 0.5;
@@ -101,6 +96,14 @@
     padding-left: 6rem;
     padding-right: 6rem;
     gap: 4rem;
+  }
+  @media screen and (min-width: 2000px) {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 12vw;
+    padding-right: 12vw;
+    column-gap: 6rem;
+    row-gap: 3rem;
   }
 }
 
@@ -313,7 +316,6 @@ hr {
 
 .timeTable_context {
   color: #6a747b;
-  font-family: Manrope;
 }
 
 .main {

@@ -20,7 +20,15 @@ const Footer = () => {
     {
       dept: "活動部",
       leaders: ["林麒安", "范禎宸", "蔡欣儒"],
-      members: ["詹子毅", "馮鈺慈", "古昕云", "林俊佑", "廖苡安", "魏秭翊", "蔡沂霖"],
+      members: [
+        "詹子毅",
+        "馮鈺慈",
+        "古昕云",
+        "林俊佑",
+        "廖苡安",
+        "魏秭翊",
+        "蔡沂霖",
+      ],
     },
     {
       dept: "財務部",
@@ -29,7 +37,7 @@ const Footer = () => {
     },
     {
       dept: "設計部",
-      leaders: ["陳樂穎","詹詠甯"],
+      leaders: ["陳樂穎", "詹詠甯"],
       members: ["林立上", "王若禎", "陳宛萱", "袁孟華", "洪顥耘"],
     },
     {
@@ -45,14 +53,16 @@ const Footer = () => {
           <div className="container mx-auto flex py-8 md:basis-2/5 lg:basis-1/2 self-start md:self-stretch">
             <img
               className="w-[7rem]"
-              src="/assets/images/logo.svg"
+              src="/assets/images/Logo_colored.svg"
               alt="logo"
             />
           </div>
           <div className="container mx-auto md:basis-3/5 lg:basis-1/2 lg:whitespace-nowrap">
             {dept_list.map((dept, index) => (
               <div key={index} className="">
-                <p className="font-bold underline underline underline-offset-2 ">{dept.dept}</p>
+                <p className="font-bold underline underline-offset-2 ">
+                  {dept.dept}
+                </p>
                 <p>
                   <strong>{dept.leaders.join(" / ")}</strong>&nbsp;/&nbsp;
                   {dept.members.join(" / ")}
@@ -83,7 +93,7 @@ const Footer = () => {
                 </a>
               </div>
               <div>
-                <a href="https://youtube.com/shorts/iCx_oq5jtQ4?feature=share">
+                <a href="mailto: mchackathon2023@gmail.com">
                   <img
                     className="w-6"
                     src="/assets/icons/mail_icon.svg"
@@ -98,10 +108,7 @@ const Footer = () => {
           </div>
           <div className="flex sm:basis-1/2 justify-start sm:justify-end items-center">
             <div className="">
-              <a
-                className="after:content-['_↗']"
-                href="https://www.youtube.com/watch?v=ebxn6TlM6EY&ab_channel=%E6%88%91%E6%98%AF%E9%B3%A5%E4%BA%BA"
-              >
+              <a className="after:content-['_↗']" href="">
                 成果存放平台
               </a>
             </div>

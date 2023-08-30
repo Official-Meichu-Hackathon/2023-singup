@@ -39,10 +39,8 @@ export default function Topic() {
         id: 3,
         company: "台灣積體電路有限公司",
         logo: "/assets/images/TSMC.svg",
-
         link: "/assets/pdfs/TSMC_2023.pdf",
-        topic: "Safety Helmet Wearing Detection",
-        description: "NULL",
+        topic: "NULL",
         extra: "w-[55%]",
       },
       {

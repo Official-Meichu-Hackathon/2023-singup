@@ -19,6 +19,7 @@ const Timetable = () => {
       time: "19:30 - 22:00",
       context: ["Coding... / 娛樂交流活動"],
     },
+    { time: "22:00", context: ["閉館"] },
   ];
   const time_d2 = [
     {

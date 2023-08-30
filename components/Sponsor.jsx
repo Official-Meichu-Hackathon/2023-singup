@@ -10,10 +10,12 @@ const Sponsor = () => {
     {
       imgSrc: "/assets/images/sponsors/Google.jpg",
       size: "h-[65%] px-7",
+      link: "http://goo.gle/TWCareers",
     },
     {
       imgSrc: "/assets/images/sponsors/TSMC.svg",
       size: "h-[45%] px-7",
+      link: "https://www.tsmc.com/static/chinese/careers/it_career/index.html",
     },
     {
       imgSrc: "/assets/images/sponsors/LINE.svg",
@@ -23,6 +25,7 @@ const Sponsor = () => {
     {
       imgSrc: "/assets/images/sponsors/KKCompany.svg",
       size: "h-[110%]",
+      link: "https://kkc.tech/kkcompany-official-site",
     },
     {
       imgSrc: "/assets/images/sponsors/NXP.png",
@@ -40,7 +43,7 @@ const Sponsor = () => {
     },
   ];
   const internet = [
-    { imgSrc: "assets/images/sponsors/中華電信.svg", size: "h-[90%]" },
+    { imgSrc: "assets/images/sponsors/中華電信.jpeg", size: "h-[90%]" },
   ];
   const platinums = [
     {
@@ -160,7 +163,7 @@ const Sponsor = () => {
   const coorganizers = [
     {
       imgSrc: "/assets/images/sponsors/清大校友總會.svg",
-      size: "max-h-[80%] p-1 xl:p-3",
+      size: "h-[80%] p-2",
     },
     {
       imgSrc: "/assets/images/sponsors/教育部計畫.svg",
@@ -340,11 +343,13 @@ const Sponsor_subtitle = ({ subtitle }) => {
 const Sponsor_each = ({ cooperation }) => {
   return (
     <>
-      <div
-        className={`${cooperation.order} flex items-center h-[3rem] md:h-[5rem] xl:h-[6.75rem] bg-white`}
-      >
-        <img className={cooperation.size} src={cooperation.imgSrc} alt="" />
-      </div>
+      <a href={cooperation.link}>
+        <div
+          className={`${cooperation.order} flex items-center h-[3rem] md:h-[5rem] xl:h-[6.75rem] bg-white`}
+        >
+          <img className={cooperation.size} src={cooperation.imgSrc} alt="" />
+        </div>
+      </a>
     </>
   );
 };
