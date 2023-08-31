@@ -35,7 +35,7 @@ const Navbar = () => {
               className="object-contain mat h-5/6 "
               src="/assets/images/logo.svg"
               alt="logo"
-              loading="lazy"
+
             />
             <div className="ml-3 hackathon_title ">Meichu Hackathon</div>
           </div>
@@ -44,9 +44,9 @@ const Navbar = () => {
             className="h-[40%] "
           >
             {phone_click ? (
-              <img src="assets/images/close.png" className="h-full w-auto" loading="lazy" />
+              <img src="assets/images/close.png" className="h-full w-auto" />
             ) : (
-              <img src="assets/images/menu.png" className="h-full w-auto" loading="lazy" />
+              <img src="assets/images/menu.png" className="h-full w-auto" />
             )}
           </div>
         </div>
@@ -88,7 +88,7 @@ const Navbar = () => {
         <div className="w-full h-14 flex justify-between items-center px-[2%] bg-gray-200  ">
           <div className="text-xl font-bold  flex items-center h-full">
             <img
-              loading="lazy"
+
               className="object-contain mat h-5/6 "
               src="/assets/images/logo.svg"
               alt="logo"

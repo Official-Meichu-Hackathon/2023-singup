@@ -55,7 +55,7 @@ const Footer = () => {
               className="w-[7rem]"
               src="/assets/images/logo.svg"
               alt="logo"
-              loading="lazy"
+
             />
           </div>
           <div className="container mx-auto md:basis-3/5 lg:basis-1/2 lg:whitespace-nowrap">
@@ -81,7 +81,7 @@ const Footer = () => {
                     className="w-6"
                     src="/assets/icons/fb_icon.svg"
                     alt="facebook"
-                    loading="lazy"
+
                   />
                 </a>
               </div>
@@ -91,7 +91,7 @@ const Footer = () => {
                     className="w-6"
                     src="/assets/icons/ig_icon.svg"
                     alt="instagram"
-                    loading="lazy"
+
                   />
                 </a>
               </div>
@@ -101,7 +101,7 @@ const Footer = () => {
                     className="w-6"
                     src="/assets/icons/mail_icon.svg"
                     alt="mail"
-                    loading="lazy"
+
                   />
                 </a>
               </div>

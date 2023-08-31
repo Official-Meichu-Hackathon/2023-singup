@@ -16,45 +16,45 @@ const Sponsor = () => {
   const cooperations = [
     {
       imgSrc: "/assets/images/sponsors/新竹市政府.svg",
-      size: "h-[75%] px-7",
+      size: "h-[75%] px-7 w-auto",
     },
     {
       imgSrc: "/assets/images/sponsors/ETToday.svg",
-      size: "h-[55%] px-7",
+      size: "h-[55%] px-7 w-auto",
       link: "https://www.ettoday.net"
     },
     {
       imgSrc: "/assets/images/sponsors/Google.png",
-      size: "h-[65%] px-7",
+      size: "h-[65%] px-7 w-auto",
       link: "http://goo.gle/TWCareers",
     },
     {
       imgSrc: "/assets/images/sponsors/KKCompany.svg",
-      size: "h-[110%]",
+      size: "h-[110%] w-auto",
       link: "https://kkc.tech/kkcompany-official-site",
     },
     {
       imgSrc: "/assets/images/sponsors/LINE.svg",
-      size: "h-[45%] px-7",
+      size: "h-[45%] px-7 w-auto",
     },
     {
       imgSrc: "/assets/images/sponsors/NXP.png",
-      size: "h-[45%] px-7",
+      size: "h-[45%] px-7 w-auto",
     },
     {
       imgSrc: "/assets/images/sponsors/TSMC.svg",
-      size: "h-[45%] px-7",
+      size: "h-[45%] px-7 w-auto",
       link: "https://www.tsmc.com/static/chinese/careers/it_career/index.html",
     },
   ];
   const cooperation_sp = [
     {
       imgSrc: "/assets/images/sponsors/文曄科技.svg",
-      size: "h-full",
+      size: "h-full w-auto",
     },
   ];
   const internet = [
-    { imgSrc: "assets/images/sponsors/中華電信.jpeg", size: "h-[90%]" },
+    { imgSrc: "assets/images/sponsors/中華電信.jpeg", size: "h-[90%] w-auto" },
   ];
   const platinums = [
     {
@@ -113,7 +113,7 @@ const Sponsor = () => {
       order: "order-last md:order-none",
     },
     {
-      imgSrc: "/assets/images/sponsors/Wifiboy.svg",
+      imgSrc: "/assets/images/sponsors/aoajm-kzljc.jpg",
       size: "h-[70%] px-3",
     },
   ];
@@ -396,7 +396,7 @@ const Sponsor_each = ({ cooperation }) => {
         <div
           className={`${cooperation.order} flex items-center h-[3rem] md:h-[5rem] xl:h-[6.75rem] bg-white`}
         >
-          <img loading="lazy" className={cooperation.size} src={cooperation.imgSrc} alt="" />
+          <img className={cooperation.size} src={cooperation.imgSrc} alt="" />
         </div>
       </a>
     </>

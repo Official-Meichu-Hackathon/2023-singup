@@ -15,7 +15,7 @@ export default function Topic() {
         logo: "/assets/images/新竹市政府.svg",
         link: "/assets/pdfs/HsinchuGov_2023.pdf",
         topic: "新竹科技Ｘ文創產業",
-        extra: "w-[60%] aspect-auto",
+        extra: "w-[60%] aspect-auto h-auto",
       },
     ],
     黑客組: [
@@ -25,7 +25,7 @@ export default function Topic() {
         logo: "/assets/images/ETToday.svg",
         link: "/assets/pdfs/ETToday_2023.pdf",
         topic: "利用人工智能輔助新聞編輯提升不重覆訪客數、瀏覽數、翻頁數",
-        extra: "w-[75%]",
+        extra: "w-[75%] h-auto",
       },
       {
         id: 2,
@@ -33,7 +33,7 @@ export default function Topic() {
         logo: "/assets/images/Google.svg",
         link: "/assets/pdfs/Google_2023.pdf",
         topic: "Supportive Phone for all people",
-        extra: "w-[50%]",
+        extra: "w-[50%] h-auto",
       },
       {
         id: 3,
@@ -42,7 +42,7 @@ export default function Topic() {
         link: "/assets/pdfs/KKCompany_2023.pdf",
         topic:
           "結合 BlendVision Streaming & Interactive API，打造深富創意的影音應用",
-        extra: "w-[85%]",
+        extra: "w-[85%] h-auto",
       },
       {
         id: 4,
@@ -50,7 +50,7 @@ export default function Topic() {
         logo: "/assets/images/LINE.svg",
         link: "/assets/pdfs/Line_2023.pdf",
         topic: "透過生成式 AI 來打造學生相關應用的 LINE Bot 聊天機器人",
-        extra: "w-[35%]",
+        extra: "w-[35%] h-auto",
       },
       {
         id: 5,
@@ -59,8 +59,8 @@ export default function Topic() {
         logo2: "/assets/images/文曄科技.svg",
         link: "/assets/pdfs/NXP_2023.pdf",
         topic: "智慧應用改善人類生活並達到永續發展",
-        extra: "w-[45%]",
-        extra2: "w-[23%] pr-6",
+        extra: "w-[45%] h-auto",
+        extra2: "w-[23%] pr-6 h-auto",
       },
       {
         id: 6,
@@ -68,14 +68,14 @@ export default function Topic() {
         logo: "/assets/images/TSMC.svg",
         link: "/assets/pdfs/TSMC_2023.pdf",
         topic: "NULL",
-        extra: "w-[55%]",
+        extra: "w-[55%] h-auto",
       },
     ],
   });
   const [activeTabIndex, setActiveTabIndex] = useState(0);
   const [tabUnderlineWidth, setTabUnderlineWidth] = useState(0);
   const [tabUnderlineLeft, setTabUnderlineLeft] = useState(0);
-
+  const [show, setShow] = useState(false)
   const tabsRef = useRef([]);
   useEffect(() => {
     function setTabPosition() {
@@ -85,6 +85,7 @@ export default function Topic() {
     }
 
     setTabPosition();
+    setShow(!show);
     window.addEventListener("resize", setTabPosition);
 
     return () => window.removeEventListener("resize", setTabPosition);
@@ -114,7 +115,7 @@ export default function Topic() {
           />
           <span className="absolute w-full bottom-[0.2rem] block h-[0.0625rem] bg-black" />
         </div>
-        <p>
+        <p className={show ? "hidden" : "block"}>
           （按企業英文全稱字母順序排列）
         </p>
         <Tab.Panels className="">
@@ -158,9 +159,9 @@ const Topic_each = ({ post }) => {
           onMouseLeave={handleHover_out}
         >
           <div className="flex justify-center gap-x-5 bg-white aspect-[19/8]">
-            <img loading="lazy" src={post.logo} className={`${post.extra}`} />
+            <img src={post.logo} className={`${post.extra}`} />
             {post.logo2 && (
-              <img loading="lazy" src={post.logo2} className={`${post.extra2}`} />
+              <img src={post.logo2} className={`${post.extra2}`} />
             )}
           </div>
           <div
@@ -212,9 +213,9 @@ const Topic_each_m = ({ post }) => {
           onMouseLeave={handleHover}
         >
           <div className="flex justify-center gap-x-4 bg-white aspect-[19/8]">
-            <img loading="lazy" src={post.logo} className={`${post.extra}`} />
+            <img src={post.logo} className={`${post.extra}`} />
             {post.logo2 && (
-              <img loading="lazy" src={post.logo2} className={`${post.extra2}`} />
+              <img src={post.logo2} className={`${post.extra2}`} />
             )}
           </div>
           <div
