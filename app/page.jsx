@@ -12,7 +12,7 @@ import Page_title from "@components/Page_title";
 const Home = () => {
   return (
     <>
-      <Page_title/>
+      <Page_title />
       <CountDown />
       <Activity />
       <Timetable />

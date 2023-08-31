@@ -93,7 +93,8 @@ export default function Topic() {
 
   return (
     <div className="container px-[5%] max-w-full py-16" id="contest">
-      <h2 className="mb-2">比賽題目</h2>
+      <h2 className="mb-2 hidden md:block">比賽題目</h2>
+      <h4 className="mb-2 m-auto md:hidden">比賽題目</h4>
       <Tab.Group>
         <div className="relative mb-3">
           <Tab.List className="relative flex gap-8">
