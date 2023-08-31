@@ -35,6 +35,7 @@ const Navbar = () => {
               className="object-contain mat h-5/6 "
               src="/assets/images/logo.svg"
               alt="logo"
+              loading="lazy"
             />
             <div className="ml-3 hackathon_title ">Meichu Hackathon</div>
           </div>
@@ -43,16 +44,15 @@ const Navbar = () => {
             className="h-[40%] "
           >
             {phone_click ? (
-              <img src="assets/images/close.png" className="h-full w-auto" />
+              <img src="assets/images/close.png" className="h-full w-auto" loading="lazy" />
             ) : (
-              <img src="assets/images/menu.png" className="h-full w-auto" />
+              <img src="assets/images/menu.png" className="h-full w-auto" loading="lazy" />
             )}
           </div>
         </div>
         <ul
-          className={`pb-4 px-6 absolute bg-gray-300 z-[-1] left-0 w-full transition-all duration-500 ease-in ${
-            phone_click ? "top-14 " : "top-[-490px]"
-          }`}
+          className={`pb-4 px-6 absolute bg-gray-300 z-[-1] left-0 w-full transition-all duration-500 ease-in ${phone_click ? "top-14 " : "top-[-490px]"
+            }`}
         >
           <li className="w-full text-xl my-4 px-4">
             <a href="#activity_hope">活動願景</a>
@@ -88,6 +88,7 @@ const Navbar = () => {
         <div className="w-full h-14 flex justify-between items-center px-[2%] bg-gray-200  ">
           <div className="text-xl font-bold  flex items-center h-full">
             <img
+              loading="lazy"
               className="object-contain mat h-5/6 "
               src="/assets/images/logo.svg"
               alt="logo"

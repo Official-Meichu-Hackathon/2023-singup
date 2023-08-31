@@ -174,7 +174,7 @@ const Sponsor = () => {
   const coorganizers = [
     {
       imgSrc: "/assets/images/sponsors/清大校友總會.svg",
-      size: "h-[80%] p-2",
+      size: "h-[120%] p-2",
     },
     {
       imgSrc: "/assets/images/sponsors/教育部計畫.svg",
@@ -198,7 +198,7 @@ const Sponsor = () => {
   ];
   const sp_thanks = [
     { name: "國立陽明交通大學產學運籌中心" },
-    { name: "大新竹社會與產業連結網路計畫" },
+    { name: "大新竹社會與產業鏈結網絡計畫" },
     { name: "國立陽明交通大學電機工程學系" },
     { name: "Colde Garage" },
   ];
@@ -396,7 +396,7 @@ const Sponsor_each = ({ cooperation }) => {
         <div
           className={`${cooperation.order} flex items-center h-[3rem] md:h-[5rem] xl:h-[6.75rem] bg-white`}
         >
-          <img className={cooperation.size} src={cooperation.imgSrc} alt="" />
+          <img loading="lazy" className={cooperation.size} src={cooperation.imgSrc} alt="" />
         </div>
       </a>
     </>

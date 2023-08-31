@@ -11,7 +11,7 @@ const Page_title = () => {
         {/* <div className="absolute mt-3 top-[15%] left-0 z-0">
               <WaveAnimation/>
             </div> */}
-        <img
+        <img loading="lazy"
           src="/assets/images/bg-spin.svg"
           alt="bg"
           className="w-full h-auto pt-[10%]"
@@ -31,14 +31,14 @@ const Page_title = () => {
           Oct. 21-22
         </h4>
         <h6 className="absolute right-[7%] text-[2vw] bottom-[13%] hack_font text-[#6A747B]">
-          11th Meichu Hackathon
+          11th Hsinchu X Meichu Hackathon
         </h6>
-        <img
+        <img loading="lazy"
           src="/assets/images/ball.svg"
           alt="bg"
           className="w-[8%] right-[15%] top-[8%] h-auto absolute"
         />
-        <img
+        <img loading="lazy"
           src="/assets/images/console.png"
           alt="bg"
           className="w-[15%] left-[17%] bottom-[8%] h-auto absolute"
@@ -49,7 +49,7 @@ const Page_title = () => {
 
         <div className="absolute top-[10%] left-0 z-0">
           {/* <WaveAnimation/> */}
-          <img
+          <img loading="lazy"
             src="/assets/images/bg-straight.svg"
             alt="bg"
             className="w-full h-auto pt-[10%]"
@@ -71,7 +71,7 @@ const Page_title = () => {
           Oct. 21-22
         </h4>
         <h6 className="absolute right-[7%] text-[5vw] bottom-[15%] hack_font text-[#6A747B]">
-          11th Meichu Hackathon
+          11th Hsinchu X Meichu Hackathon
         </h6>
       </div>
     </>

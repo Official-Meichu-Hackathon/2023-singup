@@ -53,6 +53,7 @@ const Award = () => {
           src="assets/images/award.png"
           alt="hackathron award"
           className="my-[4vh] md:my-[8vh] w-full h-auto"
+          loading="lazy"
         />
         <>
           <div className="block md:hidden mx-[5%] relative">
@@ -78,10 +79,12 @@ const Award = () => {
             <img
               src="assets/images/Award_decoration_1.png"
               className="absolute w-[30%] top-[-16vw] left-[-6vw] z-[-10]"
+              loading="lazy"
             ></img>
             <img
               src="assets/images/Award_decoration_2.png"
               className="absolute w-[30%] bottom-[-5vw] right-[-3vw] z-[-10]"
+              loading="lazy"
             ></img>
             <div className="flex items-center ml-[1%]">
               <div className="flex-1   h-full">

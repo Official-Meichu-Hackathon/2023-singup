@@ -11,7 +11,7 @@ const CountDown = () => {
     const [timerSecond, setTimeSecond] = useState(0);
     let interval = useRef();
     const startTimer = () => {
-        const target = new Date("10/20/2023 23:59:59");
+        const target = new Date("9/25/2023 08:00:00");
 
         const interval = setInterval(() => {
             const now = new Date();
@@ -32,7 +32,7 @@ const CountDown = () => {
     });
     return (
         <div className='w-full h-fit  pt-[20vh] hidden md:block relative'>
-            <img src='/assets/images/meta3.png' id='meta' className='w-[20%] absolute top-[10vh] left-[5%]' />
+            <img src='/assets/images/meta3.png' id='meta' className='w-[20%] absolute top-[10vh] left-[5%]' loading="lazy" />
             <div className='w-[60%] m-auto'>
                 <h3 className='m-auto mb-10 text-[#6A747B]'>距離報名結束還有</h3>
                 <div className="w-full h-auto flex justify-between">
