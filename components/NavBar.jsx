@@ -35,6 +35,7 @@ const Navbar = () => {
               className="object-contain mat h-1/2 "
               src="/assets/images/logo.svg"
               alt="logo"
+
             />
             <div className="ml-3 font-normal text-base hackathon_title ">Meichu Hackathon</div>
           </div>
@@ -50,9 +51,8 @@ const Navbar = () => {
           </div>
         </div>
         <ul
-          className={`pb-4 px-6 absolute bg-gray-300 z-[-1] left-0 w-full transition-all duration-500 ease-in ${
-            phone_click ? "top-14 " : "top-[-490px]"
-          }`}
+          className={`pb-4 px-6 absolute bg-gray-300 z-[-1] left-0 w-full transition-all duration-500 ease-in ${phone_click ? "top-14 " : "top-[-490px]"
+            }`}
         >
           <li className="w-full text-xl my-4 px-4">
             <a href="#activity_hope">活動願景</a>
@@ -88,7 +88,9 @@ const Navbar = () => {
         <div className="w-full h-14 flex justify-between items-center px-[2%] bg-gray-200  ">
           <div className="text-xl font-bold  flex items-center h-full">
             <img
+
               className="object-contain mat h-1/2 "
+
               src="/assets/images/logo.svg"
               alt="logo"
             />
