@@ -93,9 +93,10 @@ export default function Topic() {
 
   return (
     <div className="container px-[5%] max-w-full py-16" id="contest">
+      <h2 className="mb-2">比賽題目</h2>
       <Tab.Group>
         <div className="relative mb-3">
-          <Tab.List className="relative flex ">
+          <Tab.List className="relative flex gap-8">
             {Object.keys(categories).map((category, idx) => (
               <Tab
                 key={category}
@@ -103,7 +104,7 @@ export default function Topic() {
                 ref={(el) => (tabsRef.current[idx] = el)}
                 onClick={() => setActiveTabIndex(idx)}
               >
-                <h3 className="text-[1rem] sm:text-[1.5rem] md:text-[2.5rem] text-center whitespace-nowrap">
+                <h3 className="mt-3 text-[1rem] sm:text-[1.5rem] md:text-[2.2rem] text-center text-[#6A747B] whitespace-nowrap">
                   {category}
                 </h3>
               </Tab>
@@ -154,7 +155,7 @@ const Topic_each = ({ post }) => {
       <a href={post.link}>
         <div
           key={post.id}
-          className="relative border-[0.5px] border-[#6A747B]"
+          className="relative "
           onMouseEnter={handleHover_in}
           onMouseLeave={handleHover_out}
         >

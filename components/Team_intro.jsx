@@ -32,15 +32,17 @@ const Team_intro = () => {
       <div className="block md:hidden w-full pb-8 pt-16">
         <h4 className="w-fit m-auto text-black">組別介紹 </h4>
       </div>
-      <div className="hidden md:container md:mx-auto md:px-[4%] md:flex md:gap-x-[5%] md:flex-row md:justify-center">
-        {team_intro_data.map((data, index) => (
-          <Team_each key={index} {...data} />
-        ))}
-      </div>
-      <div className="container mx-auto flex flex-col gap-y-5 items-center md:hidden">
-        {team_intro_data.map((data, index) => (
-          <Team_each_m key={index} {...data} />
-        ))}
+      <div className="mt-5 mb-20">
+        <div className="hidden md:container md:mx-auto md:px-[4%] md:flex md:gap-x-[8%] md:flex-row md:justify-center">
+          {team_intro_data.map((data, index) => (
+            <Team_each key={index} {...data} />
+            ))}
+        </div>
+        <div className="container mx-auto flex flex-col gap-y-5 items-center md:hidden">
+          {team_intro_data.map((data, index) => (
+            <Team_each_m key={index} {...data} />
+            ))}
+        </div>
       </div>
     </div>
   );
@@ -133,12 +135,12 @@ const Team_each_m = ({ team, imageSrc, description, link, view }) => {
               {team}
             </h3>
           </div>
-          <div className="px-[5%]">
-            <p className="text-[12px] sm:text-[16px] pt-[2%] font-semibold text-white pb-[5%]">
+          <div className="px-[5%] pt-[2%]">
+            <p className="text-[12px] sm:text-[16px] pt-[2%] font-thin text-white pb-[5%]">
               {description}
             </p>
             <div
-              className={`${view} flex py-[5%] gap-x-1 sm:gap-x-2 text-base justify-end`}
+              className={`${view} flex py-[5%] gap-x-1 sm:gap-x-2 justify-end`}
             >
               <img
                 src="/assets/icons/topic_arrow_w.svg"

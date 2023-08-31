@@ -14,13 +14,13 @@
 }
 
 .title_bg {
-  background: linear-gradient(180deg, #9c9c9c 0%, rgba(156, 156, 156, 0) 100%);
+  background: linear-gradient(180deg, #9c9c9c 0%, rgba(0, 0, 0, 0) 100%);
   font-size: 13vw;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   /* 40% */
   letter-spacing: 1.25rem;
-  opacity: 0.5;
+  opacity: 0.7;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
