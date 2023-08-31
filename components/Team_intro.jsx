@@ -13,7 +13,7 @@ const Team_intro = () => {
       team: "黑客組",
       imageSrc: "/assets/images/黑客.png",
       description:
-        "我們致力於搭起學生與企業之間的橋樑，學生運用企業資源並發揮潛力回應企業命題，同時企業方更提供實習機會，能讓學生進一步實踐創意發想！而今年我們將由以下六家企業作為引導單位：Google、台積電、恩智浦半導體與文曄科技、LINE、ETtoday 東森新媒體、KKCompany Technologies",
+        "我們致力於搭起學生與企業之間的橋樑，學生運用企業資源並發揮潛力回應企業命題，同時企業方更提供實習機會，能讓學生進一步實踐創意發想！而今年我們將由以下六家企業作為引導單位：ETtoday新聞雲、Google、KKCompany Technologies 、LINE、恩智浦半導體與文曄科技、台積電 （按企業英文全稱字母順序排列）",
       link: "/assets/pdfs/工作坊.pdf",
     },
     {
@@ -32,15 +32,17 @@ const Team_intro = () => {
       <div className="block md:hidden w-full pb-8 pt-16">
         <h4 className="w-fit m-auto text-black">組別介紹 </h4>
       </div>
-      <div className="hidden md:container md:mx-auto md:px-[4%] md:flex md:gap-x-[5%] md:flex-row md:justify-center">
-        {team_intro_data.map((data, index) => (
-          <Team_each key={index} {...data} />
-        ))}
-      </div>
-      <div className="container mx-auto flex flex-col gap-y-5 items-center md:hidden">
-        {team_intro_data.map((data, index) => (
-          <Team_each_m key={index} {...data} />
-        ))}
+      <div className="mt-5 mb-20">
+        <div className="hidden md:container md:mx-auto md:px-[4%] md:flex md:gap-x-[8%] md:flex-row md:justify-center">
+          {team_intro_data.map((data, index) => (
+            <Team_each key={index} {...data} />
+            ))}
+        </div>
+        <div className="container mx-auto flex flex-col gap-y-5 items-center md:hidden">
+          {team_intro_data.map((data, index) => (
+            <Team_each_m key={index} {...data} />
+            ))}
+        </div>
       </div>
     </div>
   );
@@ -56,9 +58,8 @@ const Team_each = ({ team, imageSrc, description, link, view }) => {
   return (
     <>
       <div
-        className={`${
-          isHovered ? "bg-[#6A747B]" : "bg-[#F5F5F6]"
-        } duration-500 transition-colors relative overflow-hidden w-[75vw] sm:w-[65vw] md:w-[32rem] aspect-[20/21] border border-gray-300 rounded shadow-md`}
+        className={`${isHovered ? "bg-[#6A747B]" : "bg-[#F5F5F6]"
+          } duration-500 transition-colors relative overflow-hidden w-[75vw] sm:w-[65vw] md:w-[32rem] aspect-[20/21] border border-gray-300 rounded shadow-md`}
         onMouseEnter={handleHover}
         onMouseLeave={handleHover}
       >
@@ -67,9 +68,8 @@ const Team_each = ({ team, imageSrc, description, link, view }) => {
             <img
               src={imageSrc}
               alt="Transforming"
-              className={`w-full aspect-[11/8] object-cover transition-opacity duration-500 ${
-                isHovered ? "opacity-0" : "opacity-100"
-              }`}
+              className={`w-full aspect-[11/8] object-cover transition-opacity duration-500 ${isHovered ? "opacity-0" : "opacity-100"
+                }`}
             />
             {isHovered && (
               <div className="absolute w-full h-full top-0 pt-[6%] px-[6%] lg:pt-[10%] lg:px-[10%] bg-gray-200  bg-opacity-80 transition-opacity duration-500">
@@ -95,9 +95,8 @@ const Team_each = ({ team, imageSrc, description, link, view }) => {
               className="w-[25%] lg:w-auto aspect-square"
             />
             <p
-              className={`${
-                isHovered ? "text-white" : "text-[#6A747B]"
-              } text-[12px] lg:text-[16px] whitespace-nowrap`}
+              className={`${isHovered ? "text-white" : "text-[#6A747B]"
+                } text-[12px] lg:text-[16px] whitespace-nowrap`}
             >
               工作坊細節
             </p>
@@ -136,12 +135,12 @@ const Team_each_m = ({ team, imageSrc, description, link, view }) => {
               {team}
             </h3>
           </div>
-          <div className="px-[5%]">
-            <p className="text-[12px] sm:text-[16px] pt-[2%] font-semibold text-white pb-[5%]">
+          <div className="px-[5%] pt-[2%]">
+            <p className="text-[12px] sm:text-[16px] pt-[2%] font-thin text-white pb-[5%]">
               {description}
             </p>
             <div
-              className={`${view} flex py-[5%] gap-x-1 sm:gap-x-2 text-base justify-end`}
+              className={`${view} flex py-[5%] gap-x-1 sm:gap-x-2 justify-end`}
             >
               <img
                 src="/assets/icons/topic_arrow_w.svg"

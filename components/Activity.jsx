@@ -1,6 +1,6 @@
 "use client";
 import "@styles/globals.css";
-
+import { lazy } from "react";
 const Activity = () => {
   return (
     <>
@@ -10,6 +10,7 @@ const Activity = () => {
           src="assets/images/group_photo.png"
           className="w-full md:w-[60%] h-auto m-auto py-8"
           alt="group alt"
+          loading="lazy"
         />
         <h4 className="m-auto block md:hidden">活動願景</h4>
         <div className="w-[80%] m-auto">

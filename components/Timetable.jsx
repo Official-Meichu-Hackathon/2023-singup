@@ -19,7 +19,7 @@ const Timetable = () => {
       time: "19:30 - 22:00",
       context: ["Coding... / 娛樂交流活動"],
     },
-    { time: "22:00", context: ["閉館"] },
+    // { time: "22:00", context: ["閉館"] },
   ];
   const time_d2 = [
     {
@@ -49,7 +49,7 @@ const Timetable = () => {
     <div id="contest_process" className="py-12">
       {/* Desktop */}
       <div className="hidden md:block px-[5%] relative w-full h-[50rem] lg:h-[60rem] overflow-x-hidden">
-        <div className="flex justify-center gap-x-4 2xl:gap-x-6">
+        <div className="flex justify-center gap-x-3 2xl:gap-x-6">
           <div className="basis-1/5 2xl:basis-1/3 flex flex-shrink-0 flex-col xl:w-auto">
             {" "}
             <img
@@ -62,22 +62,22 @@ const Timetable = () => {
               src="/assets/icons/time_deco_r.svg"
               alt=""
             />
-            <div className="relative 2xl:left-[4rem]">
+            <div className="relative 2xl:left-[3rem]">
               <h2 className="text-[2.5rem] mt-[6rem] tracking-[2rem]">
                 比<br />賽<br />資<br />訊
               </h2>
-              <h2 className="text-[2.5rem] pt-5 leading-[3rem]">
+              <h2 className="text-[2.5rem] pt-8 leading-[3rem]">
                 Oct, <br />
                 2023
               </h2>
-              <h3 className="text-[1rem] lg:text-[1.25rem] pt-8  tracking-[0.125rem] font-semibold">
+              <h3 className="text-[1rem] lg:text-[1.25rem] pt-10  tracking-[0.125rem] font-semibold">
                 地點｜國立清華大學新體育館
               </h3>
-              <h3 className="text-[1rem] lg:text-[1.25rem] pt-8  tracking-[0.125rem] font-semibold whitespace-break-spaces xl:whitespace-nowrap">
+              <h3 className="text-[1rem] lg:text-[1.25rem] pt-3  tracking-[0.125rem] font-semibold whitespace-break-spaces xl:whitespace-nowrap">
                 時間｜2023/10/21(六) - 10/22(日)
               </h3>
-              <p className="text-[0.6rem] lg:text-[1rem] pt-6 text-[#6A747B]">
-                本次活動不提供過夜場地
+              <p className="text-[0.6rem] lg:text-[1rem] pt-4 text-[#6A747B]">
+                ．本次活動不提供過夜場地
               </p>
             </div>
           </div>
@@ -118,22 +118,22 @@ const Timetable = () => {
       {/* Mobile */}
       <div className="md:hidden mx-[5%] flex flex-col">
         <h4 className="w-fit m-auto py-5">比賽資訊</h4>
-        <div className="flex w-full gap-x-[5vw] sm:gap-x-12">
-          <h3 className="text-[1.6rem] sm:text-[2.25rem] pl-2 sm:pl-6 grow w-full">
+        <div className="flex mt-5 w-full gap-x-[5vw] sm:gap-x-12">
+          <h3 className="text-[1.6rem] sm:text-[1.4rem] pl-2 sm:pl-6 grow w-full">
             Oct, <br />
             2023
           </h3>
-          <div className="flex grow flex-col justify-center">
-            <h3 className="text-[0.9rem] sm:text-[1.5rem]">
+          <div className="flex grow flex-col justify-center gap-1">
+            <h3 className="text-[0.9rem] sm:text-[1.2rem]">
               地點｜國立清華大學新體育館
             </h3>
-            <h3 className="text-[0.9rem] sm:text-[1.5rem]">
+            <h3 className="text-[0.9rem] sm:text-[1.2rem]">
               時間｜2023/10/21(六) - 10/22(日)
             </h3>
           </div>
         </div>
-        <p className="text-[#6A747B] pl-12 text-[0.7rem] sm:text-[1.3rem]">
-          本次活動不提供過夜場地
+        <p className="text-[#6A747B] pl-5 text-[0.7rem] sm:text-[1rem]">
+        ．本次活動不提供過夜場地
         </p>
         <div className="relative flex flex-col">
           <div className="relative">
