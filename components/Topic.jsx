@@ -37,11 +37,12 @@ export default function Topic() {
       },
       {
         id: 3,
-        company: "台灣積體電路有限公司",
-        logo: "/assets/images/TSMC.svg",
-        link: "/assets/pdfs/TSMC_2023.pdf",
-        topic: "NULL",
-        extra: "w-[55%]",
+        company: "KKCompany Technologies",
+        logo: "/assets/images/KKCompany.svg",
+        link: "/assets/pdfs/KKCompany_2023.pdf",
+        topic:
+          "結合 BlendVision Streaming & Interactive API，打造深富創意的影音應用",
+        extra: "w-[85%]",
       },
       {
         id: 4,
@@ -63,12 +64,11 @@ export default function Topic() {
       },
       {
         id: 6,
-        company: "KKCompany Technologies",
-        logo: "/assets/images/KKCompany.svg",
-        link: "/assets/pdfs/KKCompany_2023.pdf",
-        topic:
-          "結合 BlendVision Streaming & Interactive API，打造深富創意的影音應用",
-        extra: "w-[85%]",
+        company: "台灣積體電路有限公司",
+        logo: "/assets/images/TSMC.svg",
+        link: "/assets/pdfs/TSMC_2023.pdf",
+        topic: "NULL",
+        extra: "w-[55%]",
       },
     ],
   });
