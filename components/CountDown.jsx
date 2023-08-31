@@ -32,7 +32,7 @@ const CountDown = () => {
     });
     return (
         <div className='w-full h-fit  pt-[20vh] hidden md:block relative'>
-            <img src='/assets/images/meta3.png' id='meta' className='w-[20%] absolute top-[10vh] left-[5%]' />
+            <img src='/assets/images/meta3.png' id='meta' className='w-[20%] absolute top-[10vh] left-[3%]' />
             <div className='w-[60%] m-auto'>
                 <h3 className='m-auto mb-10 text-[#6A747B]'>距離報名結束還有</h3>
                 <div className="w-full h-auto flex justify-between">

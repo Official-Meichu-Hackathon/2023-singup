@@ -3,23 +3,23 @@ import React from "react";
 const News = () => {
   const news = [
     {
-      title: "2022 新竹 X 梅竹黑客松回歸實體活動順利落幕！梅竹大獎第一名：邪萬教教我",
+      title: "．2022 新竹 X 梅竹黑客松回歸實體活動順利落幕！梅竹大獎第一名：邪萬教教我",
       link: "https://agirls.aotter.net/post/61492",
     },
     {
-      title: " LINE 【梅竹黑客松 2022】活動分享",
+      title: "． LINE 【梅竹黑客松 2022】活動分享",
       link: "https://engineering.linecorp.com/zh-hant/blog/meichu-hackathon-2022",
     },
     {
-      title: "2022「新竹X梅竹黑客松」競賽結果出爐！",
+      title: "．2022「新竹X梅竹黑客松」競賽結果出爐！",
       link: "https://tw.news.yahoo.com/news/2022-%E6%96%B0%E7%AB%B9x%E6%A2%85%E7%AB%B9%E9%BB%91%E5%AE%A2%E6%9D%BE-%E7%AB%B6%E8%B3%BD%E7%B5%90%E6%9E%9C%E5%87%BA%E7%88%90-102750795.html?guccounter=1",
     },
     {
-      title: "2022 新竹 X 梅竹黑客松競爭夯 共450名好手角逐創意",
+      title: "．2022 新竹 X 梅竹黑客松競爭夯 共450名好手角逐創意",
       link: "https://tw.news.yahoo.com/news/2022-%E6%96%B0%E7%AB%B9-x-%E6%A2%85%E7%AB%B9%E9%BB%91%E5%AE%A2%E6%9D%BE%E7%AB%B6%E7%88%AD%E5%A4%AF-%E5%85%B1450%E5%90%8D%E5%A5%BD%E6%89%8B%E8%A7%92%E9%80%90%E5%89%B5%E6%84%8F-072050298.html"
     },
     {
-      title: "2022 新竹X梅竹黑客松落幕　參賽者從日常激發靈感",
+      title: "．2022 新竹X梅竹黑客松落幕　參賽者從日常激發靈感",
       link: "https://www.ettoday.net/news/20221121/2384809.htm"
     }
   ];
