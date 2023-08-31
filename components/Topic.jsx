@@ -151,7 +151,7 @@ const Topic_each = ({ post }) => {
       <a href={post.link}>
         <div
           key={post.id}
-          className="relative border-[0.5px] border-[#6A747B]"
+          className="relative "
           onMouseEnter={handleHover_in}
           onMouseLeave={handleHover_out}
         >
