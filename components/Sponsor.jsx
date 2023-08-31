@@ -21,6 +21,7 @@ const Sponsor = () => {
     {
       imgSrc: "/assets/images/sponsors/ETToday.svg",
       size: "h-[55%] px-7",
+      link: "https://www.ettoday.net"
     },
     {
       imgSrc: "/assets/images/sponsors/Google.png",
