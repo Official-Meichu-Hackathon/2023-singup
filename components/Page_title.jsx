@@ -1,18 +1,19 @@
 import React from "react";
 // import WaveAnimation from "@styles/WaveAnimation";
-import Waveanimation from "@styles/wave-animation";
+// import Waveanimation from "@styles/wave-animation";
 
 const Page_title = () => {
     return(
     <>
-        <div className = "hidden md:block aspect-[1440/800] w-full  relative bg-white">
+        <div className = "hidden md:block aspect-[1440/800] w-full  relative ">
             <h4 className="absolute title_bg z-10">
               2023
             </h4>
 
-            <div className="absolute mt-3 top-[15%] left-0 z-0">
-              <Waveanimation/>
-            </div>
+            {/* <div className="absolute mt-3 top-[15%] left-0 z-0">
+              <WaveAnimation/>
+            </div> */}
+            <img src = '/assets/images/bg-spin.svg' alt = "bg" className = 'w-full h-auto pt-[10%]'/>
             <div className = 'absolute m-auto h-full top-[7%] left-[48%] text-[4vw] w-[4vw] leading-snug flex flex-col'>
               <h1 className  ='text-[4vw] w-[4vw] leading-snug'>新</h1>
               <h1 className  ='text-[4vw] w-[4vw] leading-snug'>竹</h1>
@@ -31,13 +32,14 @@ const Page_title = () => {
             <img src = '/assets/images/console.png' alt = "bg" className = 'w-[15%] left-[17%] bottom-[8%] h-auto absolute'/>
 
         </div> 
-        <div className = "block md:hidden aspect-[411/725] w-full relative bg-white">
+        <div className = "block md:hidden aspect-[411/725] w-full relative">
             <h4 className="absolute title_bg top-[1%]">
               2023
             </h4>
 
             <div className="absolute top-[10%] left-0 z-0">
-              <Waveanimation/>
+              {/* <WaveAnimation/> */}
+              <img src = '/assets/images/bg-straight.svg' alt = "bg" className = 'w-full h-auto pt-[10%]'/>
             </div>
       
             <div className = 'absolute m-auto h-full top-[2%] left-[44%] text-[12vw] w-[12vw] flex flex-col '>
