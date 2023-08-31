@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'export'
+    output: 'export',
+    rules: {
+        "@next/next/no-img-element": "off",
+    },
 }
 
 module.exports = nextConfig

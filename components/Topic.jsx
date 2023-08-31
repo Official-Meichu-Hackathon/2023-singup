@@ -21,7 +21,7 @@ export default function Topic() {
     黑客組: [
       {
         id: 1,
-        company: "ETtoday東森新媒體",
+        company: "ETtoday新聞雲",
         logo: "/assets/images/ETToday.svg",
         link: "/assets/pdfs/ETToday_2023.pdf",
         topic: "利用人工智能輔助新聞編輯提升不重覆訪客數、瀏覽數、翻頁數",
@@ -64,7 +64,7 @@ export default function Topic() {
       },
       {
         id: 6,
-        company: "台灣積體電路有限公司",
+        company: "台灣積體電路製造股份有限公司",
         logo: "/assets/images/TSMC.svg",
         link: "/assets/pdfs/TSMC_2023.pdf",
         topic: "NULL",
@@ -114,6 +114,9 @@ export default function Topic() {
           />
           <span className="absolute w-full bottom-[0.2rem] block h-[0.0625rem] bg-black" />
         </div>
+        <p>
+          （按企業英文全稱字母順序排列）
+        </p>
         <Tab.Panels className="">
           {Object.values(categories).map((posts, idx) => (
             <Tab.Panel key={idx} className="py-3 px-0 focus:outline-none">
@@ -161,17 +164,15 @@ const Topic_each = ({ post }) => {
             )}
           </div>
           <div
-            className={`${
-              isHovered && "topic_box_hover"
-            } p-[1.25rem] xl:p-[1.5rem] flex flex-col gap-y-[1rem] topic_box h-[11rem] lg:h-[12rem] 2xl:h-[13rem] relative`}
+            className={`${isHovered && "topic_box_hover"
+              } p-[1.25rem] xl:p-[1.5rem] flex flex-col gap-y-[1rem] topic_box h-[11rem] lg:h-[12rem] 2xl:h-[13rem] relative`}
           >
             <h3 className={`${isHovered && "text-white"} text-base xl:text-xl`}>
               {post.company}
             </h3>
             <p
-              className={`${
-                isHovered && "text-white"
-              } text-sm xl:text-base font-light`}
+              className={`${isHovered && "text-white"
+                } text-sm xl:text-base font-light`}
             >
               主題：{post.topic}
             </p>
@@ -184,9 +185,8 @@ const Topic_each = ({ post }) => {
                 }
               />
               <p
-                className={`${
-                  isHovered && "text-white"
-                } text-sm xl:text-base text-[#6A747B] `}
+                className={`${isHovered && "text-white"
+                  } text-sm xl:text-base text-[#6A747B] `}
               >
                 下載PDF
               </p>
@@ -218,18 +218,16 @@ const Topic_each_m = ({ post }) => {
             )}
           </div>
           <div
-            className={`${
-              isHovered && "topic_box_hover"
-            } p-[1rem] flex flex-col gap-y-[0.25rem] bg-[#EAEAEC] topic_box h-[9rem] relative`}
+            className={`${isHovered && "topic_box_hover"
+              } p-[1rem] flex flex-col gap-y-[0.25rem] bg-[#EAEAEC] topic_box h-[9rem] relative`}
           >
             <h3 className={`${isHovered && "text-white"} text-[0.75rem]`}>
               {post.company}
             </h3>
 
             <p
-              className={`${
-                isHovered && "text-white"
-              } text-[0.625rem] font-light`}
+              className={`${isHovered && "text-white"
+                } text-[0.625rem] font-light`}
             >
               主題：{post.topic}
             </p>
@@ -242,9 +240,8 @@ const Topic_each_m = ({ post }) => {
                 }
               />
               <p
-                className={`${
-                  isHovered && "text-white"
-                } text-sm xl:text-base text-[#6A747B] `}
+                className={`${isHovered && "text-white"
+                  } text-sm xl:text-base text-[#6A747B] `}
               >
                 下載PDF
               </p>
