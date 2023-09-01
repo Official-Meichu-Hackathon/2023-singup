@@ -15,174 +15,181 @@ SwiperCore.use([Autoplay]);
 const Sponsor = () => {
   const cooperations = [
     {
-      imgSrc: "/assets/images/sponsors/新竹市政府.svg",
-      size: "h-[75%] px-7 w-auto",
+      imgSrc: "/assets/images/新竹市政府.svg",
+      size: "h-[2.25rem] md:h-[3.25rem] xl:h-[4.25rem] px-7 w-auto",
     },
     {
-      imgSrc: "/assets/images/sponsors/ETToday.svg",
-      size: "h-[55%] px-7 w-auto",
-      link: "https://www.ettoday.net"
+      imgSrc: "/assets/images/ETToday.svg",
+      size: "h-[1.75rem] md:h-[2.25rem] xl:h-[3.25rem] px-7 w-auto",
+      link: "https://www.ettoday.net",
     },
     {
-      imgSrc: "/assets/images/sponsors/Google.png",
-      size: "h-[65%] px-7 w-auto",
+      imgSrc: "/assets/images/Google.png",
+      size: "h-[1.75rem] md:h-[2.75rem] xl:h-[3.75rem] px-7 w-auto",
       link: "http://goo.gle/TWCareers",
     },
     {
-      imgSrc: "/assets/images/sponsors/KKCompany.svg",
-      size: "h-[110%] w-auto",
+      imgSrc: "/assets/images/KKCompany.svg",
+      size: "h-[3.5rem] md:h-[5rem] xl:h-[6rem] w-auto",
       link: "https://kkc.tech/kkcompany-official-site",
     },
     {
-      imgSrc: "/assets/images/sponsors/LINE.svg",
-      size: "h-[45%] px-7 w-auto",
+      imgSrc: "/assets/images/LINE.svg",
+      size: "h-[1.25rem] md:h-[1.75rem] xl:h-[2.75rem] px-7 w-auto",
     },
     {
-      imgSrc: "/assets/images/sponsors/NXP.png",
-      size: "h-[45%] px-7 w-auto",
+      imgSrc: "/assets/images/NXP.png",
+      size: "h-[1.25rem] md:h-[1.75rem] xl:h-[2.75rem] px-7 w-auto",
+      link: "https://www.facebook.com/nxpsemitaiwan?mibextid=LQQJ4d",
     },
     {
-      imgSrc: "/assets/images/sponsors/TSMC.svg",
-      size: "h-[45%] px-7 w-auto",
+      imgSrc: "/assets/images/TSMC.svg",
+      size: "h-[1.25rem] md:h-[1.75rem] xl:h-[2.75rem] px-7 w-auto",
       link: "https://www.tsmc.com/static/chinese/careers/it_career/index.html",
     },
   ];
   const cooperation_sp = [
     {
-      imgSrc: "/assets/images/sponsors/文曄科技.svg",
-      size: "h-full w-auto",
+      imgSrc: "/assets/images/文曄科技.svg",
+      size: "h-[3rem] md:h-[5rem] xl:h-[7rem] w-auto",
     },
   ];
   const internet = [
-    { imgSrc: "assets/images/sponsors/中華電信.jpeg", size: "h-[90%] w-auto" },
+    {
+      imgSrc: "assets/images/中華電信.jpeg",
+      size: "h-[2.5rem] md:h-[4rem] xl:h-[6rem] w-auto",
+    },
   ];
   const platinums = [
     {
-      imgSrc: "/assets/images/sponsors/台泥.svg",
-      size: "h-full p-2 xl:p-3",
+      imgSrc: "/assets/images/台泥.svg",
+      size: "h-[1.25rem] md:h-[3.5rem] xl:h-[5.75rem] w-auto px-2",
     },
     {
-      imgSrc: "/assets/images/sponsors/國泰.svg",
-      size: "h-[60%] px-3",
+      imgSrc: "/assets/images/國泰.svg",
+      size: "h-[1rem] md:h-[2rem] xl:h-[3.5rem] w-auto px-2",
     },
     {
-      imgSrc: "/assets/images/sponsors/Micron.svg",
-      size: "h-[60%] px-3",
+      imgSrc: "/assets/images/Micron.svg",
+      size: "h-[1rem] md:h-[2rem] xl:h-[3.5rem] w-auto px-2",
     },
     {
-      imgSrc: "/assets/images/sponsors/Akatsuki.svg",
-      size: "h-[50%] pr-3",
+      imgSrc: "/assets/images/Akatsuki.svg",
+      size: "h-[1rem] md:h-[2rem] xl:h-[3.5rem] w-auto pr-3",
     },
   ];
   const golds = [
     {
-      imgSrc: "/assets/images/sponsors/Logi.png",
+      imgSrc: "/assets/images/Logi.png",
       name: "Logitech",
-      size: "max-h-[60%]",
+      size: "h-[1rem] md:h-[2rem] xl:h-[3.5rem] w-auto",
     },
   ];
   const silvers = [
     {
-      imgSrc: "/assets/images/sponsors/104.svg",
-      size: "h-[55%]",
+      imgSrc: "/assets/images/104.svg",
+      size: "h-[1rem] md:h-[2rem] xl:h-[3.5rem] w-auto px-2",
     },
     {
-      imgSrc: "/assets/images/sponsors/PXI.svg",
-      size: "h-[60%]",
+      imgSrc: "/assets/images/PXI.svg",
+      size: "h-[1rem] md:h-[2rem] xl:h-[3.5rem] w-auto px-2",
       order: "order-last md:order-none",
     },
     {
-      imgSrc: "/assets/images/sponsors/CTBC.svg",
-      size: "h-[65%] ",
+      imgSrc: "/assets/images/CTBC.svg",
+      size: "h-[1.25rem] md:h-[2.25rem] xl:h-[3.75rem] w-auto px-2",
     },
   ];
   const bronzes = [
     {
-      imgSrc: "/assets/images/sponsors/錦明.svg",
-      size: "h-[80%]",
+      imgSrc: "/assets/images/錦明.svg",
+      size: "h-[1.5rem] md:h-[3rem] xl:h-[5rem] w-auto",
     },
   ];
   const bronzes_sp = [
     {
-      imgSrc: "/assets/images/sponsors/舒希.png",
-      size: "h-[65%] px-3",
+      imgSrc: "/assets/images/舒希.png",
+      size: "h-[1.5rem] md:h-[2.75rem] xl:h-[4.5rem] w-auto px-2",
     },
     {
-      imgSrc: "/assets/images/sponsors/墊腳石.svg",
-      size: "h-[50%] px-3",
+      imgSrc: "/assets/images/墊腳石.svg",
+      size: "h-[1rem] md:h-[2rem] xl:h-[3.25rem] w-auto px-2",
       order: "order-last md:order-none",
     },
     {
-      imgSrc: "/assets/images/sponsors/aoajm-kzljc.jpg",
-      size: "h-[70%] px-3",
+      imgSrc: "/assets/images/wifiboy.jpg",
+      size: "h-[1.5rem] md:h-[3rem] xl:h-[5rem] w-auto px-2",
     },
   ];
   const freshmen = [
-    { imgSrc: "/assets/images/sponsors/玩樂小子.svg", size: "h-full p-3" },
     {
-      imgSrc: "/assets/images/sponsors/健人餐廚.svg",
-      size: "max-h-[60%] xl:max-h-full pt-1 px-3",
+      imgSrc: "/assets/images/玩樂小子.svg",
+      size: "h-[2rem] md:h-[3.5rem] xl:h-[5rem] w-auto",
     },
     {
-      imgSrc: "/assets/images/sponsors/可樂果.svg",
-      size: "max-h-[60%] xl:max-h-full px-3",
+      imgSrc: "/assets/images/健人餐廚.jpg",
+      size: "h-[2.5rem] md:h-[4rem] xl:h-[6.5rem] w-auto",
     },
     {
-      imgSrc: "/assets/images/sponsors/Epoch.svg",
-      size: "max-h-[60%] xl:max-h-full px-2",
+      imgSrc: "/assets/images/可樂果.svg",
+      size: "h-[1.5rem] md:h-[3rem] xl:h-[5rem] w-auto px-2",
+    },
+    {
+      imgSrc: "/assets/images/Epoch.svg",
+      size: "h-[1.5rem] md:h-[3rem] xl:h-[5rem] w-auto px-2",
     },
   ];
   const sp_A = [
     {
-      imgSrc: "/assets/images/sponsors/WithMe.svg",
-      size: "max-h-full p-2 md:p-3",
+      imgSrc: "/assets/images/WithMe.svg",
+      size: "h-[1.5rem] md:h-[2.75rem] xl:h-[4.5rem] w-auto px-1",
     },
     {
-      imgSrc: "/assets/images/sponsors/信義房屋.svg",
-      size: "max-h-[70%] xl:max-h-full px-3",
+      imgSrc: "/assets/images/信義房屋.png",
+      size: "h-[1.75rem] md:h-[3rem] xl:h-[5rem] w-auto",
     },
     {
-      imgSrc: "/assets/images/sponsors/老虎牙子.svg",
-      size: "max-h-[70%] xl:max-h-full px-3",
+      imgSrc: "/assets/images/老虎牙子.jpg",
+      size: "h-[1.5rem] md:h-[3rem] xl:h-[4.5rem] w-auto",
     },
     {
-      imgSrc: "/assets/images/sponsors/SunShing.svg",
-      size: "max-h-[70%] xl:max-h-full px-2",
+      imgSrc: "/assets/images/SunShing.svg",
+      size: "h-[1.5rem] md:h-[3rem] xl:h-[4.5rem] w-auto px-1",
     },
   ];
   const sp_B = [
     {
-      imgSrc: "/assets/images/sponsors/木木心予.svg",
-      size: "max-h-[90%] xl:max-h-full p-3",
+      imgSrc: "/assets/images/木木心予.svg",
+      size: "h-[1.5rem] md:h-[3rem] xl:h-[4.5rem] w-auto px-2",
     },
   ];
   const sp_C = [
     {
-      imgSrc: "/assets/images/sponsors/曼曼餵魚.svg",
-      size: "h-[80%] p-2 ",
+      imgSrc: "/assets/images/曼曼.png",
+      size: "h-[2.25rem] md:h-[4.5rem] xl:h-[5.5rem] w-auto p-1",
     },
     {
-      imgSrc: "/assets/images/sponsors/LALAKitchen.svg",
-      size: "h-[65%] px-3",
+      imgSrc: "/assets/images/LALAKitchen.svg",
+      size: "h-[1.75rem] md:h-[3.5rem] xl:h-[5rem] w-auto px-2",
     },
     {
-      imgSrc: "/assets/images/sponsors/RITUS.svg",
-      size: "h-[60%] px-3",
+      imgSrc: "/assets/images/RITUS.svg",
+      size: "h-[1.75rem] md:h-[3rem] xl:h-[4.5rem] w-auto px-2",
     },
   ];
   const media = [];
   const coorganizers = [
     {
-      imgSrc: "/assets/images/sponsors/清大校友總會.svg",
-      size: "h-[120%] p-2",
+      imgSrc: "/assets/images/清大校友總會.png",
+      size: "h-[2rem] md:h-[3rem] xl:h-[5rem] w-auto px-1",
     },
     {
-      imgSrc: "/assets/images/sponsors/教育部計畫.svg",
-      size: "max-h-[80%] p-1 xl:p-3",
+      imgSrc: "/assets/images/教育部計畫.png",
+      size: "h-[1.5rem] md:h-[2.5rem] xl:h-[4rem] w-auto px-2",
     },
     {
-      imgSrc: "/assets/images/sponsors/思源.svg",
-      size: "max-h-[45%] px-2",
+      imgSrc: "/assets/images/思源.png",
+      size: "h-[1.5rem] md:h-[2.25rem] xl:h-[3.25rem] w-auto px-2",
     },
   ];
   const coorganizers_word = [
@@ -233,7 +240,7 @@ const Sponsor = () => {
 
   return (
     <div id="sponsor">
-      <div className="px-[5%] py-12 bg-white">
+      <div className="px-[5%] py-12 bg-slate-300">
         <Sponsor_title title="合作企業" />
         <div className="sponsor_box">
           {cooperations.map((cooperation, index) => {
@@ -354,6 +361,7 @@ const Sponsor = () => {
                     src={item.path}
                     className="inline-block w-full h-auto "
                     key={index}
+                    alt={"test"}
                   ></img>
                 ))}
               </div>
