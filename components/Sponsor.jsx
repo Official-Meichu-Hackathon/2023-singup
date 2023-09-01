@@ -240,7 +240,7 @@ const Sponsor = () => {
 
   return (
     <div id="sponsor">
-      <div className="px-[5%] py-12 bg-slate-300">
+      <div className="px-[5%] py-12 bg-white">
         <Sponsor_title title="合作企業" />
         <div className="sponsor_box">
           {cooperations.map((cooperation, index) => {
