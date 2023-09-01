@@ -2,6 +2,7 @@
 import React from "react";
 import "@styles/globals.css";
 import SwiperCore, { Autoplay } from "swiper";
+import Image from 'next/image';
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -15,173 +16,173 @@ SwiperCore.use([Autoplay]);
 const Sponsor = () => {
   const cooperations = [
     {
-      imgSrc: "/assets/images/新竹市政府.svg",
+      imgSrc: "/../public/assets/images/新竹市政府LOGO1.png",
       size: "h-[75%] px-7 w-auto",
     },
     {
-      imgSrc: "/assets/images/ETToday.svg",
+      imgSrc: "/../public/assets/images/ETToday新聞雲 logo.png",
       size: "h-[55%] px-7 w-auto",
       link: "https://www.ettoday.net"
     },
     {
-      imgSrc: "/assets/images/Google.png",
+      imgSrc: "/../public/assets/images/Google.png",
       size: "h-[65%] px-7 w-auto",
       link: "http://goo.gle/TWCareers",
     },
     {
-      imgSrc: "/assets/images/KKCompany.svg",
+      imgSrc: "/../public/assets/images/KKCompany.png",
       size: "h-[110%] w-auto",
       link: "https://kkc.tech/kkcompany-official-site",
     },
     {
-      imgSrc: "/assets/images/LINE.svg",
+      imgSrc: "/../public/assets/images/LINE.png",
       size: "h-[45%] px-7 w-auto",
     },
     {
-      imgSrc: "/assets/images/NXP.png",
+      imgSrc: "/../public/assets/images/NXP.png",
       size: "h-[45%] px-7 w-auto",
     },
     {
-      imgSrc: "/assets/images/TSMC.svg",
+      imgSrc: "/../public/assets/images/tsmc.png",
       size: "h-[45%] px-7 w-auto",
       link: "https://www.tsmc.com/static/chinese/careers/it_career/index.html",
     },
   ];
   const cooperation_sp = [
     {
-      imgSrc: "/assets/images/文曄科技.svg",
+      imgSrc: "/../public/assets/images/文曄科技.svg",
       size: "h-full w-auto",
     },
   ];
   const internet = [
-    { imgSrc: "assets/images/中華電信.jpeg", size: "h-[90%] w-auto" },
+    { imgSrc: "/../public/assets/images/中華電信.jpeg", size: "h-[90%] w-auto" },
   ];
   const platinums = [
     {
-      imgSrc: "/assets/images/台泥.svg",
+      imgSrc: "/../public/assets/images/台泥.svg",
       size: "h-full p-2 xl:p-3",
     },
     {
-      imgSrc: "/assets/images/國泰.svg",
+      imgSrc: "/../public/assets/images/國泰.svg",
       size: "h-[60%] px-3",
     },
     {
-      imgSrc: "/assets/images/Micron.svg",
+      imgSrc: "/../public/assets/images/Micron.svg",
       size: "h-[60%] px-3",
     },
     {
-      imgSrc: "/assets/images/Akatsuki.svg",
+      imgSrc: "/../public/assets/images/Akatsuki.svg",
       size: "h-[50%] pr-3",
     },
   ];
   const golds = [
     {
-      imgSrc: "/assets/images/Logi.png",
+      imgSrc: "/../public/assets/images/Logi.png",
       name: "Logitech",
       size: "max-h-[60%]",
     },
   ];
   const silvers = [
     {
-      imgSrc: "/assets/images/104.svg",
+      imgSrc: "/../public/assets/images/104.svg",
       size: "h-[55%]",
     },
     {
-      imgSrc: "/assets/images/PXI.svg",
+      imgSrc: "/../public/assets/images/PXI.svg",
       size: "h-[60%]",
       order: "order-last md:order-none",
     },
     {
-      imgSrc: "/assets/images/CTBC.svg",
+      imgSrc: "/../public/assets/images/CTBC.svg",
       size: "h-[65%] ",
     },
   ];
   const bronzes = [
     {
-      imgSrc: "/assets/images/錦明.svg",
+      imgSrc: "/../public/assets/images/錦明.svg",
       size: "h-[80%]",
     },
   ];
   const bronzes_sp = [
     {
-      imgSrc: "/assets/images/舒希.png",
+      imgSrc: "/../public/assets/images/舒希.png",
       size: "h-[65%] px-3",
     },
     {
-      imgSrc: "/assets/images/墊腳石.svg",
+      imgSrc: "/../public/assets/images/墊腳石.svg",
       size: "h-[50%] px-3",
       order: "order-last md:order-none",
     },
     {
-      imgSrc: "/assets/images/aoajm-kzljc.jpg",
+      imgSrc: "/../public/assets/images/aoajm-kzljc.jpg",
       size: "h-[70%] px-3",
     },
   ];
   const freshmen = [
-    { imgSrc: "/assets/images/玩樂小子.svg", size: "h-full p-3" },
+    { imgSrc: "/../public/assets/images/玩樂小子.svg", size: "h-full p-3" },
     {
-      imgSrc: "/assets/images/健人餐廚.svg",
+      imgSrc: "/../public/assets/images/健人餐廚.svg",
       size: "max-h-[60%] xl:max-h-full pt-1 px-3",
     },
     {
-      imgSrc: "/assets/images/可樂果.svg",
+      imgSrc: "/../public/assets/images/可樂果.svg",
       size: "max-h-[60%] xl:max-h-full px-3",
     },
     {
-      imgSrc: "/assets/images/Epoch.svg",
+      imgSrc: "/../public/assets/images/Epoch.svg",
       size: "max-h-[60%] xl:max-h-full px-2",
     },
   ];
   const sp_A = [
     {
-      imgSrc: "/assets/images/WithMe.svg",
+      imgSrc: "/../public/assets/images/WithMe.svg",
       size: "max-h-full p-2 md:p-3",
     },
     {
-      imgSrc: "/assets/images/信義房屋.svg",
+      imgSrc: "/../public/assets/images/信義房屋.svg",
       size: "max-h-[70%] xl:max-h-full px-3",
     },
     {
-      imgSrc: "/assets/images/老虎牙子.svg",
+      imgSrc: "/../public/assets/images/老虎牙子.svg",
       size: "max-h-[70%] xl:max-h-full px-3",
     },
     {
-      imgSrc: "/assets/images/SunShing.svg",
+      imgSrc: "/../public/assets/images/SunShing.svg",
       size: "max-h-[70%] xl:max-h-full px-2",
     },
   ];
   const sp_B = [
     {
-      imgSrc: "/assets/images/木木心予.svg",
+      imgSrc: "/../public/assets/images/木木心予.svg",
       size: "max-h-[90%] xl:max-h-full p-3",
     },
   ];
   const sp_C = [
     {
-      imgSrc: "/assets/images/曼曼餵魚.svg",
+      imgSrc: "/../public/assets/images/曼曼餵魚.svg",
       size: "h-[80%] p-2 ",
     },
     {
-      imgSrc: "/assets/images/LALAKitchen.svg",
+      imgSrc: "/../public/assets/images/LALAKitchen.svg",
       size: "h-[65%] px-3",
     },
     {
-      imgSrc: "/assets/images/RITUS.svg",
+      imgSrc: "/../public/assets/images/RITUS.svg",
       size: "h-[60%] px-3",
     },
   ];
   const media = [];
   const coorganizers = [
     {
-      imgSrc: "/assets/images/清大校友總會.svg",
+      imgSrc: "/../public/assets/images/清大校友總會.svg",
       size: "h-[120%] p-2",
     },
     {
-      imgSrc: "/assets/images/教育部計畫.svg",
+      imgSrc: "/../public/assets/images/教育部計畫.svg",
       size: "max-h-[80%] p-1 xl:p-3",
     },
     {
-      imgSrc: "/assets/images/思源.svg",
+      imgSrc: "/../public/assets/images/思源.svg",
       size: "max-h-[45%] px-2",
     },
   ];
@@ -203,8 +204,8 @@ const Sponsor = () => {
     { name: "Colde Garage" },
   ];
   const nxp_marquee = [
-    { path: "/assets/images/nxp-page-1.jpg" },
-    { path: "/assets/images/nxp-page-2.jpg" },
+    { path: "/../public/assets/images/nxp-page-1.jpg" },
+    { path: "/../public/assets/images/nxp-page-2.jpg" },
   ];
   const delay = 2500;
   const [index, setIndex] = React.useState(0);
@@ -354,7 +355,7 @@ const Sponsor = () => {
                     src={item.path}
                     className="inline-block w-full h-auto "
                     key={index}
-                    alt={'test'}
+                    alt={'nxp'}
                   ></img>
                 ))}
               </div>
@@ -397,7 +398,7 @@ const Sponsor_each = ({ cooperation }) => {
         <div
           className={`${cooperation.order} flex items-center h-[3rem] md:h-[5rem] xl:h-[6.75rem] bg-white`}
         >
-          <img className={cooperation.size} src={cooperation.imgSrc} alt="" />
+          <Image width={300} height={200} className={cooperation.size} src={cooperation.imgSrc} alt="test" />
         </div>
       </a>
     </>
