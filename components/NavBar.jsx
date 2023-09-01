@@ -32,11 +32,12 @@ const Navbar = () => {
         <div className="w-full h-14 flex justify-between items-center px-[3%] bg-gray-200  ">
           <div className="text-xl font-bold flex items-center h-full">
             <img
-              className="object-contain mat h-5/6 "
+              className="object-contain mat h-1/2 "
               src="/assets/images/logo.svg"
               alt="logo"
+
             />
-            <div className="ml-3 hackathon_title ">Meichu Hackathon</div>
+            <div className="ml-3 font-normal text-base hackathon_title ">Meichu Hackathon</div>
           </div>
           <div
             onClick={() => set_phone_click(!phone_click)}
@@ -50,9 +51,8 @@ const Navbar = () => {
           </div>
         </div>
         <ul
-          className={`pb-4 px-6 absolute bg-gray-300 z-[-1] left-0 w-full transition-all duration-500 ease-in ${
-            phone_click ? "top-14 " : "top-[-490px]"
-          }`}
+          className={`pb-4 px-6 absolute bg-gray-300 z-[-1] left-0 w-full transition-all duration-500 ease-in ${phone_click ? "top-14 " : "top-[-490px]"
+            }`}
         >
           <li className="w-full text-xl my-4 px-4">
             <a href="#activity_hope">活動願景</a>
@@ -88,18 +88,20 @@ const Navbar = () => {
         <div className="w-full h-14 flex justify-between items-center px-[2%] bg-gray-200  ">
           <div className="text-xl font-bold  flex items-center h-full">
             <img
-              className="object-contain mat h-5/6 "
+
+              className="object-contain mat h-1/2 "
+
               src="/assets/images/logo.svg"
               alt="logo"
             />
-            <div className="ml-3 hackathon_title ">Meichu Hackathon</div>
+            <div className="ml-4 font-normal text-base hackathon_title ">Meichu Hackathon</div>
           </div>
 
           <ul className="flex items-center max-h-10">
-            <li className="w-auto  mx-2">
+            <li className="w-auto  mx-2.5">
               <a href="#activity_hope">活動願景</a>
             </li>
-            <li className="w-auto  mx-2">
+            <li className="w-auto  mx-2.5">
               <Menu as="div" className="relative inline-block text-left">
                 <Menu.Button>比賽資訊</Menu.Button>
                 <Transition
@@ -133,16 +135,16 @@ const Navbar = () => {
                 </Transition>
               </Menu>
             </li>
-            <li className="w-auto  mx-2">
+            <li className="w-auto  mx-2.5">
               <a href="#sign-in">報名辦法</a>
             </li>
-            <li className="w-auto  mx-2">
+            <li className="w-auto  mx-2.5">
               <a href="#contest">競賽題目</a>
             </li>
-            <li className="w-auto  mx-2">
+            <li className="w-auto  mx-2.5">
               <a href="#sponsor">贊助</a>
             </li>
-            <li className="w-auto ml-1 bg-[#A8D5CC] text-white px-4 py-1 font-bold rounded-2xl">
+            <li className="w-auto ml-2 bg-[#A8D5CC] text-white px-4 py-1 font-bold rounded-2xl">
               <a href="https://docs.google.com/forms/d/1wqN2bF9rWR0sOVBpFUiP0Q75hMQNMbY6le3kFZDslVI/edit" target="_blank">
                 立即報名
               </a>

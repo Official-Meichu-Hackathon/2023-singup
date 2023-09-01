@@ -1,14 +1,14 @@
-"use client"
+"use client";
 import React from "react";
 import "@styles/globals.css";
-import SwiperCore, { Autoplay } from"swiper";
-import { Swiper, SwiperSlide } from"swiper/react";
+import SwiperCore, { Autoplay } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import"swiper/css";
-import"swiper/css/navigation";
-import"swiper/css/pagination";
-import"swiper/css/scrollbar";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 // install Swiper modules
 SwiperCore.use([Autoplay]);
 
@@ -16,45 +16,45 @@ const Sponsor = () => {
   const cooperations = [
     {
       imgSrc: "/assets/images/sponsors/新竹市政府.svg",
-      size: "h-[75%] px-7",
-    },
-    {
-      imgSrc: "/assets/images/sponsors/Google.png",
-      size: "h-[65%] px-7",
-      link: "http://goo.gle/TWCareers",
-    },
-    {
-      imgSrc: "/assets/images/sponsors/TSMC.svg",
-      size: "h-[45%] px-7",
-      link: "https://www.tsmc.com/static/chinese/careers/it_career/index.html",
-    },
-    {
-      imgSrc: "/assets/images/sponsors/LINE.svg",
-      size: "h-[45%] px-7",
-    },
-
-    {
-      imgSrc: "/assets/images/sponsors/KKCompany.svg",
-      size: "h-[110%]",
-      link: "https://kkc.tech/kkcompany-official-site",
-    },
-    {
-      imgSrc: "/assets/images/sponsors/NXP.png",
-      size: "h-[45%] px-7",
+      size: "h-[75%] px-7 w-auto",
     },
     {
       imgSrc: "/assets/images/sponsors/ETToday.svg",
-      size: "h-[55%] px-7",
+      size: "h-[55%] px-7 w-auto",
+      link: "https://www.ettoday.net"
+    },
+    {
+      imgSrc: "/assets/images/sponsors/Google.png",
+      size: "h-[65%] px-7 w-auto",
+      link: "http://goo.gle/TWCareers",
+    },
+    {
+      imgSrc: "/assets/images/sponsors/KKCompany.svg",
+      size: "h-[110%] w-auto",
+      link: "https://kkc.tech/kkcompany-official-site",
+    },
+    {
+      imgSrc: "/assets/images/sponsors/LINE.svg",
+      size: "h-[45%] px-7 w-auto",
+    },
+    {
+      imgSrc: "/assets/images/sponsors/NXP.png",
+      size: "h-[45%] px-7 w-auto",
+    },
+    {
+      imgSrc: "/assets/images/sponsors/TSMC.svg",
+      size: "h-[45%] px-7 w-auto",
+      link: "https://www.tsmc.com/static/chinese/careers/it_career/index.html",
     },
   ];
   const cooperation_sp = [
     {
       imgSrc: "/assets/images/sponsors/文曄科技.svg",
-      size: "h-full",
+      size: "h-full w-auto",
     },
   ];
   const internet = [
-    { imgSrc: "assets/images/sponsors/中華電信.jpeg", size: "h-[90%]" },
+    { imgSrc: "assets/images/sponsors/中華電信.jpeg", size: "h-[90%] w-auto" },
   ];
   const platinums = [
     {
@@ -71,7 +71,7 @@ const Sponsor = () => {
     },
     {
       imgSrc: "/assets/images/sponsors/Akatsuki.svg",
-      size: "h-[60%] pr-3",
+      size: "h-[50%] pr-3",
     },
   ];
   const golds = [
@@ -105,16 +105,16 @@ const Sponsor = () => {
   const bronzes_sp = [
     {
       imgSrc: "/assets/images/sponsors/舒希.png",
-      size: "h-[60%] px-3",
+      size: "h-[65%] px-3",
     },
     {
       imgSrc: "/assets/images/sponsors/墊腳石.svg",
-      size: "h-[55%] px-3",
+      size: "h-[50%] px-3",
       order: "order-last md:order-none",
     },
     {
-      imgSrc: "/assets/images/sponsors/Wifiboy.svg",
-      size: "max-h-[60%] xl:max-h-full px-3",
+      imgSrc: "/assets/images/sponsors/aoajm-kzljc.jpg",
+      size: "h-[70%] px-3",
     },
   ];
   const freshmen = [
@@ -174,7 +174,7 @@ const Sponsor = () => {
   const coorganizers = [
     {
       imgSrc: "/assets/images/sponsors/清大校友總會.svg",
-      size: "h-[80%] p-2",
+      size: "h-[120%] p-2",
     },
     {
       imgSrc: "/assets/images/sponsors/教育部計畫.svg",
@@ -198,14 +198,14 @@ const Sponsor = () => {
   ];
   const sp_thanks = [
     { name: "國立陽明交通大學產學運籌中心" },
-    { name: "大新竹社會與產業連結網路計畫" },
+    { name: "大新竹社會與產業鏈結網絡計畫" },
     { name: "國立陽明交通大學電機工程學系" },
     { name: "Colde Garage" },
   ];
   const nxp_marquee = [
-    { path:'/assets/images/nxp-page-1.jpg' },
-    { path:'/assets/images/nxp-page-2.jpg' }
-  ]
+    { path: "/assets/images/nxp-page-1.jpg" },
+    { path: "/assets/images/nxp-page-2.jpg" },
+  ];
   const delay = 2500;
   const [index, setIndex] = React.useState(0);
   const timeoutRef = React.useRef(null);
@@ -230,7 +230,6 @@ const Sponsor = () => {
       resetTimeout();
     };
   }, [index]);
-
 
   return (
     <div id="sponsor">
@@ -346,19 +345,19 @@ const Sponsor = () => {
             className="w-[80%] md:w-[70%] lg:w-[60%] my-[1%] block "
           >
             <div className="w-full overflow-hidden ">
-            <div
-              className="ease-in-out duration-1000 whitespace-nowrap"
-              style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
-            >
-              {nxp_marquee.map((item, index) => (
-                <img
-                  src = {item.path}
-                  className="inline-block w-full h-auto "
-                  key={index}
-                ></img>
-              ))}
+              <div
+                className="ease-in-out duration-1000 whitespace-nowrap"
+                style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+              >
+                {nxp_marquee.map((item, index) => (
+                  <img
+                    src={item.path}
+                    className="inline-block w-full h-auto "
+                    key={index}
+                  ></img>
+                ))}
+              </div>
             </div>
-          </div>
           </a>
         </div>
       </div>
