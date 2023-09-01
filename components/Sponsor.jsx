@@ -123,20 +123,20 @@ const Sponsor = () => {
   ];
   const freshmen = [
     {
-      imgSrc: "/assets/images/玩樂小子.svg",
+      imgSrc: "/assets/images/玩樂小子.png",
       size: "h-[2rem] md:h-[3.5rem] xl:h-[5rem] w-auto",
     },
     {
-      imgSrc: "/assets/images/健人餐廚.jpg",
-      size: "h-[2.5rem] md:h-[4rem] xl:h-[6.5rem] w-auto",
+      imgSrc: "/assets/images/健人餐廚.jpeg",
+      size: "h-[2.75rem] md:h-[4rem] xl:h-[7rem] w-auto",
     },
     {
-      imgSrc: "/assets/images/可樂果.svg",
-      size: "h-[1.5rem] md:h-[3rem] xl:h-[5rem] w-auto px-2",
+      imgSrc: "/assets/images/可樂果.png",
+      size: "h-[1.5rem] md:h-[3rem] xl:h-[5rem] w-auto px-3",
     },
     {
-      imgSrc: "/assets/images/Epoch.svg",
-      size: "h-[1.5rem] md:h-[3rem] xl:h-[5rem] w-auto px-2",
+      imgSrc: "/assets/images/Epoch.jpeg",
+      size: "h-[1.5rem] md:h-[3rem] xl:h-[5rem] w-auto px-3",
     },
   ];
   const sp_A = [
@@ -153,13 +153,13 @@ const Sponsor = () => {
       size: "h-[1.5rem] md:h-[3rem] xl:h-[4.5rem] w-auto",
     },
     {
-      imgSrc: "/assets/images/SunShing.svg",
+      imgSrc: "/assets/images/SunShing.png",
       size: "h-[1.5rem] md:h-[3rem] xl:h-[4.5rem] w-auto px-1",
     },
   ];
   const sp_B = [
     {
-      imgSrc: "/assets/images/木木心予.svg",
+      imgSrc: "/assets/images/木木心予.png",
       size: "h-[1.5rem] md:h-[3rem] xl:h-[4.5rem] w-auto px-2",
     },
   ];
@@ -169,11 +169,11 @@ const Sponsor = () => {
       size: "h-[2.25rem] md:h-[4.5rem] xl:h-[5.5rem] w-auto p-1",
     },
     {
-      imgSrc: "/assets/images/LALAKitchen.svg",
+      imgSrc: "/assets/images/LALAKitchen.png",
       size: "h-[1.75rem] md:h-[3.5rem] xl:h-[5rem] w-auto px-2",
     },
     {
-      imgSrc: "/assets/images/RITUS.svg",
+      imgSrc: "/assets/images/RITUS.jpeg",
       size: "h-[1.75rem] md:h-[3rem] xl:h-[4.5rem] w-auto px-2",
     },
   ];
