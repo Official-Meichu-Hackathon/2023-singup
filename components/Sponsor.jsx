@@ -36,6 +36,7 @@ const Sponsor = () => {
     {
       imgSrc: "/assets/images/LINE.svg",
       size: "h-[1.25rem] md:h-[1.75rem] xl:h-[2.75rem] px-7 w-auto",
+      link: "https://engineering.linecorp.com/zh-hant/search?q=TECH%20FRESH",
     },
     {
       imgSrc: "/assets/images/NXP.png",
