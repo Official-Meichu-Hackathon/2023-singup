@@ -75,7 +75,7 @@ export default function Topic() {
   const [activeTabIndex, setActiveTabIndex] = useState(0);
   const [tabUnderlineWidth, setTabUnderlineWidth] = useState(0);
   const [tabUnderlineLeft, setTabUnderlineLeft] = useState(0);
-  const [show, setShow] = useState(false)
+  const [show, setShow] = useState(false);
   const tabsRef = useRef([]);
   useEffect(() => {
     function setTabPosition() {
@@ -118,6 +118,8 @@ export default function Topic() {
         </div>
         <p className={show ? "hidden" : "block"}>
           （按企業英文全稱字母順序排列）
+          <br />
+          工作坊內容包含企業介紹與題目所需資源說明，具體內容因各企業有所不同。
         </p>
         <Tab.Panels className="">
           {Object.values(categories).map((posts, idx) => (
@@ -166,15 +168,17 @@ const Topic_each = ({ post }) => {
             )}
           </div>
           <div
-            className={`${isHovered && "topic_box_hover"
-              } p-[1.25rem] xl:p-[1.5rem] flex flex-col gap-y-[1rem] topic_box h-[11rem] lg:h-[12rem] 2xl:h-[13rem] relative`}
+            className={`${
+              isHovered && "topic_box_hover"
+            } p-[1.25rem] xl:p-[1.5rem] flex flex-col gap-y-[1rem] topic_box h-[11rem] lg:h-[12rem] 2xl:h-[13rem] relative`}
           >
             <h3 className={`${isHovered && "text-white"} text-base xl:text-xl`}>
               {post.company}
             </h3>
             <p
-              className={`${isHovered && "text-white"
-                } text-sm xl:text-base font-light`}
+              className={`${
+                isHovered && "text-white"
+              } text-sm xl:text-base font-light`}
             >
               主題：{post.topic}
             </p>
@@ -187,8 +191,9 @@ const Topic_each = ({ post }) => {
                 }
               />
               <p
-                className={`${isHovered && "text-white"
-                  } text-sm xl:text-base text-[#6A747B] `}
+                className={`${
+                  isHovered && "text-white"
+                } text-sm xl:text-base text-[#6A747B] `}
               >
                 下載PDF
               </p>
@@ -220,16 +225,18 @@ const Topic_each_m = ({ post }) => {
             )}
           </div>
           <div
-            className={`${isHovered && "topic_box_hover"
-              } p-[1rem] flex flex-col gap-y-[0.25rem] bg-[#EAEAEC] topic_box h-[9rem] relative`}
+            className={`${
+              isHovered && "topic_box_hover"
+            } p-[1rem] flex flex-col gap-y-[0.25rem] bg-[#EAEAEC] topic_box h-[9rem] relative`}
           >
             <h3 className={`${isHovered && "text-white"} text-[0.75rem]`}>
               {post.company}
             </h3>
 
             <p
-              className={`${isHovered && "text-white"
-                } text-[0.625rem] font-light`}
+              className={`${
+                isHovered && "text-white"
+              } text-[0.625rem] font-light`}
             >
               主題：{post.topic}
             </p>
@@ -242,8 +249,9 @@ const Topic_each_m = ({ post }) => {
                 }
               />
               <p
-                className={`${isHovered && "text-white"
-                  } text-sm xl:text-base text-[#6A747B] `}
+                className={`${
+                  isHovered && "text-white"
+                } text-sm xl:text-base text-[#6A747B] `}
               >
                 下載PDF
               </p>
