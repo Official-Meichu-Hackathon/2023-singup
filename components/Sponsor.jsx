@@ -2,6 +2,7 @@
 import React from "react";
 import "@styles/globals.css";
 import SwiperCore, { Autoplay } from "swiper";
+import Image from 'next/image';
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -15,6 +16,7 @@ SwiperCore.use([Autoplay]);
 const Sponsor = () => {
   const cooperations = [
     {
+
       imgSrc: "/assets/images/新竹市政府.svg",
       size: "h-[2.25rem] md:h-[3.25rem] xl:h-[4.25rem] px-7 w-auto",
     },
@@ -51,6 +53,7 @@ const Sponsor = () => {
   ];
   const cooperation_sp = [
     {
+
       imgSrc: "/assets/images/文曄科技.svg",
       size: "h-[3rem] md:h-[5rem] xl:h-[7rem] w-auto",
     },
@@ -211,8 +214,8 @@ const Sponsor = () => {
     { name: "Colde Garage" },
   ];
   const nxp_marquee = [
-    { path: "/assets/images/nxp-page-1.jpg" },
-    { path: "/assets/images/nxp-page-2.jpg" },
+    { path: "/../public/assets/images/nxp-page-1.jpg" },
+    { path: "/../public/assets/images/nxp-page-2.jpg" },
   ];
   const delay = 2500;
   const [index, setIndex] = React.useState(0);
@@ -362,7 +365,7 @@ const Sponsor = () => {
                     src={item.path}
                     className="inline-block w-full h-auto "
                     key={index}
-                    alt={"test"}
+                    alt={'nxp'}
                   ></img>
                 ))}
               </div>
@@ -405,7 +408,7 @@ const Sponsor_each = ({ cooperation }) => {
         <div
           className={`${cooperation.order} flex items-center h-[3rem] md:h-[5rem] xl:h-[6.75rem] bg-white`}
         >
-          <img className={cooperation.size} src={cooperation.imgSrc} alt="" />
+          <Image width={300} height={200} className={cooperation.size} src={cooperation.imgSrc} alt="test" />
         </div>
       </a>
     </>
