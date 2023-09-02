@@ -60,7 +60,7 @@ const Sponsor = () => {
   ];
   const internet = [
     {
-      imgSrc: "assets/images/中華電信.jpeg",
+      imgSrc: "/assets/images/中華電信.jpeg",
       size: "h-[2.5rem] md:h-[4rem] xl:h-[6rem] w-auto",
     },
   ];
