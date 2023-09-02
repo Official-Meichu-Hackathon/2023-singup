@@ -55,7 +55,6 @@ const Footer = () => {
               className="w-[7rem]"
               src="/assets/images/logo.svg"
               alt="logo"
-
             />
           </div>
           <div className="container mx-auto md:basis-3/5 lg:basis-1/2 lg:whitespace-nowrap">
@@ -81,7 +80,6 @@ const Footer = () => {
                     className="w-6"
                     src="/assets/icons/fb_icon.svg"
                     alt="facebook"
-
                   />
                 </a>
               </div>
@@ -91,7 +89,6 @@ const Footer = () => {
                     className="w-6"
                     src="/assets/icons/ig_icon.svg"
                     alt="instagram"
-
                   />
                 </a>
               </div>
@@ -101,18 +98,20 @@ const Footer = () => {
                     className="w-6"
                     src="/assets/icons/mail_icon.svg"
                     alt="mail"
-
                   />
                 </a>
               </div>
             </div>
             <div>
-              <p>Copyright © 2023 MeiChu Hackathon</p>
+              <p>Copyright © 2023 Meichu Hackathon</p>
             </div>
           </div>
           <div className="flex sm:basis-1/2 justify-start sm:justify-end items-center">
             <div className="">
-              <a className="after:content-['_↗']" href="https://tenyear.meichuhackathon.org/">
+              <a
+                className="after:content-['_↗']"
+                href="https://tenyear.meichuhackathon.org/"
+              >
                 成果存放平台
               </a>
             </div>

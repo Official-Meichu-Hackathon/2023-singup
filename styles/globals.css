@@ -28,7 +28,7 @@
 
 .topic_box {
   background: linear-gradient(to right, #6a747b 50%, #eaeaec 50%);
-  background-size: 200% 100%;
+  background-size: 250% 100%;
   background-position: right bottom;
   transition: all 0.5s ease-out;
 }
