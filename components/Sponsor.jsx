@@ -132,7 +132,7 @@ const Sponsor = () => {
     },
     {
       imgSrc: "/assets/images/健人餐廚.jpeg",
-      size: "h-[2.75rem] md:h-[4rem] xl:h-[7rem] w-auto",
+      size: "h-[4rem] md:h-[6rem] xl:h-[10rem] w-auto",
     },
     {
       imgSrc: "/assets/images/可樂果.png",
