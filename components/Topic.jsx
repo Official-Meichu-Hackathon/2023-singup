@@ -49,7 +49,7 @@ export default function Topic() {
         logo2: "/assets/images/文曄科技.svg",
         link: "/assets/pdfs/NXP_2023.pdf",
         topic: "智慧應用改善人類生活並達到永續發展",
-        extra: "w-[45%] h-auto",
+        extra: "w-[45%] h-fit py-auto self-center",
         extra2: "w-[23%] pr-6 h-auto",
       },
       {
@@ -219,7 +219,7 @@ const Topic_each_m = ({ post }) => {
           onMouseEnter={handleHover}
           onMouseLeave={handleHover}
         >
-          <div className="flex justify-center gap-x-4 bg-white aspect-[19/8]">
+          <div className="flex justify-center gap-x-4 bg-white aspect-[19/8] flex">
             <img src={post.logo} className={`${post.extra}`} />
             {post.logo2 && (
               <img src={post.logo2} className={`${post.extra2}`} />
