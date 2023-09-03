@@ -30,11 +30,11 @@ const Team_intro = () => {
         <h2 className="w-fit mx-auto text-black">
           組別介紹&工作坊{" "}
         </h2>
-        <h6 className='font-normal'>工作坊內容包含企業介紹與題目所需資源說明，具體內容因各企業有所不同</h6>
+        <h6 className='font-normal w-fit mx-auto'>工作坊內容包含企業介紹與題目所需資源說明，具體內容因各企業有所不同</h6>
       </div>
       <div className="block md:hidden w-full pb-8 pt-16">
         <h4 className="w-fit m-auto text-black">組別介紹&工作坊</h4>
-        <h6 className='font-normal'>工作坊內容包含企業介紹與題目所需資源說明，具體內容因各企業有所不同</h6>
+        <p className='font-normal w-fit mx-auto'>工作坊內容包含企業介紹與題目所需資源說明，具體內容因各企業有所不同</p>
       </div>
      
       <div className="mt-5 mb-20">

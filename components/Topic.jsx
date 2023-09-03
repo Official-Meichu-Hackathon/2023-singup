@@ -45,7 +45,7 @@ export default function Topic() {
       {
         id: 5,
         company: "恩智浦半導體與文曄科技",
-        logo: "/assets/images/NXP.svg",
+        logo: "/assets/images/NXP.png",
         logo2: "/assets/images/文曄科技.svg",
         link: "/assets/pdfs/NXP_2023.pdf",
         topic: "智慧應用改善人類生活並達到永續發展",

@@ -6,7 +6,7 @@ const Timetable = () => {
     { time: "08:30 - 09:00", context: ["參賽者報到"] },
     { time: "09:00 - 10:30", context: ["開幕式"] },
     {
-      time: "10:30 - 11:30",
+      time: "10:30 - 12:00",
       context: ["Coding... / 企業博覽會\n/ 娛樂交流活動"],
     },
     { time: "12:00 - 13:30", context: ["午餐時間"] },
