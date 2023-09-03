@@ -214,8 +214,8 @@ const Sponsor = () => {
     { name: "Colde Garage" },
   ];
   const nxp_marquee = [
-    { path: "/../public/assets/images/nxp-page-1.jpg" },
-    { path: "/../public/assets/images/nxp-page-2.jpg" },
+    { path: "/assets/images/nxp-page-1.jpg" },
+    { path: "/assets/images/nxp-page-2.jpg" },
   ];
   const delay = 2500;
   const [index, setIndex] = React.useState(0);
