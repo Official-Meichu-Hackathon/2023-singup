@@ -13,7 +13,7 @@ const Team_intro = () => {
       team: "黑客組",
       imageSrc: "/assets/images/黑客.png",
       description:
-        "我們致力於搭起學生與企業之間的橋樑，學生運用企業資源並發揮潛力回應企業命題，同時企業方更提供實習機會，能讓學生進一步實踐創意發想！而今年我們將由以下六家企業作為引導單位：ETtoday新聞雲、Google、KKCompany Technologies 、LINE、恩智浦半導體與文曄科技、台積電 （按企業英文全稱字母順序排列）",
+        "我們致力於搭起學生與企業之間的橋樑，學生運用企業資源並發揮潛力回應企業命題，讓學生進一步實踐創意發想！而今年我們將由以下六家企業作為引導單位：ETtoday新聞雲、Google、KKCompany Technologies 、LINE、恩智浦半導體與文曄科技、台積電 （按企業英文全稱字母順序排列）",
       link: "/assets/pdfs/工作坊.pdf",
     },
     {
