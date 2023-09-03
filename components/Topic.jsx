@@ -8,16 +8,6 @@ function classNames(...classes) {
 
 export default function Topic() {
   let [categories] = useState({
-    創客交流組: [
-      {
-        id: 1,
-        company: "新竹市政府",
-        logo: "/assets/images/新竹市政府.svg",
-        link: "/assets/pdfs/HsinchuGov_2023.pdf",
-        topic: "新竹科技Ｘ文創產業",
-        extra: "w-[60%] aspect-auto h-auto",
-      },
-    ],
     黑客組: [
       {
         id: 1,
@@ -71,11 +61,21 @@ export default function Topic() {
         extra: "w-[55%] h-auto",
       },
     ],
+    創客交流組: [
+      {
+        id: 1,
+        company: "新竹市政府",
+        logo: "/assets/images/新竹市政府.svg",
+        link: "/assets/pdfs/HsinchuGov_2023.pdf",
+        topic: "新竹科技Ｘ文創產業",
+        extra: "w-[60%] aspect-auto h-auto",
+      },
+    ]
   });
   const [activeTabIndex, setActiveTabIndex] = useState(0);
   const [tabUnderlineWidth, setTabUnderlineWidth] = useState(0);
   const [tabUnderlineLeft, setTabUnderlineLeft] = useState(0);
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
   const tabsRef = useRef([]);
   useEffect(() => {
     function setTabPosition() {
@@ -94,7 +94,7 @@ export default function Topic() {
   return (
     <div className="container px-[5%] max-w-full py-16" id="contest">
       <h2 className="mb-2 hidden md:block">比賽題目</h2>
-      <h4 className="mb-2 m-auto md:hidden">比賽題目</h4>
+      <h4 className="m-auto md:hidden">比賽題目</h4>
       <Tab.Group>
         <div className="relative mb-3">
           <Tab.List className="relative flex gap-8">

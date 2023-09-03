@@ -185,7 +185,7 @@ const Sponsor = () => {
   const coorganizers = [
     {
       imgSrc: "/assets/images/清大校友總會.png",
-      size: "h-[2rem] md:h-[3rem] xl:h-[5rem] w-auto px-1",
+      size: "h-[3rem] md:h-[4.5rem] xl:h-[7.5rem] w-auto px-1",
     },
     {
       imgSrc: "/assets/images/教育部計畫.png",
@@ -217,7 +217,7 @@ const Sponsor = () => {
     { path: "/assets/images/nxp-page-1.jpg" },
     { path: "/assets/images/nxp-page-2.jpg" },
   ];
-  const delay = 2500;
+  const delay = 5000;
   const [index, setIndex] = React.useState(0);
   const timeoutRef = React.useRef(null);
 
@@ -330,7 +330,7 @@ const Sponsor = () => {
             </div>
           </div>
         </div>
-        <Sponsor_title title="媒體合作名單" />
+        {/* <Sponsor_title title="媒體合作名單" /> */}
         <Sponsor_title title="協辦單位" />
         <div className="sponsor_box">
           {coorganizers.map((cooperation, index) => {

@@ -3,8 +3,29 @@ import Marquee from 'react-fast-marquee';
 const Wave = () => {
     const row1 = [
         "assets/images/wave1.jpg",
-        "assets/images/wave2.jpg"
-
+        "assets/images/wave2.jpg",
+        "assets/images/wave1.jpg",
+        "assets/images/wave2.jpg",
+        "assets/images/wave1.jpg",
+        "assets/images/wave2.jpg",
+        "assets/images/wave1.jpg",
+        "assets/images/wave2.jpg",
+        "assets/images/wave1.jpg",
+        "assets/images/wave2.jpg",
+        "assets/images/wave1.jpg",
+        "assets/images/wave2.jpg",
+        "assets/images/wave1.jpg",
+        "assets/images/wave2.jpg",
+        "assets/images/wave1.jpg",
+        "assets/images/wave2.jpg",
+        "assets/images/wave1.jpg",
+        "assets/images/wave2.jpg",
+        "assets/images/wave1.jpg",
+        "assets/images/wave2.jpg",
+        "assets/images/wave1.jpg",
+        "assets/images/wave2.jpg",
+        "assets/images/wave1.jpg",
+        "assets/images/wave2.jpg",
     ];
     return (
         <>

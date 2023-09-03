@@ -25,13 +25,18 @@ const Team_intro = () => {
     },
   ];
   return (
-    <div id="team_intro">
-      <h2 className="w-fit mx-auto text-black hidden md:block pb-8 pt-12">
-        組別介紹{" "}
-      </h2>
-      <div className="block md:hidden w-full pb-8 pt-16">
-        <h4 className="w-fit m-auto text-black">組別介紹 </h4>
+    <div id="team_intro ">
+      <div className ="hidden md:block pb-8 pt-12">
+        <h2 className="w-fit mx-auto text-black">
+          組別介紹&工作坊{" "}
+        </h2>
+        <h6 className='font-normal'>工作坊內容包含企業介紹與題目所需資源說明，具體內容因各企業有所不同</h6>
       </div>
+      <div className="block md:hidden w-full pb-8 pt-16">
+        <h4 className="w-fit m-auto text-black">組別介紹&工作坊</h4>
+        <h6 className='font-normal'>工作坊內容包含企業介紹與題目所需資源說明，具體內容因各企業有所不同</h6>
+      </div>
+     
       <div className="mt-5 mb-20">
         <div className="hidden md:container md:mx-auto md:px-[4%] md:flex md:gap-x-[8%] md:flex-row md:justify-center">
           {team_intro_data.map((data, index) => (

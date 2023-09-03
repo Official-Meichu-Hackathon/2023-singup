@@ -74,7 +74,7 @@ const Navbar = () => {
             <a href="#contest">競賽題目</a>
           </li>
           <li className="w-full text-xl my-4 px-4">
-            <a href="#sponsor">贊助</a>
+            <a href="#sponsor">單位</a>
           </li>
           <li className="w-full bg-[#A8D5CC] text-white px-4 py-1 rounded-2xl">
             <a href="https://docs.google.com/forms/d/1wqN2bF9rWR0sOVBpFUiP0Q75hMQNMbY6le3kFZDslVI/edit" target="_blank">
@@ -142,7 +142,7 @@ const Navbar = () => {
               <a href="#contest">競賽題目</a>
             </li>
             <li className="w-auto  mx-2.5">
-              <a href="#sponsor">贊助</a>
+              <a href="#sponsor">贊助單位</a>
             </li>
             <li className="w-auto ml-2 bg-[#A8D5CC] text-white px-4 py-1 font-bold rounded-2xl">
               <a href="https://docs.google.com/forms/d/1wqN2bF9rWR0sOVBpFUiP0Q75hMQNMbY6le3kFZDslVI/edit" target="_blank">
