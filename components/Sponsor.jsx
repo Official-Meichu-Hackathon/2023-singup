@@ -295,7 +295,7 @@ const Sponsor = () => {
             return <Sponsor_each key={index} cooperation={cooperation} />;
           })}
         </div>
-        <Sponsor_subtitle subtitle="FRESHMAN" />
+        <Sponsor_subtitle subtitle="FRESHMAN" className ='z-30' />
         <div className="sponsor_box">
           {freshmen.map((cooperation, index) => {
             return <Sponsor_each key={index} cooperation={cooperation} />;

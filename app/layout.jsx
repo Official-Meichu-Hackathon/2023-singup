@@ -2,6 +2,7 @@ import "@styles/globals.css";
 
 import NavBar from "@components/NavBar";
 import Footer from "@components/Footer";
+// import {} from "@next/font"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const metadata = {

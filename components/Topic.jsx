@@ -49,7 +49,7 @@ export default function Topic() {
         logo2: "/assets/images/文曄科技.svg",
         link: "/assets/pdfs/NXP_2023.pdf",
         topic: "智慧應用改善人類生活並達到永續發展",
-        extra: "w-[45%] h-[38.63%] py-auto self-center",
+        extra: "w-[40%] h-[34.34%] py-auto self-center mr-4",
         extra2: "w-[23%] pr-6 h-auto",
       },
       {
@@ -173,7 +173,7 @@ const Topic_each = ({ post }) => {
               isHovered && "topic_box_hover"
             } p-[1.25rem] xl:p-[1.5rem] flex flex-col gap-y-[1rem] topic_box h-[11rem] lg:h-[12rem] 2xl:h-[13rem] relative`}
           >
-            <h3 className={`${isHovered && "text-white"} text-base xl:text-xl`}>
+            <h3 className={`${isHovered && "text-white"} text-lg xl:text-xl`}>
               {post.company}
             </h3>
             <p
@@ -215,7 +215,7 @@ const Topic_each_m = ({ post }) => {
       <a href={post.link}>
         <div
           key={post.id}
-          className="relative border-[0.5px] border-[#6A747B]"
+          className="relative "
           onMouseEnter={handleHover}
           onMouseLeave={handleHover}
         >
@@ -230,7 +230,7 @@ const Topic_each_m = ({ post }) => {
               isHovered && "topic_box_hover"
             } p-[1rem] flex flex-col gap-y-[0.25rem] bg-[#EAEAEC] topic_box h-[9rem] relative`}
           >
-            <h3 className={`${isHovered && "text-white"} text-[0.75rem]`}>
+            <h3 className={`${isHovered && "text-white"} text-xl `}>
               {post.company}
             </h3>
 
