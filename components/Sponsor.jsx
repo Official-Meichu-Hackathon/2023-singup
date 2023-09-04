@@ -295,9 +295,7 @@ const Sponsor = () => {
             return <Sponsor_each key={index} cooperation={cooperation} />;
           })}
         </div>
-        <div className = 'my-3'>
-          <Sponsor_subtitle subtitle="FRESHMAN" className ='z-30' />
-        </div>
+        <Sponsor_subtitle subtitle="FRESHMAN"/>
         <div className="sponsor_box">
           {freshmen.map((cooperation, index) => {
             return <Sponsor_each key={index} cooperation={cooperation} />;
@@ -396,7 +394,7 @@ const Sponsor_title = ({ title }) => {
 const Sponsor_subtitle = ({ subtitle }) => {
   return (
     <>
-      <p className="text-[0.675rem] md:text-base xl:text-xl font-medium text-center tracking-[0.15em]">
+      <p className="text-[0.675rem] md:text-base xl:text-xl font-medium text-center tracking-[0.15em] z-30">
         {subtitle}
       </p>
     </>
