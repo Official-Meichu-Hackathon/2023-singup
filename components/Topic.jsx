@@ -49,7 +49,7 @@ export default function Topic() {
         logo2: "/assets/images/文曄科技.svg",
         link: "/assets/pdfs/NXP_2023.pdf",
         topic: "智慧應用改善人類生活並達到永續發展",
-        extra: "w-[45%] h-fit py-auto self-center",
+        extra: "w-[45%] h-[38.63%] py-auto self-center",
         extra2: "w-[23%] pr-6 h-auto",
       },
       {
