@@ -7,7 +7,7 @@ const Activity = () => {
       <div id="activity_hope" className="w-full my-12">
         <h2 className="m-auto hidden md:block pt-12">活動願景</h2>
         <img
-          src="assets/images/group_photo.png"
+          src="assets/images/group_photo.jpg"
           className="w-full md:w-[60%] h-auto m-auto py-8"
           alt="group alt"
           loading="lazy"

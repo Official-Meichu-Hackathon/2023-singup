@@ -117,7 +117,7 @@ const Sponsor = () => {
     },
     {
       imgSrc: "/assets/images/墊腳石.svg",
-      size: "h-[1rem] md:h-[2rem] xl:h-[3.25rem] w-auto px-2",
+      size: "h-[0.8rem] md:h-[1.6rem] xl:h-[2.6rem] w-auto px-2",
       order: "order-last md:order-none",
     },
     {
@@ -295,7 +295,9 @@ const Sponsor = () => {
             return <Sponsor_each key={index} cooperation={cooperation} />;
           })}
         </div>
-        <Sponsor_subtitle subtitle="FRESHMAN" className ='z-30' />
+        <div className = 'my-3'>
+          <Sponsor_subtitle subtitle="FRESHMAN" className ='z-30' />
+        </div>
         <div className="sponsor_box">
           {freshmen.map((cooperation, index) => {
             return <Sponsor_each key={index} cooperation={cooperation} />;

@@ -50,7 +50,7 @@ const Award = () => {
           <h4 className="w-fit m-auto text-black">獎項資訊 </h4>
         </div>
         <img
-          src="assets/images/award.png"
+          src="assets/images/award.jpg"
           alt="hackathron award"
           className="my-[4vh] md:my-[8vh] w-full h-auto"
 

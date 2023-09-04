@@ -7,10 +7,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const metadata = {
   title: "2023 meichu hackathon",
+  image: "/assets/images/logo.svg"
 };
 
 const RootLayout = ({ children }) => (
   <html lang="en">
+    <img src="/assets/images/logo.svg" alt="2023 Meichu Hackathon"></img>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+TC"></link>
     <body className="bg-[#F5F5F6] top-0 absolute ">
 
       <NavBar />

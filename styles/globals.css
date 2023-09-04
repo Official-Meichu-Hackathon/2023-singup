@@ -395,3 +395,6 @@ hr {
 .hackathon_title {
   font-style: italic;
 }
+body {
+  font-family: 'Noto Serif TC', serif;
+}
