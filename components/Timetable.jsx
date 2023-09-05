@@ -24,7 +24,7 @@ const Timetable = () => {
   const time_d2 = [
     {
       time: "08:00 - 11:00",
-      context: ["Coding.../企業博覽會\n/娛樂交流活動"],
+      context: ["Coding.../企業博覽會\n/ 娛樂交流活動"],
     },
     { time: "11:00 - 12:00", context: ["午餐時間"] },
     { time: "12:00 - 13:00", context: ["Coding..."] },
