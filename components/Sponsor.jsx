@@ -131,16 +131,16 @@ const Sponsor = () => {
       size: "h-[2rem] md:h-[3.5rem] xl:h-[5rem] w-auto",
     },
     {
-      imgSrc: "/assets/images/健人餐廚.jpeg",
-      size: "h-[4rem] md:h-[6rem] xl:h-[10rem] w-auto",
-    },
-    {
       imgSrc: "/assets/images/可樂果.png",
       size: "h-[1.5rem] md:h-[3rem] xl:h-[5rem] w-auto px-3",
     },
     {
       imgSrc: "/assets/images/Epoch.jpeg",
       size: "h-[1.5rem] md:h-[3rem] xl:h-[5rem] w-auto px-3",
+    },
+    {
+      imgSrc: "/assets/images/健人餐廚.jpeg",
+      size: "h-[4rem] md:h-[6rem] xl:h-[10rem] w-auto",
     },
   ];
   const sp_A = [

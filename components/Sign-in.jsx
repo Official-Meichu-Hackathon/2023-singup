@@ -35,7 +35,7 @@ const Sign_in = () => {
           <div className="px-[4%] py-[2%] w-full grid grid-rows-3 grid-flow-col bar_gradient_inverse overflow-hidden rounded-t-[1.5rem] border-b-2 border-[#6A747B]">
             <p className="px-2 font-bold text-[0.8em]">
               {" "}
-              9/5（一）~ 9/25（一）08:00
+              9/5（二）~ 9/25（一）08:00
             </p>
             <p className="px-2 font-bold text-[0.8em]"> 9/25（一）23:59</p>
             <p className="px-2 font-bold text-[0.8em]"> 9/29（五）23:59</p>
@@ -117,7 +117,7 @@ const Sign_in = () => {
                 isHovered_a ? "" : "bg-gray-100"
               }  ease-in-out duration-500 px-[8%] py-[5%] h-[25%]`}
             >
-              <h5 className="py-5"> 9/5（一）~ 9/25（一）08:00</h5>
+              <h5 className="py-5"> 9/5（二）~ 9/25（一）08:00</h5>
               <h4 className="py-5 pb-10">開始報名</h4>
             </div>
             <div
