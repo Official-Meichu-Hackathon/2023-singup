@@ -124,6 +124,10 @@ const Sponsor = () => {
       imgSrc: "/assets/images/wifiboy.jpg",
       size: "h-[1.5rem] md:h-[3rem] xl:h-[5rem] w-auto px-2",
     },
+    {
+      imgSrc: "/assests/images/domino.svg",
+      size: "h-[1.5rem] md:h-[2.75rem] xl:h-[4.5rem] w-auto px-2",
+    }
   ];
   const freshmen = [
     {
