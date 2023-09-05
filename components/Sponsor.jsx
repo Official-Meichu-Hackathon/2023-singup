@@ -125,8 +125,8 @@ const Sponsor = () => {
       size: "h-[1.5rem] md:h-[3rem] xl:h-[5rem] w-auto px-2",
     },
     {
-      imgSrc: "/assests/images/domino.svg",
-      size: "h-[1.5rem] md:h-[2.75rem] xl:h-[4.5rem] w-auto px-2",
+      imgSrc: "/assets/images/domino.svg",
+      size: "h-[2rem] md:h-[3.2rem] xl:h-[5.1rem] w-auto px-2",
     }
   ];
   const freshmen = [
