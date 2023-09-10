@@ -125,7 +125,7 @@ const Sponsor = () => {
       size: "h-[1.5rem] md:h-[3rem] xl:h-[5rem] w-auto px-2",
     },
     {
-      imgSrc: "/assets/images/domino.svg",
+      imgSrc: "/assets/images/domino.png",
       size: "h-[2rem] md:h-[3.2rem] xl:h-[5.1rem] w-auto px-2",
     }
   ];
