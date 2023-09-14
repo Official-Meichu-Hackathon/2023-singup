@@ -185,7 +185,12 @@ const Sponsor = () => {
   ];
   const media = [
     {
-      name: "TechNews 科技新報",
+      imgSrc: "/assets/images/TechNews.png",
+      size: "h-[1.75rem] md:h-[3.25rem] xl:h-[5rem] w-auto",
+    },
+    {
+      imgSrc: "/assets/images/換日線.png",
+      size: "h-[2rem] md:h-[3.5rem] xl:h-[5rem] w-auto",
     },
   ];
   const coorganizers = [
@@ -337,10 +342,9 @@ const Sponsor = () => {
           </div>
         </div>
         <Sponsor_title title="媒體合作" />
-
-        <div className="sponsor_box_word">
+        <div className="sponsor_box">
           {media.map((cooperation, index) => {
-            return <Sponsor_each_word key={index} cooperation={cooperation} />;
+            return <Sponsor_each key={index} cooperation={cooperation} />;
           })}
         </div>
         {/* <Sponsor_title title="媒體合作名單" /> */}
