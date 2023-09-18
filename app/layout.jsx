@@ -57,6 +57,7 @@ const RootLayout = ({ children }) => (
         href="/assets/icons/favicon.ico"
         type="image/x-icon"
       ></link>
+      <meta name="google-site-verification" content="aVRs1RdcJpmUH6-D2CyakMGZ9nbD11zZ0czvEE74UgQ" />
     </head>
     <body className="bg-[#F5F5F6] top-0 absolute ">
       <NavBar />
