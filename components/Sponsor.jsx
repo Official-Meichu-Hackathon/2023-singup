@@ -2,7 +2,7 @@
 import React from "react";
 import "@styles/globals.css";
 import SwiperCore, { Autoplay } from "swiper";
-import Image from 'next/image';
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -16,7 +16,6 @@ SwiperCore.use([Autoplay]);
 const Sponsor = () => {
   const cooperations = [
     {
-
       imgSrc: "/assets/images/新竹市政府.svg",
       size: "h-[2.25rem] md:h-[3.25rem] xl:h-[4.25rem] px-7 w-auto",
     },
@@ -53,7 +52,6 @@ const Sponsor = () => {
   ];
   const cooperation_sp = [
     {
-
       imgSrc: "/assets/images/文曄科技.svg",
       size: "h-[3rem] md:h-[5rem] xl:h-[7rem] w-auto",
     },
@@ -127,7 +125,7 @@ const Sponsor = () => {
     {
       imgSrc: "/assets/images/domino.png",
       size: "h-[2rem] md:h-[3.2rem] xl:h-[5.1rem] w-auto px-2",
-    }
+    },
   ];
   const freshmen = [
     {
@@ -185,7 +183,16 @@ const Sponsor = () => {
       size: "h-[1.75rem] md:h-[3rem] xl:h-[4.5rem] w-auto px-2",
     },
   ];
-  const media = [];
+  const media = [
+    {
+      imgSrc: "/assets/images/TechNews.png",
+      size: "h-[1.75rem] md:h-[3.25rem] xl:h-[5rem] w-auto",
+    },
+    {
+      imgSrc: "/assets/images/換日線.png",
+      size: "h-[2rem] md:h-[3.5rem] xl:h-[5rem] w-auto",
+    },
+  ];
   const coorganizers = [
     {
       imgSrc: "/assets/images/清大校友總會.png",
@@ -299,7 +306,7 @@ const Sponsor = () => {
             return <Sponsor_each key={index} cooperation={cooperation} />;
           })}
         </div>
-        <Sponsor_subtitle subtitle="FRESHMAN"/>
+        <Sponsor_subtitle subtitle="FRESHMAN" />
         <div className="sponsor_box">
           {freshmen.map((cooperation, index) => {
             return <Sponsor_each key={index} cooperation={cooperation} />;
@@ -333,6 +340,12 @@ const Sponsor = () => {
               })}
             </div>
           </div>
+        </div>
+        <Sponsor_title title="媒體合作" />
+        <div className="sponsor_box">
+          {media.map((cooperation, index) => {
+            return <Sponsor_each key={index} cooperation={cooperation} />;
+          })}
         </div>
         {/* <Sponsor_title title="媒體合作名單" /> */}
         <Sponsor_title title="協辦單位" />
@@ -369,7 +382,7 @@ const Sponsor = () => {
                     src={item.path}
                     className="inline-block w-full h-auto "
                     key={index}
-                    alt={'nxp'}
+                    alt={"nxp"}
                   ></img>
                 ))}
               </div>
@@ -412,7 +425,13 @@ const Sponsor_each = ({ cooperation }) => {
         <div
           className={`${cooperation.order} flex items-center h-[3rem] md:h-[5rem] xl:h-[6.75rem] bg-white`}
         >
-          <Image width={300} height={200} className={cooperation.size} src={cooperation.imgSrc} alt="test" />
+          <Image
+            width={300}
+            height={200}
+            className={cooperation.size}
+            src={cooperation.imgSrc}
+            alt="test"
+          />
         </div>
       </a>
     </>
