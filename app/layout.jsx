@@ -6,7 +6,7 @@ import Footer from "@components/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const metadata = {
-  title: "2023 新竹X梅竹黑客松",
+  title: "2023 新竹 X 梅竹黑客松",
   image: "/assets/images/logo.svg",
   icon: "/assets/icons/favicon.ico",
   url: "https://2023.meichuhackathon.org/",
