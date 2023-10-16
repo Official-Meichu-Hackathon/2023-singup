@@ -108,6 +108,12 @@ const Sponsor = () => {
       size: "h-[1.5rem] md:h-[3rem] xl:h-[5rem] w-auto",
     },
   ];
+  const golds_sp = [
+    {
+      imgSrc: "/assets/images/活動王.svg",
+      size: "h-[1.8rem] md:h-[3.5rem] xl:h-[5rem] w-auto px-2",
+    },
+  ];
   const bronzes_sp = [
     {
       imgSrc: "/assets/images/舒希.png",
@@ -300,6 +306,12 @@ const Sponsor = () => {
           })}
         </div>
         <Sponsor_title title="特殊贊助" />
+        <Sponsor_subtitle subtitle="Gold" />
+        <div className="sponsor_box">
+          {golds_sp.map((cooperation, index) => {
+            return <Sponsor_each key={index} cooperation={cooperation} />;
+          })}
+        </div>
         <Sponsor_subtitle subtitle="BRONZE" />
         <div className="sponsor_box">
           {bronzes_sp.map((cooperation, index) => {
