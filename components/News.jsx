@@ -3,7 +3,13 @@ import React from "react";
 const News = () => {
   const news = [
     {
-      title: "．2022 新竹 X 梅竹黑客松回歸實體活動順利落幕！梅竹大獎第一名：邪萬教教我",
+      title:
+        "．《 超越理工壁壘，啟發創新思維，黑客力量與馬拉松的精彩碰撞！》— Podcast with 換日線",
+      link: "https://open.firstory.me/story/clnoe3k7u01zz01urfm0sfxfn",
+    },
+    {
+      title:
+        "．2022 新竹 X 梅竹黑客松回歸實體活動順利落幕！梅竹大獎第一名：邪萬教教我",
       link: "https://agirls.aotter.net/post/61492",
     },
     {
@@ -16,12 +22,12 @@ const News = () => {
     },
     {
       title: "．2022 新竹 X 梅竹黑客松競爭夯 共450名好手角逐創意",
-      link: "https://tw.news.yahoo.com/news/2022-%E6%96%B0%E7%AB%B9-x-%E6%A2%85%E7%AB%B9%E9%BB%91%E5%AE%A2%E6%9D%BE%E7%AB%B6%E7%88%AD%E5%A4%AF-%E5%85%B1450%E5%90%8D%E5%A5%BD%E6%89%8B%E8%A7%92%E9%80%90%E5%89%B5%E6%84%8F-072050298.html"
+      link: "https://tw.news.yahoo.com/news/2022-%E6%96%B0%E7%AB%B9-x-%E6%A2%85%E7%AB%B9%E9%BB%91%E5%AE%A2%E6%9D%BE%E7%AB%B6%E7%88%AD%E5%A4%AF-%E5%85%B1450%E5%90%8D%E5%A5%BD%E6%89%8B%E8%A7%92%E9%80%90%E5%89%B5%E6%84%8F-072050298.html",
     },
     {
       title: "．2022 新竹X梅竹黑客松落幕　參賽者從日常激發靈感",
-      link: "https://www.ettoday.net/news/20221121/2384809.htm"
-    }
+      link: "https://www.ettoday.net/news/20221121/2384809.htm",
+    },
   ];
 
   return (
@@ -40,7 +46,11 @@ const News = () => {
           <div className="flex flex-col px-[2rem] pb-5 underline-offset-auto">
             {news.map((news, index) => {
               return (
-                <a href={news.link} key={index} className = 'underline underline-offset-4'>
+                <a
+                  href={news.link}
+                  key={index}
+                  className="underline underline-offset-4"
+                >
                   {news.title}
                 </a>
               );
